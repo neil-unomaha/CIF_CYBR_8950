@@ -12,7 +12,7 @@
 
 ### Merit
 
-If we can effectively implement tools from the Palo Alto API to the CIF Framework, this will help to automate some of the processes within the system. This can remove some of the manual, tedious task(s) that must be done with the framework. With proper implementation, this could also eliminate risk associated with human error within the framework, as it would be done automatically. If deemed appropriate, this could also be shared with other colleges/organizations that utilize the CIF framework. 
+If we can effectively implement tools from the Palo Alto API to the CIF Framework, this will help to automate some of the processes within the system. This can remove some of the manual, tedious task(s) that must be done with the framework. With proper implementation, this could also eliminate risk associated with human error within the framework, as it would be done automatically. If deemed appropriate, this could also be shared with other colleges/organizations that utilize the CIF framework.
 
 ## Project Timeline
 
@@ -29,7 +29,14 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 ## Project Methodology
 - *Probably first do the research, set up test environment, get a feel of the environment, start testing Palo Alto API calls and document what worked and what didn't. Maybe start around there? Eventually try to set it up in a way that it can be applied in the field?*
 
-#### Literature Review
+### Literature Review and Research
+
+#### Research Questions
+
+* Is there a way to properly implement Palo Alto API to automate any processes within the CIF framework?
+* Will implementing said API effectively be more efficient in the CIF framework?
+* more stuff...........
+
 **Keywords:** [put in keywords here to use when looking for literature]
 
 1. **[Title of the document]**  
@@ -38,7 +45,7 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 **Published in:**  
 **Summary:**  
 
-#### Technical Plan
+### Technical Plan
 **High-Level Project Overview** 
 - *Probaby a hierarchical bulleted list*
 
