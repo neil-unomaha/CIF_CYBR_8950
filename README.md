@@ -35,7 +35,8 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 
 * Is there a way to properly implement Palo Alto API to automate any processes within the CIF framework?
 * Will implementing said API effectively be more efficient in the CIF framework?
-* more stuff...........
+* Is the dockerized version of CIFv4 up to the University standard or will it need modified.
+* ... more
 
 **Keywords:** [put in keywords here to use when looking for literature]
 
