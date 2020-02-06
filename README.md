@@ -3,10 +3,16 @@
 ## Executive Project Summary
 
 ### Goals and Objectives
-- bullet list
 
-### Merit of the Project
-- paragraph
+* Familiarize ourselves with the CIF framework to better understand the system
+* Setup sandbox environment with CIF
+* Research Palo Alto documentation and other resources to better understand the API
+* Look into using the Palo Alto API to automate any processes within the CIF framework
+* Document key findings and processes that were attempted in the sandbox environment
+
+### Merit
+
+If we can effectively implement tools from the Palo Alto API to the CIF Framework, this will help to automate some of the processes within the system. This can remove some of the manual, tedious task(s) that must be done with the framework. With proper implementation, this could also eliminate risk associated with human error within the framework, as it would be done automatically. If deemed appropriate, this could also be shared with other colleges/organizations that utilize the CIF framework. 
 
 ## Project Timeline
 
