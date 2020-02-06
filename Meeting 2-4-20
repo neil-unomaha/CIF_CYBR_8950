@@ -1,0 +1,33 @@
+CIF Version 4 Notes
+Current Status of CIF 4:
+Brian has a cron job that each day it automatically copies the threats into a file. Brian is then manually taking those threats and adding them to CIF.
+
+Wishlist:
+He would like us to automate the process:
+
+About every 15minutes, using the Palo Alto API, Pull from Palo Alto and Push it out to CIF to CIF.
+Also go the other way: pull threats from CIF, and push them up to Palo Alto automatically.
+
+Observation:
+A wishlist item from Brian was to dockerize CIF, but this has already been done for version 4 (the links in the power point regarding CIF was for version 3)
+
+Notes: Download CIF via Docker on Ubuntu 16.04 LTS
+
+I followed the directions at https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton
+I DID have to create an account on Maxmind as suggested in the installation directions
+MAXMIND
+username: nthorne@unomaha.edu
+Account_user ID: *****
+License Key: *****
+
+I attempted to install CIF on Ubuntu 16.04 Desktop via docker but docker was unable to finish pulling the image from docker hub.
+I went ahead and added the environment variables described in the installation direction to my .bashrc file and sourced it. It appears copy/paste isn’t possible with ubuntu server between the VM and the host
+Once I was in an interactive shell for my container, I did install cifsdk as indicated here: https://github.com/csirtgadgets/verbose-robot/wiki/Where-do-I-start
+
+After getting the docker image, I started it up in interactive terminal via:
+docker exec -it verbose-robot /bin/bash
+
+According to the docks, I should enter variables as described here:
+https://github.com/csirtgadgets/verbose-robot/wiki/FAQ#searching-logs
+
+The issue is that I need a text editor, and apparently this image doesn’t allow installing nano or VIM
