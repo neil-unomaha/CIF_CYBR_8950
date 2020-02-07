@@ -32,12 +32,13 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 ### Literature Review and Research
 
 #### Research Questions
+* What are the barriers/enablers of api integration for a CIF? 
+* If there are barriers, how can they be mitigated?
+* How does mitigating the barriers increase efficiency?
+* What are the required attributes for a CIF framework to be used in a university setting?
+* To what degree does the current CIF satisfy those required API  endpoints?
 
-* Is there a way to properly implement Palo Alto API to automate any processes within the CIF framework?
-* Will implementing said API effectively be more efficient in the CIF framework?
-* Is the dockerized version of CIFv4 up to the University standard or will it need modified.
-* Research CIFv4 API to pull information from Palo Alto.
-* ... more
+
 
 **Keywords:** [put in keywords here to use when looking for literature]
 
