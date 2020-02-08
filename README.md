@@ -41,15 +41,13 @@ Following setup of CIF, we hope to shift our focus on Palo Alto documentation to
 
 #### Research Questions
 
-* What are the barriers/enablers of api integration for a CIF? 
+* What are the barriers/enablers of api integration for a CIF?
 * If there are barriers, how can they be mitigated?
 * How does mitigating the barriers increase efficiency?
 * What are the required attributes for a CIF framework to be used in a university setting?
 * To what degree does the current CIF satisfy those required API  endpoints?
 
-**Keywords:** [put in keywords here to use when looking for literature]
-
-
+**Keywords:** Dockerization Hardening, Web Services, Systems Architecture Integration, Process Automation
 
 ### Technical Plan
 
