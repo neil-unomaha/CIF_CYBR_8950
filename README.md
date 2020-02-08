@@ -32,29 +32,29 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 | another example | 1-10 | 1-10 | Some description | How to avoid it|
 
 ## Project Methodology
-- *Probably first do the research, set up test environment, get a feel of the environment, start testing Palo Alto API calls and document what worked and what didn't. Maybe start around there? Eventually try to set it up in a way that it can be applied in the field?*
+
+We will begin this project by conducting thorough research and reviewing literature that pertains to the research questions listed below. Any notes or interesting information that could be useful for the project that accesses the research questions will be documented. Following the research, we will read through documentation to better understand the CIF framework, how it is implemented, how it is set up, how it is used, etc. Following, a test environment will be setup using the CIF documentation provided to get a better understanding of the framework.  
+
+Following setup of CIF, we hope to shift our focus on Palo Alto documentation to learn more about its API and try to find ways to implement it in such a way that we can pull information from the organization and upload it to CIF. Barriers that could affect this API integration will be identified and investigated for any mitigations. Any information that could be of significance throughout the entire process will be documented for other team members, or for others that work with CIF to refer to.  
 
 ### Literature Review and Research
 
 #### Research Questions
+
 * What are the barriers/enablers of api integration for a CIF? 
 * If there are barriers, how can they be mitigated?
 * How does mitigating the barriers increase efficiency?
 * What are the required attributes for a CIF framework to be used in a university setting?
 * To what degree does the current CIF satisfy those required API  endpoints?
 
-
-
 **Keywords:** [put in keywords here to use when looking for literature]
 
-1. **[Title of the document]**  
-**Authors:**  
-**Date Published:**  
-**Published in:**  
-**Summary:**  
+
 
 ### Technical Plan
+
 **High-Level Project Overview** 
+
 - *Probaby a hierarchical bulleted list*
 
 ## Resources/Technology Needed
