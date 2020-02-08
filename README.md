@@ -2,6 +2,11 @@
 
 ## Executive Project Summary
 
+The Collective Intelligence Framework, or CIF, is built to intelligently retrieve threat information from various sources, and use that information for incident response, intrusion detection, and mitigation. Most commonly, this framework works with IP addresses, domains, and URLs that have been suspected to be malicious. The framework works to analyze data at different times to make observations and build reputations based off these observations. The process is split into seven parts: parse, normalize, post process, store, query, share, and produce.  
+
+Within this existing framework, the project will focus on the store portion of the process and thus will be discussing this part in more detail. CIF holds a database of millions of records of threat intelligence. One source of the threat intelligence information is from the company, Palo Alto. Information is pulled from Palo Alto and pushed to CIF, then pushed to Palo Alto devices within CIF. At this time, a cron job is used once a day to automatically copy threats into a file, then manually added to the CIF. For this project, it is the aim to make this threat pulling process more automatic. Palo Alto will update their threat information numerous times a day, and it would be more effective to collect this information and push to CIF numerous times a day, rather than once a day. One potential goal is to utilize the Palo Alto API to pull this information and automatically copy the threats to CIF. Another potential goal may to pull the threats from CIF and push them to the Palo Alto devices directly. 
+
+
 ### Goals and Objectives
 
 * Familiarize ourselves with the CIF framework to better understand the system
@@ -12,7 +17,7 @@
 
 ### Merit
 
-If we can effectively implement tools from the Palo Alto API to the CIF Framework, this will help to automate some of the processes within the system. This can remove some of the manual, tedious task(s) that must be done with the framework. With proper implementation, this could also eliminate risk associated with human error within the framework, as it would be done automatically. If deemed appropriate, this could also be shared with other colleges/organizations that utilize the CIF framework.
+If we can effectively implement tools from the Palo Alto API to the CIF Framework, this will help to automate some of the processes within the system. This can remove some of the manual, tedious task(s) that must be done with the framework. With proper implementation, this could also eliminate risk associated with human error within the framework, as it would be done automatically. If deemed appropriate, this could also be shared with other colleges/organizations that utilize the CIF framework. However, if in the event we are unable to accomplish this, the fallback would be to pull threat from the CIF, and automatically push them to the Palo Alto devices. This would still accomplish a more automated process.
 
 ## Project Timeline
 
