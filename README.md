@@ -38,7 +38,7 @@ We will begin this project by conducting thorough research and reviewing literat
 Following setup of CIF, we hope to shift our focus on Palo Alto documentation to learn more about its API and try to find ways to implement it in such a way that we can pull information from the organization and upload it to CIF. Barriers that could affect this API integration will be identified and investigated for any mitigations. Any information that could be of significance throughout the entire process will be documented for other team members, or for others that work with CIF to refer to.  
 
 ### Literature Review and Research
-#### [Milestone 1](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Literature-Research.md)
+#### [Literature and Research](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Literature-Research.md)
 
 #### Research Questions
 
