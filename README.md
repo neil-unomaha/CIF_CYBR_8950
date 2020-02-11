@@ -67,7 +67,11 @@ Following setup of CIF, we hope to shift our focus on Palo Alto documentation to
 
 |Resource  | Dr. Hale needed? | Investigating Team member | Description |
 |-------------------|---------|---------------------------|-------------|
-|Some resource| No | Bob | Some description  |
+|Virtual Machine Software| No | All | CIF 4 runs in Ubuntu 16.04 Server.  Run a vm for Ubuntu 16.04.  |
+|Ubuntu 16.04 Server| No | All | Required to run CIF4  |
+|Docker| No | All | Docker image exists for CIF 4.  It is one of the methods for getting CIF 4 installed.  |
+|cifsdk| No | All | Install cif within the docker container  |
+|Palo Alto API Documentation| No | All | Necessarty to familiarize ourselves iwth the Palo Alto documentation in order to build the requsted feature.  |
 
 ## First Sprint Plan
 * Link to Kanban board on github (probably issue based)
