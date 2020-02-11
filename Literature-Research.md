@@ -3,20 +3,20 @@
 ### Process Automation Articles
 J. K. Visser and H. T. Malan, “Identification of risk associated with process automation systems,” Int. J. Econ. Manag. Eng, vol. 13, no. 7, pp. 1044–1051, 2019. \
 Keywords - Process Automation, Risk, System Performance, Third-Party Communication, Interface Compatibility \
-(Add Paragraph with info)
+This paper was a study that was sent to 172 instrument technicians and technology managers. This was to identify risk in process automation systems. The focused 5 areas of risk: lack of skilled technicians, integration of capability of the third-party system software, reliability of the process automation hardware, excessive costs pertaining to performing maintenance and migrations on the automation systems, and requirements of having third-party communication interfacing compatibility as well as real-time communication networks. This works addresses these problems and gives a conceptual framework in a way to follow to remedy these issues. \
 URL - https://pdfs.semanticscholar.org/b845/bde145526fb9fff7517161337533982defc9.pdf \
 
 
 ### API Integration / Middleware for Connecting APIs
 S. Chang-Woo, L. Daesung, C. Kyung-Yong, R. Kee-Wook, and L. Jung-Hyun, “Interactive middleware architecture for lifelog based context awareness,” Multimedia Tools and Applications, vol. 71, Jan. 2013. \
 Keyword - Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Devices, Logs \
-(Add Paragraph with info)
+This paper reference all the different forms of information being made today. There is a need for middleware to be able to obtain it from all sources and store it in a centralized location or DBMS. The research shows how effective middleware is an important issue that needs to be addressed. The paper goes on to address the distributed environment and how they communicate, and the middleware needed to allow a different type of hardware to talk. They talk about a lot of other work and explain there experiment fairly well for the common reader to understand. \
 URL - https://link.springer.com/article/10.1007/s11042-013-1362-7 \
 
 ### Systems Architecture Integration
 R. T. Tiburski, L. A. Amaral, E. D. Matos, and F. Hessel, “The importance of a standard security architecture for SOA-based IoT middleware,” Institute of Electrical and Electronics Engineers, vol. 53, no. 12, pp. 20–26, Dec. 2015. \
 Keyword – IoT, System Architecture, Middleware, Security, Standard Architecture \
-(Add Paragraph with info)
+This paper talks about integration into systems for IoT devices. It goes into detail about the middleware needed to monitor IoT devices on the systems. The paper reference how a Service-Oriented Architecture (SOA) is useful for integration from new devices. After the discussion of SOA, it talks about the company using Resource-Oriented Architecture alongside the SOA to bring the benefits of IoT devices into a company infrastructure. Then the paper talks about the security risks that come with the IoT devices and ways to mitigate them. This paper is a good reference for System Architecture Integration examples because it shows how to bring IoT devices into the mix. \
 URL: https://www.researchgate.net/publication/290378256_The_Importance_of_a_Standard_Security_Architecture_for_SOA-based_IoT_Middleware \
 
 ### Web Services Literature
