@@ -156,3 +156,27 @@ Developed over 18 month field trial with one student with autism. Started with a
 A collective intelligence model can be applied to many different contexts—likely any context where the aggregated information from various contexts all surrounding the same issue or problem can yield revealing insights.
 
 D. G. Gregg, “Designing for collective intelligence,” Communications of the ACM, vol. 53, no. 4, p. 134, Jan. 2010.
+
+----
+
+keywords: {multi-agent systems;human swarming method;parallel distributed intelligence;autonomous robots;simulated agents;UNU platform;artificial swarm intelligence;ASI;collective intelligence;Real-time systems;Sociology;Statistics;System recovery;Force;Decision making;Neurons}
+
+1. Problem Statement
+Aggregating individual opinion asynchronously, such as by polling, does not provide the opportunity for real-time collective intelligence to emerge. 
+2. Research Question(s)
+What is the comparison of human swarming to that of decision making done asynchronously?
+What are the critical components that yield successful human swarms?
+3. Contribution: 
+Software makes it possible to conduct real-time negotiation 
+4. Rationale
+Various mechanisms in use can cause entrenchment, and polarizing view.  Hearding and snowballing effects are sometimes seen with existing mechanisms.
+5. Investigative Approach:
+Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy aware winners. They then did the same thing but with their human swarm software UNU
+6. Lessons Learned:
+Collective intelligence has sub categories.  Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation.   In fact, polling can cause entrenchment.   
+Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in their direction of their choice, but lots of people are doing this at the same time which reveals realtime feedback.  
+Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages. 
+
+L. B. Rosenberg, "Human swarming, a real-time method for parallel distributed intelligence," 2015 Swarm/Human Blended Intelligence Workshop (SHBI), Cleveland, OH, 2015, pp. 1-7.
+doi: 10.1109/SHBI.2015.7321685
+
