@@ -41,3 +41,19 @@ J. Elmellas, “Knowledge is power: the evolution of threat intelligence,” Sci
 Keyword - CIF, Security, Threat Intelligence \
 This paper starts by talking about threat intelligence and how the need for the collaboration came about the birth of the Collective Intelligence Framework. And how CIF can be used for IP, Autonomous System Numbers, email addresses, domain names, and URLs. The researcher talks about the ease that CIF allows for automating the use of dating being brought to it. The researcher goes into detail about using SIEM (Security Information and Event Management) Software to gather multiple tools logs and pass the correct data to the CIF. Then share it with others. He ends the paper talking about TAXII(Trusted Automated Exchange of Indicator Information) standard that is being adopted for the situation for multiple organizations to share information. \
 URL - PDF is in issue No. 12 \
+
+----------
+
+Keywords - Cyber Threat Intelligence Capability, Super SEIM
+
+This book services as guidance for successful development and implementation of cyber threat intelligence capability. It derives its conclusions from the personal observations of the author.
+Two critical take aways:
+* It is critical that business objectives are clearly defined so that the most appropriate cyber threat intelligence capability can be built.
+* Threat Intelligence feed is different from data feed. Often intelligence is sold when in fact it is just data. Threat intelligence is data that has been vetted by some process or procedure and it satisfies three different requirements:
+  *	Relevant
+  *	Actionable
+  *	Valuable
+  
+H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber threat intelligence capability. Amsterdam: Syngress, an imprint of Elsevier, 2015.
+
+
