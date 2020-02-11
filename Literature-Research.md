@@ -69,6 +69,32 @@ By identifying beforehand all possible API errors a user might run into, it can 
     
 J. Aué, M. Aniche, M. Lobbezoo and A. van Deursen, "An Exploratory Study on Faults inWeb API Integration in a Large-Scale Payment Company," 2018 IEEE/ACM 40th International Conference on Software Engineering: Software Engineering in Practice Track (ICSE-SEIP), Gothenburg, 2018, pp. 13-22. URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8449231&isnumber=8449161
 
+----
+
+keywords: {application program interfaces;software reusability;system documentation;systematic mapping study;API documentation generation approaches;software reuse;software developers;API documentation process;API documentation generation tools;natural language documentation;code examples;API users;API documentation approaches;Documentation;Data mining;Tools;Software;Libraries;Systematics;Application programming interfaces;API;API Documentation;Systematic mapping study}
+
+1. Problem Statement
+Maintaining API documentation is a burdensome task. Especially when code updates are frequent, documentation updates often get overlooked. Tools are required to aid in this process.
+
+2. Research Question(s)
+* What approaches exist for creating new and improving existing API documentation?
+* How do the approaches contribute to API documentation?
+* What are the sources for API documentation?
+* What are the quality properties of the approaches?
+* How are the documentation approaches evaluated?
+3. Contribution:
+A representation of what the current literature in the domain of API documentation expresses is important in order to maintain up-to-date API documentation.
+4. Rationale
+Documentation is crucial. Without an authoritative source providing documentation for their code artifacts, users will turn towards the internet on crowd-sourced platforms where it is not guaranteed they will receive the best guidance.
+5. Investigative Approach:
+Conducted a systematic mapping study regarding various search terms related to APIs. They then analyzed the API documentation strategies discussed in those papers. Most approaches to
+6. Lessons Learned:
+The results from the study suggest that, if the quality of the API documentation is to be maintained: tools to generate the API documentation must be used. The study suggests that a significant amount of API documentation generation tools focus on producing natural language and code examples. This article thus postulates that these are the two areas that are most lacking in API documentation.
+Major of papers reference tools, while others use plugins, but which ultimately produce templates which include natural language documentation and code examples.
+
+K. Nybom, A. Ashraf and I. Porres, "A Systematic Mapping Study on API Documentation Generation Approaches," 2018 44th Euromicro Conference on Software Engineering and Advanced Applications (SEAA), Prague, 2018, pp. 462-469.
+doi: 10.1109/SEAA.2018.00081,
+URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8498248&isnumber=8498147
 
 ### Dockerization Hardening
 
