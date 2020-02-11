@@ -141,6 +141,38 @@ Keyword – Security as a Service, Docker, Dockerization, Security, IoT \
 This paper talks about docker as security as a service. They first talk about why they choose docker for this investigation was that it was lightweight and fairly secure in their default configuration. They all used edge cases to test the docker container for performance and to see how it would handle these. They found that docker was suitable for there test even when scraping and building the containers for an app it was relatively quick and effective. The end of the paper talking about optimizing security service provisioning. This was showing that using docker to launch multiple security instances is viable when date rates are increased. This helps to show the docker can be used securely in an organization. \
 URL - https://www.researchgate.net/profile/Madhusanka_Liyanage/publication/338853880_Security_as_a_Service_Platform_Leveraging_Multi-Access_Edge_Computing_Infrastructure_Provisions/links/5e2fc88ea6fdcc309695b451/Security-as-a-Service-Platform-Leveraging-Multi-Access-Edge-Computing-Infrastructure-Provisions.pdf \
 
+-----
+Keywords: cloud computing;computer network security;operating systems (computers);virtualisation;Docker container security;Denial of Service attack;DoS attack;containerization;virtualization;cloud based IT environment;Docker engine;operating system;OS;Containers;Kernel;Computer crime;Linux;Access control;Cloud computing;Cloud Containers;Docker Technology;Security Issues;DoS Attacks;Micro Services Architecture
+
+
+1. Problem Statement: Docker containers can be vulnerable to ARP spoofing, Mac flooding, DoS attacks, among others.
+
+2. Research Question(s)
+
+- What Threats and vulnerabilities exist surrounding the docker platform?
+- What mitigations exist to make the docker platform more secure?
+
+3. Contribution:
+
+- The paper lists known threats and vulnerabilities around docker, such as DoS attacks, docker daemon attack surface, integrity of docker host issue, etc.
+- Previous, related work to address security for the Docker container are listed, such as Mandatory access control (MAC), Secure Containers with Security-Enhanced Linux (SELinux), and best practices.
+- The paper introduces an experiment for addressing DoS attack concerns on the docker containers.
+
+4. Rationale: The paper introduces an experiment model to prevent DoS attacks to the docker model. Test included assigning memory limit in the docker, assigning memory reservation in the default file, and providing a default memory. The tests were of subtle changes to the docker containers but helped the security and safety of the container.
+
+5. Investigative Approach
+What is the approach (e.g. field study, experience with a new or existing or existing method, review, empirical, etc.)? or what is the paper’s empirical rationale?
+
+6. Lessons learned:
+
+- The tests were of subtle changes to the docker containers but helped the security and safety of the container.
+
+J. Chelladhurai, P. R. Chelliah and S. A. Kumar, "Securing Docker Containers from Denial of Service (DoS) Attacks," 2016 IEEE International Conference on Services Computing (SCC), San Francisco, CA, 2016, pp. 856-859.
+doi: 10.1109/SCC.2016.123
+URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=7557545&isnumber=7557418
+
+-----
+
 ### CIF Literature
 
 J. Elmellas, “Knowledge is power: the evolution of threat intelligence,” ScienceDirect, pp. 1–5, Jul. 2016. \
