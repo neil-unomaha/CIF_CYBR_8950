@@ -14,6 +14,38 @@ Keyword - Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Dev
 This paper reference all the different forms of information being made today. There is a need for middleware to be able to obtain it from all sources and store it in a centralized location or DBMS. The research shows how effective middleware is an important issue that needs to be addressed. The paper goes on to address the distributed environment and how they communicate, and the middleware needed to allow a different type of hardware to talk. They talk about a lot of other work and explain there experiment fairly well for the common reader to understand. \
 URL - https://link.springer.com/article/10.1007/s11042-013-1362-7 \
 
+-----
+
+Keywords: API development, API maintenance, software platform APIs, API review, multi-device API
+
+1. Problem Statement: In the beginning, the Tizen API had simple submissions and approvals via emails between the developers and reviewers. There was no way to effectively track changes or share with other stakeholders of the API unless explicitly made a recipient of the email chain.
+
+2. Research Question(s)
+
+  - Can the process of updating Tizen API be improved?
+  - How can they share information about Tizen API with other stakeholders if changes are made?
+
+3. Contribution:
+
+  - JIRA bug system was implemented to provide a submission-based/approval-based workflow, task search ability, status-change notifications, etc.
+  - API Change Requests (ACR) had different states in JIRA system for updates, reviews, preparations, approvals, etc. Stakeholders are applied with specified responsibilities/tasks for each state.
+
+4. Rationale: The paper argues that research has been done improving API usability frameworks, but no report of API process that is designed and used in a large-scale software platform.
+
+5. Investigative Approach
+
+  - They took their time to come up with a detailed process of ACR when it came to the API and recognizing the environment it operates in. The paper claims the new process helps stakeholders work more efficiently while maintaining API consistency for usability and backward compatibility.
+
+6. Lessons learned
+
+  - There are various ways and methods organizations and individuals try to improve their APIs and update process. Different organizations/devices will have different needs from each API
+
+H. Kwon, J. Ahn, S. Choi, J. Siewierski, P. Kosko and P. Szydelko, "An Experience Report of the API Evolution and Maintenance for Software Platforms," 2018 IEEE International Conference on Software Maintenance and Evolution (ICSME), Madrid, 2018, pp. 587-590.
+doi: 10.1109/ICSME.2018.00034
+URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8530070&isnumber=8529823
+
+-----
+
 V. Chang, "Design of middleware platform to enhance abilities of application systems integration," International Conference on Information Technology: Coding and Computing (ITCC'05) - Volume II, Las Vegas, NV, 2005, pp. 461-466 Vol. 2.
 doi: 10.1109/ITCC.2005.123
 keywords - Linux;middleware;graphical user interfaces;software metrics;software development management;software maintenance;protocols;Linux/Unix base middleware platform design;application systems integration;GUI operating interface;software editing;software upgrading;software updating;software integration;software system development;data transmission;API;application software protocol;TCP/IP protocol;X.25 protocol;SNA protocol;Middleware;Application software;Technology management;Protocols;Pervasive computing;Switches;Condition monitoring;Operating systems;Costs;Cities and towns;GUI operating interface;TCP/IP;API;Linux;X.25;SNA  
