@@ -56,4 +56,33 @@ Two critical take aways:
   
 H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber threat intelligence capability. Amsterdam: Syngress, an imprint of Elsevier, 2015.
 
+----------
+
+Keywords: Collective Intelligence, Web 2.0 Applications
+
+1.	Problem Statement
+There is currently no applications specifically tailored to the special education sector. An information system needs to be designed surrounding special education data—one which ingests data from a variety of different contexts and settings. Data input must have good UX design so as to easily sift through data and to easily utilize the data to make strategic and informed decisions for the clients.
+2.	Research Question(s)
+What is a design and implementation strategy for developing a special-purpose collective intelligence application within the domain of special education data?
+3.	Contribution:
+There is value in using the collective intelligence model in the special education sector because data is often collected in silos. A single application that ingests data from all the different sources can identify patterns and make more informed decisions on future endeavors.
+This paper identifies seven principle collective intelligence requirements:
+    - Task specific representations
+    - Data is the key
+    - Users add value
+    - Facilitate data aggregation
+    - Facilitate data access
+    - Facilitate access for all devices
+    - The perpetual beta (continuous improvement)
+4.	Rationale
+Researchers claim that, at the time of this publication, there did not exist a tailored application to the special education sector.
+5.	Investigative Approach:
+Developed over 18 month field trial with one student with autism. Started with a prototype and with feedback made tweaks and increased features over time.
+6.	Lessons Learned:
+A collective intelligence model can be applied to many different contexts—likely any context where the aggregated information from various contexts all surrounding the same issue or problem can yield revealing insights.
+
+D. G. Gregg, “Designing for collective intelligence,” Communications of the ACM, vol. 53, no. 4, p. 134, Jan. 2010.
+
+
+
 
