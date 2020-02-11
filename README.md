@@ -27,8 +27,15 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 
 |Risk name  | Impact     | Likelihood | Description | Mitigation |
 |-----------|------------|------------|-------------|------------|
-|Sample name| 1-10 | 1-10 | Some description | How to avoid it |
-| another example | 1-10 | 1-10 | Some description | How to avoid it|
+|Developed API contains errors| 10 | 2 | Errors in code must be avoided at all costs |Include peer review practices in the code development prorcess, as well as automated tests. |
+|Developed API containers security vulnerabilities | 10 | 2 | Controls should be in place in order to provide assurance of the quality and security of the developed software | Research what the most common security vulnerabilities are regarding APIs.  Ensure the code is peer reviewed. |
+|Insufficient Technical skills to develop API| 10 | 2 | It is essential that the team collectively possesses the skills to deliver the desired feature requests.  If the team does not possess the skills, they must have resources available to them in order to acquire the necessary knowledge to complete the task | The team needs to allot sufficient time to gaining a solid understanding of the software they will be working with throughout the project.  A survey of all the technological components should be conducted.  The team should determine if the team already possesses sufficeint knowledge on each of these software components.  If not, the team should ensure that resources are available to them in order to acquire this knowledge. |
+|Roadblocks to setting up Test Environment | 5 | 2 | It is critical that a test environment exists in order to aid in the development and testing of the API  | Step through the installation process within the documentation. If trouble arises, consult Brian for assistance.|
+|Developed API Product has poor Documentation| 10 | 1 | Poorly written documentation can sabotage even the best software products.  It is important that just as much effort goes into creating well-written documentation as the software that it describes. | Research what comprises state of the art documentation.  Discover what princples and best practices should be followed. |
+|University Policies Prevent Usage of Feature| 7 | 1 | Some description | Maintain communication with Brian throughout the development process.  |
+
+
+
 
 ## Project Methodology
 
