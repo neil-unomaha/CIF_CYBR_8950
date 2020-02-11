@@ -77,4 +77,4 @@ Following setup of CIF, we hope to shift our focus on Palo Alto documentation to
 * Link to Kanban board on github (probably issue based)
 
 ## License
-* TBD
+[MIT License](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/MIT-LICENSE)
