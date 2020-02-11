@@ -28,6 +28,48 @@ Keyword - Firewalls, Security patterns, Network security, Cloud Computing, Servi
 This paper gives a generalized view of different firewall configurations for single businesses and multiple businesses. They discuss how one firewall can filter traffic to one customer differently than it filters to another customer. By setting group rules for any traffic going to certain IP ranges or domains. They talk about in detail about cloud-based firewalls like amazon uses their firewalls and how they are configured. It gives a nice explanation of the configuration and how every business is a little different. The paper also talks about having multiple firewalls and each one does something different. Some firewalls only do security groups while others are for whitelisting. It gives detail on why the configuration is made like this and have a lot of good images to visualize this. \
 URL - https://www.researchgate.net/publication/266385038_Patterns_for_cloud_firewalls \
 
+-----
+
+keywords: {application program interfaces;financial data processing;Internet;service-oriented architecture;Web APIs;Adyen's payment service;API consumer applications;API related problems;API integration;invalid request data;large-scale payment company;service-oriented architectures;API error responses;Stakeholders;Production;Fault diagnosis;Companies;Complexity theory;Servers;web engineering;web API integration;webservices},
+1.	Problem Statement
+As Web APIs grow in complexity, so too does quantity and type of errors. At the time of this publication, no large scale evaluation has been conducted that identies and classifies all types of API errors that can happen.
+2.	Research Question(s)
+    - What types of faults are impacting API consumers?
+    - What is the prevalence of these fault types, and how many API consumers are impacted by them?
+    - What are the current practices and challenges to avoid and reduce the impact of problems caused by faultus in API integration?
+3.	Contribution:
+  * Classification of API faults
+    - invalid user input
+    - missing user input
+    - expired request data
+    - invalid request data
+    - missing request data
+    - insufficient permissions
+    - double processing
+    - configuration
+    - missing server data
+    - internal and third party
+  * Recommendations for API providers and API consumers to reduce faults
+4.	Rationale
+By identifying beforehand all possible API errors a user might run into, it can facilitate good documentation and help developers develop good API design which helps prevent errors from occurring.
+5.	Investigative Approach:
+  * Evaluated error responses to a large scale webserve (Adyen webservices)
+  * Evaluated 2.43 million error responses from the logs
+  * Surveyed API consumers
+6.	Lessons Learned:
+  * Most faults are caused by the following:
+    - invalid request data (received input that cannot be handled)
+    - missing request data (consumer fails to send needed info required for action)
+    - double processing (send same request to delete the same resource twice: second request produces a fault because the resource no longer exists)
+  * Faults caused by the API provider and third parties are must impactful (those originating by end user: not so much)
+    - API documentation is critical, followed by code examples
+    - Provide common implementation scenarios (instead of merely stating the different options of the API calls)
+    - Identify the most common API mistakes, and how to prevent them
+    - Details on error codes
+    
+J. Aué, M. Aniche, M. Lobbezoo and A. van Deursen, "An Exploratory Study on Faults inWeb API Integration in a Large-Scale Payment Company," 2018 IEEE/ACM 40th International Conference on Software Engineering: Software Engineering in Practice Track (ICSE-SEIP), Gothenburg, 2018, pp. 13-22. URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8449231&isnumber=8449161
+
+
 ### Dockerization Hardening
 
 P. Ranaweera, V. N. Imirth, M. Liyanage, and A. D. Jurcut, “Security as a Service Platform Leveraging Multi-Access Edge Computing Infrastructure Provisions,” researchgate.net, pp. 1–7. \
