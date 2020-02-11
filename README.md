@@ -74,7 +74,7 @@ Following setup of CIF, we hope to shift our focus on Palo Alto documentation to
 |Palo Alto API Documentation| No | All | Necessarty to familiarize ourselves iwth the Palo Alto documentation in order to build the requsted feature.  |
 
 ## First Sprint Plan
-* Link to Kanban board on github (probably issue based)
+Progress of the Project is [tracked via Github issues](https://github.com/neil-unomaha/CIF_CYBR_8950/issues)
 
 ## License
 [MIT License](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/MIT-LICENSE)
