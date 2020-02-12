@@ -20,6 +20,8 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 
 ## Project Timeline
 
+This is a rough outline of each weeks project goals. The team came together to make a timeline that follows the milestone markers and other events that might occur. This timeline is suspected to change as the project goes on or if the team hits any faults along the way. A Gantt chart can be seen below for a better look at the team distribution of work.
+
 | Week          | Area of Focus    |
 | ------------- | ------------- |
 | 0-3           | CIF Enironment set up and stabilization.<br> Project Realization will be used to develope a plan for the future. As well as documentation. |
