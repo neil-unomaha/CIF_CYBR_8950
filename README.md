@@ -21,7 +21,7 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 ## Project Timeline
 
 * Come up with task list and projected deadlines for said tasks
-![Gant Chart](/assets/Gantt_Timeline.png "Project Timeline")
+![Gant Chart](/Assets/Gantt_Timeline.png "Project Timeline")
 
 ## Risk List
 
