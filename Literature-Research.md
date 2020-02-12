@@ -2,17 +2,71 @@
 
 ### Process Automation Articles
 
-J. K. Visser and H. T. Malan, “Identification of risk associated with process automation systems,” Int. J. Econ. Manag. Eng, vol. 13, no. 7, pp. 1044–1051, 2019. \
-Keyword - Process Automation, Risk, System Performance, Third-Party Communication, Interface Compatibility \
-This paper was a study that was sent to 172 instrument technicians and technology managers. This was to identify risk in process automation systems. The focused 5 areas of risk: lack of skilled technicians, integration of capability of the third-party system software, reliability of the process automation hardware, excessive costs pertaining to performing maintenance and migrations on the automation systems, and requirements of having third-party communication interfacing compatibility as well as real-time communication networks. This works addresses these problems and gives a conceptual framework in a way to follow to remedy these issues. \
-URL - https://pdfs.semanticscholar.org/b845/bde145526fb9fff7517161337533982defc9.pdf \
+Keywords: Process Automation, Risk, System Performance, Third-Party Communication, Interface Compatibility
+
+1. Problem Statement: The research paper looks to identify the sources of risk associated with process automation in petrochemical and similar energy companies. As well as find the viewpoints of the people that work there.
+
+2: Research Question:
+
+  - The researchers focused on determining the risk sources associated with the equipment that is part of the process automation system.
+  - The second objective was to identify if the managers and technicians were aware of the risk and if they share the same viewpoint on the risk associated with process automation.
+
+3. Contribution:
+
+  - The researchers identify the most prevalent risk associated with process automation
+  - Obtained live data from multiple companies to see a larger view of the technician’s perspective
+
+4. Rationale: The paper presents the information to the user and allows them to develop their own opinion while presenting the facts they found.
+
+5. Investigative Approach: This paper uses surveys and an in-depth look at a single company to give an overview of the problem and what needs to be identified and addressed.
+
+6. Lesson Learned:
+
+  - The five most prevalent risks associated with process automation in the research groups company’s area.
+  - What companies think is there biggest risk and how they would rate it to other risks
+  - The 7 common identified risks throughout the surveyed company.
+
+7. Implications for Practice:
+
+ - Given these results, it will help identify and mitigate risk for companies.
+
+8. Implications for Research:
+
+  - Allows for areas to be addressed for possible standard mitigation techniques and best practices to be used to develop process automation systems.
+
+J. K. Visser and H. T. Malan, “Identification of risk associated with process automation systems,” Int. J. Econ. Manag. Eng, vol. 13, no. 7, pp. 1044–1051, 2019.
+
+URL: https://pdfs.semanticscholar.org/b845/bde145526fb9fff7517161337533982defc9.pdf 
+
 
 ### API Integration / Middleware for Connecting APIs
 
-S. Chang-Woo, L. Daesung, C. Kyung-Yong, R. Kee-Wook, and L. Jung-Hyun, “Interactive middleware architecture for lifelog based context awareness,” Multimedia Tools and Applications, vol. 71, Jan. 2013. \
-Keyword - Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Devices, Logs \
-This paper reference all the different forms of information being made today. There is a need for middleware to be able to obtain it from all sources and store it in a centralized location or DBMS. The research shows how effective middleware is an important issue that needs to be addressed. The paper goes on to address the distributed environment and how they communicate, and the middleware needed to allow a different type of hardware to talk. They talk about a lot of other work and explain there experiment fairly well for the common reader to understand. \
-URL - https://link.springer.com/article/10.1007/s11042-013-1362-7 \
+Keywords: Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Devices, Logs
+
+1. Problem Statement: Middleware is everywhere and everything is producing data now a day. A centralized tool is needed to make processing this data easier. The need for middleware for mobile nodes and mobile devices.
+
+2: Research Question: Interactive middleware architecture for lifelog based context-awareness in distributed and ubiquitous environments. As well, for mobile nodes and devices.
+
+3. Contribution: The paper strives to share information of designs for a system that can distribute and manage situational information for mobile nodes and devices in a distributed and ubiquitous environment and share the service content between the interactive middleware.
+
+4. Rationale: The Paper shows how multiple middlewares can work together to get information from all nodes and devices and put it into one area.
+
+5. Investigative Approach:
+
+  - The researchers first identified the problem areas to fix and what will be needed.
+  - Developed a middleware architecture for lifelog based context-awareness.
+  - Test the middleware in a test development environment.
+
+6. Lesson Learned: The researchers showed that for wireless and wired networks. It is possible to have an environment that provides automatic services any time any place and can be controlled using and interactive middleware.
+
+7. Implications for Practice: This provides a basic guide to the community on the setup for wireless and wired networks to use middleware to compound all date being generated into a centralized location.
+
+8. Implications for Research: Set the groundwork to expand middleware research for others to use to develop lifelog similar systems to compound data.
+
+S. Chang-Woo, L. Daesung, C. Kyung-Yong, R. Kee-Wook, and L. Jung-Hyun, “Interactive middleware architecture for lifelog based context awareness,” Multimedia Tools and Applications, vol. 71, Jan. 2013.
+
+URL: https://link.springer.com/article/10.1007/s11042-013-1362-7 
+
 
 -----
 
@@ -52,34 +106,34 @@ Keywords: middleware, RPC, MOM, TOM, DOM, SOA, Web Service, SOM
 
 2. Research Question(s)
 
-- What are the current paradigms for middleware?
-- What is service-oriented middleware? How does it different from other types of middleware?
+  - What are the current paradigms for middleware?
+  - What is service-oriented middleware? How does it different from other types of middleware?
 
 3. Contribution
 
-- This paper collect information about current paradigms for middleware and latest paradigm in the middleware area
+  - This paper collect information about current paradigms for middleware and latest paradigm in the middleware area
 	
 4. Rationale
 
-- Paper defines current paradigms and how they can be applied
-- Talks about service-oriented middleware and how it is used in Service-Oriented Architecture
+  - Paper defines current paradigms and how they can be applied
+  - Talks about service-oriented middleware and how it is used in Service-Oriented Architecture
 
 5. Investigative Approach
 
-- This paper aims to be informative and explain different types of middleware that exist and how they are applied.
+  - This paper aims to be informative and explain different types of middleware that exist and how they are applied.
 
 6. Lessons learned
 
-- Existing traditional middleware is explained (i.e., Remote Procedure Call, Message-Oriented Middleware, Transaction-Oriented Middleware, Distributed Object Middleware)
-- Service-Oriented Architecture is explained (services are autonomous, platform-independent computational entities, etc.)
+  - Existing traditional middleware is explained (i.e., Remote Procedure Call, Message-Oriented Middleware, Transaction-Oriented Middleware, Distributed Object Middleware)
+  - Service-Oriented Architecture is explained (services are autonomous, platform-independent computational entities, etc.)
 
 7. Implications for practice:
 
-- With introduction to SOA, it gives web services as an example of a technology based on SOA.
+  - With introduction to SOA, it gives web services as an example of a technology based on SOA.
 
 8. Implications for research:
 
-- Paper introduces potential future research, such as have middleware address context awareness, open coordination paradigm of communication, and dependability.
+  - Paper introduces potential future research, such as have middleware address context awareness, open coordination paradigm of communication, and dependability.
 
 L. Qilin and Z. Mintian, "The State of the Art in Middleware," 2010 International Forum on Information Technology and Applications, Kunming, 2010, pp. 83-85.
 doi: 10.1109/IFITA.2010.118
@@ -88,18 +142,54 @@ doi: 10.1109/IFITA.2010.118
 
 ### Systems Architecture Integration
 
-R. T. Tiburski, L. A. Amaral, E. D. Matos, and F. Hessel, “The importance of a standard security architecture for SOA-based IoT middleware,” Institute of Electrical and Electronics Engineers, vol. 53, no. 12, pp. 20–26, Dec. 2015. \
-Keyword – IoT, System Architecture, Middleware, Security, Standard Architecture \
-This paper talks about integration into systems for IoT devices. It goes into detail about the middleware needed to monitor IoT devices on the systems. The paper reference how a Service-Oriented Architecture (SOA) is useful for integration from new devices. After the discussion of SOA, it talks about the company using Resource-Oriented Architecture alongside the SOA to bring the benefits of IoT devices into a company infrastructure. Then the paper talks about the security risks that come with the IoT devices and ways to mitigate them. This paper is a good reference for System Architecture Integration examples because it shows how to bring IoT devices into the mix. \
-URL: https://www.researchgate.net/publication/290378256_The_Importance_of_a_Standard_Security_Architecture_for_SOA-based_IoT_Middleware \
+Keywords: IoT, System Architecture, Middleware, Security, Standard Architecture
+
+1. Problem Statement: To define a standard security architecture for service-oriented architecture based IoT middleware and analyzes concepts and existing work. To allow for sizable networks of IoT devices to be integrated.
+
+2: Research Question: To close the gap and expand the research of Service-Oriented Architecture (SAO) for IoT devices used on a network.
+
+3. Contribution: This paper showed that to support SOA-based IoT middleware for most systems, the community will need to standardize security architecture for SOA-based IoT middleware.
+
+4. Rationale: The reason this paper was developed was that there is no standard which makes it tough for an organization to build a standard network to use the majority of IoT devices. To allow the user to connect almost any IoT
+
+5. Investigative Approach: Define a standard definition and make a mock standard that could support most IoT devices. Then the researchers defined security threats and requirements for the standard and showed related work for it.
+
+6. Lesson Learned: This seems like the best way to integrate IoT devices however until there is a standard way of implementing this it will be hit or miss until a standard can be made.
+
+7. Implications for Practice: Each organization should step back and define everything they need and try to implement it so the user can implement it across the company’s network.
+
+8. Implications for Research: It showed many different types of environments that could be used to give a better standard of secure architecture such as CoRE and SOA. As well as providing a possible solution for large networks.
+
+R. T. Tiburski, L. A. Amaral, E. D. Matos, and F. Hessel, “The importance of a standard security architecture for SOA-based IoT middleware,” Institute of Electrical and Electronics Engineers, vol. 53, no. 12, pp. 20–26, Dec. 2015.
+
+URL: https://www.researchgate.net/publication/290378256_The_Importance_of_a_Standard_Security_Architecture_for_SOA-based_IoT_Middleware 
+
 
 ### Web Services Literature
 
-E. B. Fernandez, N. Yoshioka, and H. Washizaki, “Patterns For Cloud Firewalls” AsianPLoP (pattern languages of programs), pp. 1–11. \
-Keyword - Firewalls, Security patterns, Network security, Cloud Computing, Services \
-This paper gives a generalized view of different firewall configurations for single businesses and multiple businesses. They discuss how one firewall can filter traffic to one customer differently than it filters to another customer. By setting group rules for any traffic going to certain IP ranges or domains. They talk about in detail about cloud-based firewalls like amazon uses their firewalls and how they are configured. It gives a nice explanation of the configuration and how every business is a little different. The paper also talks about having multiple firewalls and each one does something different. Some firewalls only do security groups while others are for whitelisting. It gives detail on why the configuration is made like this and have a lot of good images to visualize this. \
-URL - https://www.researchgate.net/publication/266385038_Patterns_for_cloud_firewalls \
+Keywords: Firewalls, Security patterns, Network security, Cloud Computing, Services
 
+1. Problem Statement: Researches developed a new firewall pattern to help cloud firewalls be used to the best of their ability.
+
+2: Research Question: Can you combine firewalls of similar customer requirements to help make the system more efficient.
+
+3. Contribution: If possible, it can make a firewall configuration for multiple organizations easier to configure because 1 cloud firewall could work for several customers.
+
+4. Rationale: Instead of configuring one firewall for every customer try to combine some to cut down on resources if the user allows it.
+
+5. Investigative Approach: The research first addresses the problem and possible solutions and the forces they have to deal with. As well as people that require it and other issues such as scalability and structure. Then the implement and try to solve known issues.
+
+6. Lesson Learned: It can be done when the user uses them in their organization, but it is two more patterns that can address more security patterns for better understanding.
+
+7. Implications for Practice: Give the community two more security patterns firewalls can use for configuration.
+
+8. Implications for Research: Give more known solution and cases that develop for others to build off and potential fix as well.
+
+E. B. Fernandez, N. Yoshioka, and H. Washizaki, “Patterns for Cloud Firewalls” AsianPLoP (pattern languages of programs), pp. 1–11.
+
+URL: https://www.researchgate.net/publication/266385038_Patterns_for_cloud_firewalls 
+
+----
 
 keywords: {application program interfaces;financial data processing;Internet;service-oriented architecture;Web APIs;Adyen's payment service;API consumer applications;API related problems;API integration;invalid request data;large-scale payment company;service-oriented architectures;API error responses;Stakeholders;Production;Fault diagnosis;Companies;Complexity theory;Servers;web engineering;web API integration;webservices},
 1.	Problem Statement
@@ -169,10 +259,28 @@ URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber
 
 ### Dockerization Hardening
 
-P. Ranaweera, V. N. Imirth, M. Liyanage, and A. D. Jurcut, “Security as a Service Platform Leveraging Multi-Access Edge Computing Infrastructure Provisions,” researchgate.net, pp. 1–7. \
-Keyword – Security as a Service, Docker, Dockerization, Security, IoT \
-This paper talks about docker as security as a service. They first talk about why they choose docker for this investigation was that it was lightweight and fairly secure in their default configuration. They all used edge cases to test the docker container for performance and to see how it would handle these. They found that docker was suitable for there test even when scraping and building the containers for an app it was relatively quick and effective. The end of the paper talking about optimizing security service provisioning. This was showing that using docker to launch multiple security instances is viable when date rates are increased. This helps to show the docker can be used securely in an organization. \
-URL - https://www.researchgate.net/profile/Madhusanka_Liyanage/publication/338853880_Security_as_a_Service_Platform_Leveraging_Multi-Access_Edge_Computing_Infrastructure_Provisions/links/5e2fc88ea6fdcc309695b451/Security-as-a-Service-Platform-Leveraging-Multi-Access-Edge-Computing-Infrastructure-Provisions.pdf \
+Keywords: Security as a Service, Docker, Dockerization, Security, IoT
+
+1. Problem Statement: Deploying multiple instances of a security platform to meet scalability needs and perform for mobile devices and IoT.
+
+2: Research Question: Proving the plausibility of launching multiple security instances on the developed prototype edge platform.
+
+3. Contribution: Will show that adding a quick way to instances multiple security instances to provide coverage for IoT and mobile devices while using Docker. This is done by using Security as a service standard that leverages the MEC edge platform for providing.
+
+4. Rationale: The ability to stand up a configured and standard security server can be time-consuming. If the ability to do it quickly and securely is needed.
+
+5. Investigative Approach: The researcher identified the problem and found related work. The built a background and developed cases that need to be solved and possible solutions. Then prototyping and building an environment for it. Finally testing and conclusions.
+
+6. Lesson Learned: It is feasible to launch multiple security services simultaneously by employing virtualization technologies such as Docker.
+
+7. Implications for Practice: Allows for others to stand up security services quickly and possibly to use in the real world.
+
+8. Implications for Research: Start the foundation for quick builds for security services to be used in research. As well as a guide to get started doing it with explanations.
+
+P. Ranaweera, V. N. Imirth, M. Liyanage, and A. D. Jurcut, “Security as a Service Platform Leveraging Multi-Access Edge Computing Infrastructure Provisions,” researchgate.net, pp. 1–7.
+
+URL: https://www.researchgate.net/profile/Madhusanka_Liyanage/publication/338853880_Security_as_a_Service_Platform_Leveraging_Multi-Access_Edge_Computing_Infrastructure_Provisions/links/5e2fc88ea6fdcc309695b451/Security-as-a-Service-Platform-Leveraging-Multi-Access-Edge-Computing-Infrastructure-Provisions.pdf 
+
 
 -----
 Keywords: cloud computing;computer network security;operating systems (computers);virtualisation;Docker container security;Denial of Service attack;DoS attack;containerization;virtualization;cloud based IT environment;Docker engine;operating system;OS;Containers;Kernel;Computer crime;Linux;Access control;Cloud computing;Cloud Containers;Docker Technology;Security Issues;DoS Attacks;Micro Services Architecture
@@ -208,10 +316,29 @@ URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber
 
 ### CIF Literature
 
-J. Elmellas, “Knowledge is power: the evolution of threat intelligence,” ScienceDirect, pp. 1–5, Jul. 2016. \
-Keyword - CIF, Security, Threat Intelligence \
-This paper starts by talking about threat intelligence and how the need for the collaboration came about the birth of the Collective Intelligence Framework. And how CIF can be used for IP, Autonomous System Numbers, email addresses, domain names, and URLs. The researcher talks about the ease that CIF allows for automating the use of dating being brought to it. The researcher goes into detail about using SIEM (Security Information and Event Management) Software to gather multiple tools logs and pass the correct data to the CIF. Then share it with others. He ends the paper talking about TAXII(Trusted Automated Exchange of Indicator Information) standard that is being adopted for the situation for multiple organizations to share information. \
-URL - PDF is in issue No. 12 \
+Keywords: CIF, Security, Threat Intelligence
+
+1. Problem Statement: Now day’s companies get data for possible threats from many sources. The problem here is sifting through it all and developing the Threat Intelligence.
+
+2: Research Question: Understand the reason for Threat intelligence and how to turn raw data into threat intelligence and advanced persistent threats.
+
+3. Contribution: This paper strives to give the community the ability to sort data and make it useable and share it for the best outcome and prevent threats.
+
+4. Rationale: Sharing information and the TI Cycle. Which is the cycle of processing raw data and sifting through it and then using it to block other data and then repeat.
+
+5. Investigative Approach: The researchers first talk about how TI came about and the reason for sharing it. Then the move into the TI cycle and what is being done. Finally, they go into the cutting-edge part of TI and what companies are doing and how they are gathering the information. Some even use it for businesses.
+
+6. Lesson Learned: Threat intelligence is always growing, and more data is always being processed and shared. There needs to be a shift in TI because it is new it is still growing and has a lot of potentials. There are already reliable sources for TI, and it is constantly growing.
+
+7. Implications for Practice: May help the community understand TI and help it grow. As well as shedding new light on what it can do.
+
+8. Implications for Research: The research aspect allows for others to build off this paper and help shape TI to make it better and more predictive for users to find good information to use to help protect.
+
+J. Elmellas, “Knowledge is power: the evolution of threat intelligence” ScienceDirect, pp. 1–5, Jul. 2016. 
+Keyword - CIF, Security, Threat Intelligence
+
+URL: https://www.sciencedirect.com/science/article/abs/pii/S1361372316300513 also in issue 11.
+
 
 ----------
 
