@@ -20,7 +20,13 @@ If we can effectively implement tools from the Palo Alto API to the CIF Framewor
 
 ## Project Timeline
 
-* Come up with task list and projected deadlines for said tasks
+| Week          | Area of Focus    |
+| ------------- | ------------- |
+| 0-3           | CIF Enironment set up and stabilization.<br> Project Realization will be used to develope a plan for the future. As well as documentation. |
+| 4-6           | Finishing goals and Project Realization.<br> Documentation and Presentation planning for the milestone two presentation. |
+| 7-10           | Progress of Realization report and Handling any unforseen events.<br> Packaging of the API and testing wil be done.<br> Final report will be started. |
+| 11-12            | Final testing and packaging of CIF API.<br> As well as presentation planning. |
+
 ![Gant Chart](/Assets/Gantt_Timeline.png "Project Timeline")
 
 ## Risk List
