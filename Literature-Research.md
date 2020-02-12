@@ -86,13 +86,6 @@ doi: 10.1109/IFITA.2010.118
 
 -----
 
-V. Chang, "Design of middleware platform to enhance abilities of application systems integration," International Conference on Information Technology: Coding and Computing (ITCC'05) - Volume II, Las Vegas, NV, 2005, pp. 461-466 Vol. 2.
-doi: 10.1109/ITCC.2005.123
-keywords - Linux;middleware;graphical user interfaces;software metrics;software development management;software maintenance;protocols;Linux/Unix base middleware platform design;application systems integration;GUI operating interface;software editing;software upgrading;software updating;software integration;software system development;data transmission;API;application software protocol;TCP/IP protocol;X.25 protocol;SNA protocol;Middleware;Application software;Technology management;Protocols;Pervasive computing;Switches;Condition monitoring;Operating systems;Costs;Cities and towns;GUI operating interface;TCP/IP;API;Linux;X.25;SNA  
-(Add Paragraph with info)  
-URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=1425186&isnumber=30769
-
-
 ### Systems Architecture Integration
 
 R. T. Tiburski, L. A. Amaral, E. D. Matos, and F. Hessel, “The importance of a standard security architecture for SOA-based IoT middleware,” Institute of Electrical and Electronics Engineers, vol. 53, no. 12, pp. 20–26, Dec. 2015. \
