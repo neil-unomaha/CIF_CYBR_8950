@@ -46,6 +46,46 @@ URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber
 
 -----
 
+Keywords: middleware, RPC, MOM, TOM, DOM, SOA, Web Service, SOM
+
+1. Problem Statement: From the existing middleware solutions, Service-Oriented Middleware (SOM) is another potential solution.
+
+2. Research Question(s)
+
+- What are the current paradigms for middleware?
+- What is service-oriented middleware? How does it different from other types of middleware?
+
+3. Contribution
+
+- This paper collect information about current paradigms for middleware and latest paradigm in the middleware area
+	
+4. Rationale
+
+- Paper defines current paradigms and how they can be applied
+- Talks about service-oriented middleware and how it is used in Service-Oriented Architecture
+
+5. Investigative Approach
+
+- This paper aims to be informative and explain different types of middleware that exist and how they are applied.
+
+6. Lessons learned
+
+- Existing traditional middleware is explained (i.e., Remote Procedure Call, Message-Oriented Middleware, Transaction-Oriented Middleware, Distributed Object Middleware)
+- Service-Oriented Architecture is explained (services are autonomous, platform-independent computational entities, etc.)
+
+7. Implications for practice:
+
+- With introduction to SOA, it gives web services as an example of a technology based on SOA.
+
+8. Implications for research:
+
+- Paper introduces potential future research, such as have middleware address context awareness, open coordination paradigm of communication, and dependability.
+
+L. Qilin and Z. Mintian, "The State of the Art in Middleware," 2010 International Forum on Information Technology and Applications, Kunming, 2010, pp. 83-85.
+doi: 10.1109/IFITA.2010.118
+
+-----
+
 V. Chang, "Design of middleware platform to enhance abilities of application systems integration," International Conference on Information Technology: Coding and Computing (ITCC'05) - Volume II, Las Vegas, NV, 2005, pp. 461-466 Vol. 2.
 doi: 10.1109/ITCC.2005.123
 keywords - Linux;middleware;graphical user interfaces;software metrics;software development management;software maintenance;protocols;Linux/Unix base middleware platform design;application systems integration;GUI operating interface;software editing;software upgrading;software updating;software integration;software system development;data transmission;API;application software protocol;TCP/IP protocol;X.25 protocol;SNA protocol;Middleware;Application software;Technology management;Protocols;Pervasive computing;Switches;Condition monitoring;Operating systems;Costs;Cities and towns;GUI operating interface;TCP/IP;API;Linux;X.25;SNA  
