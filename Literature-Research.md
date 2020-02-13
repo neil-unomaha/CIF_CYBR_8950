@@ -42,7 +42,7 @@ URL: https://pdfs.semanticscholar.org/b845/bde145526fb9fff7517161337533982defc9.
 
 Keywords: Scientific workflows, Workflow management systems, Extreme-scale computing, in situ processing
 
-1. Problem Statement: As workflows have been adopted by a number of scientific communities, they are becoming more complex and need more sophisticated workflow management capabilities.
+1. Problem Statement: As workflows have been adopted by several scientific communities, they are becoming more complex and need more sophisticated workflow management capabilities.
 
 2. Research Question(s):
 
@@ -89,7 +89,7 @@ Keywords: Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Dev
 
 3. Contribution: The paper strives to share information of designs for a system that can distribute and manage situational information for mobile nodes and devices in a distributed and ubiquitous environment and share the service content between the interactive middleware.
 
-4. Rationale: The Paper shows how multiple middlewares can work together to get information from all nodes and devices and put it into one area.
+4. Rationale: The Paper shows how multiple middlewares can work together to get information from all nodes and devices and put them into one area.
 
 5. Investigative Approach:
 
@@ -120,8 +120,8 @@ Keywords: API development, API maintenance, software platform APIs, API review, 
 
 3. Contribution:
 
-    - JIRA bug system was implemented to provide a submission-based/approval-based workflow, task search ability, status-change notifications, etc.
-    - API Change Requests (ACR) had different states in JIRA system for updates, reviews, preparations, approvals, etc. Stakeholders are applied with specified responsibilities/tasks for each state.
+    - JIRA bug system was implemented to provide a submission-based/approval-based workflow, task searchability, status-change notifications, etc.
+    - API Change Requests (ACR) had different states in the JIRA system for updates, reviews, preparations, approvals, etc. Stakeholders are applied with specified responsibilities/tasks for each state.
 
 4. Rationale: The paper argues that research has been done improving API usability frameworks, but no report of API process that is designed and used in a large-scale software platform.
 
@@ -149,7 +149,7 @@ URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber
 -----
 Keywords: process tracking, data model, plug-in, multithread
 
-1. Problem Statement: Traditional development mode of process tracking has shortcoming such as low expansibility, difficulty in update and maintenance, etc.
+1. Problem Statement: Traditional development mode of process tracking has shortcomings such as low expansibility, difficulty in update and maintenance, etc.
 
 2. Research Question(s):
 
@@ -159,11 +159,11 @@ Keywords: process tracking, data model, plug-in, multithread
 
     - The paper introduces a data model design for middleware with important entities
     - Goes into details of the system architecture of middleware
-    - Discusses implementation of middleware
+    - Discusses the implementation of middleware
 
 4. Rationale: The paper introduces a data model concept that aims to mitigate the shortcomings mentioned in the problem statement.
 
-5. Investigative Approach: The paper introduced ways to implement the model, and claimed it was implemented in different projects but did not details the methodology they went into.
+5. Investigative Approach: The paper introduced ways to implement the model, and claimed it was implemented in different projects but did not detail the methodology they went into.
 
 6. Lessons learned: Even with no methodology from this paper, some information from it could be applied and learned from, such as their explanations of the track service schedule program, and data acquisition program.
 
@@ -185,20 +185,20 @@ Keywords: middleware, RPC, MOM, TOM, DOM, SOA, Web Service, SOM
 2. Research Question(s)
 
     - What are the current paradigms for middleware?
-    - What is service-oriented middleware? How does it different from other types of middleware?
+    - What is service-oriented middleware? How does it differ from other types of middleware?
 
 3. Contribution
 
-    - This paper collect information about current paradigms for middleware and latest paradigm in the middleware area
+    - This paper collects information about current paradigms for middleware and the latest paradigm in the middleware area
 
 4. Rationale
 
-    - Paper defines current paradigms and how they can be applied
+    - The paper defines current paradigms and how they can be applied
     - Talks about service-oriented middleware and how it is used in Service-Oriented Architecture
 
 5. Investigative Approach
 
-    - This paper aims to be informative and explain different types of middleware that exist and how they are applied.
+    - This paper aims to be informative and explain the different types of middleware that exist and how they are applied.
 
 6. Lessons learned
 
@@ -207,7 +207,7 @@ Keywords: middleware, RPC, MOM, TOM, DOM, SOA, Web Service, SOM
 
 7. Implications for practice:
 
-    - With introduction to SOA, it gives web services as an example of a technology based on SOA.
+    - With an introduction to SOA, it gives web services as an example of a technology-based on SOA.
 
 8. Implications for research:
 
@@ -222,7 +222,7 @@ Keywords: Middleware, Software tools, Software reusability, Computer architectur
 
 1. Problem Statement:
 
-    - There are shorter and shorter development cycles in software development and the reuse of software can be a tool to aid in development and not to recreate systems that already exist.
+    - There are shorter and shorter development cycles in software development and the reuse of software can be a tool to aid in the development and not to recreate systems that already exist.
 
 2. Research Question(s):
 
@@ -238,11 +238,11 @@ Keywords: Middleware, Software tools, Software reusability, Computer architectur
 
 5. Investigation:
 
-    - Researth Framework and Patterns, their interaction with each other along with middleware that uses them.
+    - Research Framework and Patterns, their interaction with each other along with middleware that uses them.
 
 6. Lessons Learned:
 
-    - More and more code reuse is available with common frameworks and patters that allow for the creation of middleware in developing new systems.
+    - More and more code reuse is available with common frameworks and patterns that allow for the creation of middleware in developing new systems.
 
 7. Implications for practice:
 
@@ -250,7 +250,7 @@ Keywords: Middleware, Software tools, Software reusability, Computer architectur
 
 8. Implications for research:
 
-    - Find pattern and frameworks that allow for code reuse and the creation of middleware that can be used within many industries.
+    - Find patterns and frameworks that allow for code reuse and the creation of middleware that can be used within many industries.
 
 D. C. Schmidt and F. Buschmann, "Patterns, frameworks, and middleware: their synergistic relationships," _25th International Conference on Software Engineering, 2003. Proceedings._, Portland, OR, USA, 2003, pp. 694-704.
 
@@ -286,7 +286,7 @@ URL: https://www.researchgate.net/publication/290378256_The_Importance_of_a_Stan
 
 -----
 
-Keywords: Systems engineering and theory, Government, Environmental management, Industrial relations, Best practices, Performance analysis, Object oriented modeling, Electronic warfare
+Keywords: Systems engineering and theory, Government, Environmental management, Industrial relations, Best practices, Performance analysis, Object-oriented modeling, Electronic warfare
 
 1. Problem Statement: There is a need for systems integration in a system, and developers need to know how their design choices can affect the integration process complexity
 
@@ -304,15 +304,15 @@ Keywords: Systems engineering and theory, Government, Environmental management, 
 
 5. Investigation:
 
-    - Study a number of government projects and discover what factors affected the integration of a system.
+    - Study several government projects and discover what factors affected the integration of a system.
 
 6. Lessons Learned:
 
-    - Clear identification of system requirements, prioritization of system requirements, commonality in hardware and software subsystems, increase in physical modularity, increase in operational commonality, decrease in orthogonality, and increase in percentage of familiar technology affected the complexity of system integration the most.
+    - Clear identification of system requirements, prioritization of system requirements, commonality in hardware and software subsystems, increase in physical modularity, increase in operational commonality, decrease in orthogonality, and increase in the percentage of familiar technology affected the complexity of system integration the most.
 
 7. Implications for practice:
 
-    - A focus on the areas above can make the complexity of integrating a system much easier that it would have otherwise be.
+    - A focus on the areas above can make the complexity of integrating a system much easier than it would have otherwise been.
 
 8. Implications for research:
 
@@ -332,7 +332,7 @@ Keywords: Firewalls, Security patterns, Network security, Cloud Computing, Servi
 
 2. Research Question(s):
 
-    - Can you combine firewalls of similar customer requirements to help make the system more efficient.
+    - Can you combine firewalls of similar customer requirements to help make the system more efficient?
 
 3. Contribution: If possible, it can make a firewall configuration for multiple organizations easier to configure because 1 cloud firewall could work for several customers.
 
@@ -344,7 +344,7 @@ Keywords: Firewalls, Security patterns, Network security, Cloud Computing, Servi
 
 7. Implications for Practice: Give the community two more security patterns firewalls can use for configuration.
 
-8. Implications for Research: Give more known solution and cases that develop for others to build off and potential fix as well.
+8. Implications for Research: Give more known solutions and cases that develop for others to build off and potential fix as well.
 
 E. B. Fernandez, N. Yoshioka, and H. Washizaki, “Patterns for Cloud Firewalls” AsianPLoP (pattern languages of programs), pp. 1–11.
 
@@ -352,15 +352,15 @@ URL: https://www.researchgate.net/publication/266385038_Patterns_for_cloud_firew
 
 -----
 
-Keywords: application program interfaces, Web APIs, API consumer applications, web API integration, webservices
+Keywords: Application program interfaces, Web APIs, API consumer applications, Web API Integration, Webservices
 
-1. Problem Statement: As Web APIs grow in complexity, so too does quantity and type of errors. At the time of this publication, no large scale evaluation has been conducted that identies and classifies all types of API errors that can happen.
+1. Problem Statement: As Web APIs grow in complexity, so too does quantity and type of errors. At the time of this publication, no large scale evaluation has been conducted that identifies and classifies all types of API errors that can happen.
 
 2. Research Question(s)
 
     - What types of faults are impacting API consumers?
     - What is the prevalence of these fault types, and how many API consumers are impacted by them?
-    - What are the current practices and challenges to avoid and reduce the impact of problems caused by faultus in API integration?
+    - What are the current practices and challenges to avoid and reduce the impact of problems caused by faults in API integration?
 
 3. Contribution:
 
@@ -382,7 +382,7 @@ By identifying beforehand all possible API errors a user might run into, it can 
 
 5. Investigative Approach:
 
-    - Evaluated error responses to a large scale webserve (Adyen webservices)
+    - Evaluated error responses to a large scale web server (Adyen webservices)
     - Evaluated 2.43 million error responses from the logs
     - Surveyed API consumers
 
@@ -391,9 +391,9 @@ By identifying beforehand all possible API errors a user might run into, it can 
     - Most faults are caused by the following:
       - invalid request data (received input that cannot be handled)
       - missing request data (consumer fails to send needed info required for action)
-      - double processing (send same request to delete the same resource twice: second request produces a fault because the resource no longer exists)
-    - Faults caused by the API provider and third parties are must impactful (those originating by end user: not so much)
-      - API documentation is critical, followed by code examples
+      - double processing (send the same request to delete the same resource twice: the second request produces a fault because the resource no longer exists)
+    - Faults caused by the API provider and third parties are must impactful (those originating by end-user: not so much)
+      - The API documentation is critical, followed by code examples
       - Provide common implementation scenarios (instead of merely stating the different options of the API calls)
       - Identify the most common API mistakes, and how to prevent them
       - Details on error codes
@@ -416,18 +416,18 @@ Keywords: application program interfaces, systematic mapping study, API document
     - What are the quality properties of the approaches?
     - How are the documentation approaches evaluated?
 
-3. Contribution: A representation of what the current literature in the domain of API documentation expresses is important in order to maintain up-to-date API documentation.
+3. Contribution: A representation of what the current literature in the domain of API documentation expresses is important to maintain up-to-date API documentation.
 
-4. Rationale Documentation is crucial. Without an authoritative source providing documentation for their code artifacts, users will turn towards the internet on crowd-sourced platforms where it is not guaranteed they will receive the best guidance.
+4. Rationale Documentation is crucial. Without an authoritative source providing documentation for their code artifacts, users will turn towards the internet on crowdsourced platforms where it is not guaranteed they will receive the best guidance.
 
 5. Investigative Approach: Conducted a systematic mapping study regarding various search terms related to APIs. They then analyzed the API documentation strategies discussed in those papers. Most approaches to
 
 6. Lessons Learned:
 
-    - The results from the study suggest that, if the quality of the API documentation is to be maintained: tools to generate the API documentation must be used. The study suggests that a significant amount of API documentation generation tools focus on producing natural language and code examples. This article thus postulates that these are the two areas that are most lacking in API documentation.
-    - Major of papers reference tools, while others use plugins, but which ultimately produce templates which include natural language documentation and code examples.
+    - The results from the study suggest that, if the quality of the API documentation is to be maintained: tools to generate the API documentation must be used. The study suggests that a significant amount of API documentation generation tools focus on producing natural language and code examples. This article thus postulates that these are the two areas that are most lacking in the API documentation.
+    - Major of paper reference tools, while others use plugins, but which ultimately produce templates which include natural language documentation and code examples.
 
-7. Implications for Practice: Automation is best to help upkeep documentation. The end result, which is most important, is that code examples and natural human language for the documentation result.
+7. Implications for Practice: Automation is best to help upkeep documentation. The most important result, is that code examples and natural human language for the documentation result.
 
 8. Implications for Research: Which tools are the most effective automated tools? What are the key components of good code example documentation?
 
@@ -465,7 +465,7 @@ P. Ranaweera, V. N. Imirth, M. Liyanage, and A. D. Jurcut, “Security as a Serv
 URL: https://www.researchgate.net/profile/Madhusanka_Liyanage/publication/338853880_Security_as_a_Service_Platform_Leveraging_Multi-Access_Edge_Computing_Infrastructure_Provisions/links/5e2fc88ea6fdcc309695b451/Security-as-a-Service-Platform-Leveraging-Multi-Access-Edge-Computing-Infrastructure-Provisions.pdf
 
 -----
-Keywords: cloud computing, Docker container security, ;containerization, virtualization, Micro Services Architecture
+Keywords: cloud computing, Docker container security, containerization, virtualization, Micro Services Architecture
 
 1. Problem Statement: Docker containers can be vulnerable to ARP spoofing, Mac flooding, DoS attacks, among others.
 
@@ -476,11 +476,11 @@ Keywords: cloud computing, Docker container security, ;containerization, virtual
 
 3. Contribution:
 
-    - The paper lists known threats and vulnerabilities around docker, such as DoS attacks, docker daemon attack surface, integrity of docker host issue, etc.
-    - Previous, related work to address security for the Docker container are listed, such as Mandatory access control (MAC), Secure Containers with Security-Enhanced Linux (SELinux), and best practices.
+    - The paper lists known threats and vulnerabilities around docker, such as DoS attacks, docker daemon attack surface, the integrity of docker host issues, etc.
+    - Previous, related work to address security for the Docker container is listed, such as Mandatory access control (MAC), Secure Containers with Security-Enhanced Linux (SELinux), and best practices.
     - The paper introduces an experiment for addressing DoS attack concerns on the docker containers.
 
-4. Rationale: The paper introduces an experiment model to prevent DoS attacks to the docker model. Test included assigning memory limit in the docker, assigning memory reservation in the default file, and providing a default memory. The tests were of subtle changes to the docker containers but helped the security and safety of the container.
+4. Rationale: The paper introduces an experiment model to prevent DoS attacks on the docker model. The test included assigning memory limits in the docker, assigning memory reservations in the default file, and providing a default memory. The tests were of subtle changes to the docker containers but helped the security and safety of the container.
 
 5. Investigative Approach
 
@@ -492,30 +492,30 @@ Keywords: cloud computing, Docker container security, ;containerization, virtual
 
 7. Implications for practice
 
-    - This study could be a helpful resouce for those wanting to secure their docker container.
+    - This study could be a helpful resource for those wanting to secure their docker container.
 
 8. Implications for research
 
     - Other organizations or teams may be interested in researching different ways to harden docker containers so they are more secure. This could be a good jumping-off point.
 
-J. Chelladhurai, P. R. Chelliah and S. A. Kumar, "Securing Docker Containers from Denial of Service (DoS) Attacks," 2016 IEEE International Conference on Services Computing (SCC), San Francisco, CA, 2016, pp. 856-859.
+J. Chelladhurai, P. R. Chelliah, and S. A. Kumar, "Securing Docker Containers from Denial of Service (DoS) Attacks," 2016 IEEE International Conference on Services Computing (SCC), San Francisco, CA, 2016, pp. 856-859.
 doi: 10.1109/SCC.2016.123
 
 URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=7557545&isnumber=7557418
 
 -----
 
-Keywords: Product life cycle management, Computer security, Cost benefit analysis, Cloud computing, Linux, Containers, Virtual networks
+Keywords: Product life cycle management, Computer security, Cost-benefit analysis, Cloud computing, Linux, Containers, Virtual networks
 
 1. Problem Statement: Docker is being used more often and that increases the attack surface of a system that may be using docker.
 
 2. Research Question(s):
 
-    - What are the security concerns of using a Docker container not just in terms of interaction between containers or the base system?
+    - What are the security concerns of using a Docker container not just in terms of the interaction between containers or the base system?
 
 3. Contribution:
 
-    - The new security implications that Docker brings to a system are an area of great concern in the industy.
+    - The new security implications that Docker brings to a system are an area of great concern in the industry.
 
 4. Rationale:
 
@@ -560,7 +560,7 @@ Keywords: CIF, Security, Threat Intelligence
 
 3. Contribution: This paper strives to give the community the ability to sort data and make it useable and share it for the best outcome and prevent threats.
 
-4. Rationale: Sharing information and the TI Cycle. Which is the cycle of processing raw data and sifting through it and then using it to block other data and then repeat.
+4. Rationale: Sharing information and the TI Cycle. Which is the cycle of processing raw data and sifting through it and then using it to block other data and then repeat?
 
 5. Investigative Approach: The researchers first talk about how TI came about and the reason for sharing it. Then the move into the TI cycle and what is being done. Finally, they go into the cutting-edge part of TI and what companies are doing and how they are gathering the information. Some even use it for businesses.
 
@@ -584,7 +584,7 @@ Keywords: Cyber Threat Intelligence Capability, Super SEIM
 
     - What is collective intelligence? How does an organization determine if a collective intelligence strategy is appropriate?
 
-3. Contribution: General overview of collective intelligence.  Key detail: data and intelligence are two different things.  Often, intelligence is sold when in fact it is really just data.  Intelligence is data that has been vetted by some process or procedure and that satisfies three different requirements: the data needs to be relevant, actionable, and valuable
+3. Contribution: General overview of collective intelligence.  Key detail: data and intelligence are two different things.  Often, intelligence is sold when in fact it is just data.  Intelligence is data that has been vetted by some process or procedure and that satisfies three different requirements: the data needs to be relevant, actionable, and valuable
 
 4. Rationale: This book functioned as an overview of collective intelligence.  It did not include research.
 
@@ -592,9 +592,9 @@ Keywords: Cyber Threat Intelligence Capability, Super SEIM
 
 6. Lessons Learned: As discussed in the contribution section, the difference between data and intelligence. Make sure that the business objectives are clearly defined before even looking into whether a collective intelligence strategy is the best approach.
 
-7. Implications for practice:  Clearly identify business objectives beforehand.  Do cost/benefit analysis of various strategies to solve specific business objectives.
+7. Implications for practice:  Identify business objectives beforehand.  Do cost/benefit analysis of various strategies to solve specific business objectives.
 
-8. Implications for Research: Becuase the book discussed collective intelligence at such a high level, it leaves open many doors for further research.  Such as: what specific problems is collective intelligence best at solving?  Where should collective intelligence be avoided?
+8. Implications for Research: Because the book discussed collective intelligence at such a high level, it leaves open many doors for further research.  Such as: what specific problems are collective intelligence best at solving?  Where should collective intelligence be avoided?
 
 H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber threat intelligence capability. Amsterdam: Syngress, an imprint of Elsevier, 2015.
 
@@ -602,16 +602,16 @@ H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber
 
 Keywords: Collective Intelligence, Web 2.0 Applications
 
-1. Problem Statement: There is currently no applications specifically tailored to the special education sector. An information system needs to be designed surrounding special education data—one which ingests data from a variety of different contexts and settings. Data input must have good UX design so as to easily sift through data and to easily utilize the data to make strategic and informed decisions for the clients.
+1. Problem Statement: There is currently no applications specifically tailored to the special education sector. An information system needs to be designed surrounding special education data—one which ingests data from a variety of different contexts and settings. Data input must have good UX design to easily sift through data and to easily utilize the data to make strategic and informed decisions for the clients.
 
 2. Research Question(s):
 
-    - What is a design and implementation strategy for developing a special-purpose collective intelligence application within the domain of special education data?
+    - What are the design and implementation strategies for developing a special-purpose collective intelligence application within the domain of special education data?
 
 3. Contribution: There is value in using the collective intelligence model in the special education sector because data is often collected in silos. A single application that ingests data from all the different sources can identify patterns and make more informed decisions on future endeavors.
 
     - This paper identifies seven principle collective intelligence requirements:
-      - Task specific representations
+      - Task-specific representations
       - Data is the key
       - Users add value
       - Facilitate data aggregation
@@ -621,13 +621,13 @@ Keywords: Collective Intelligence, Web 2.0 Applications
 
 4. Rationale: Researchers claim that, at the time of this publication, there did not exist a tailored application to the special education sector.
 
-5. Investigative Approach: Developed over 18 month field trial with one student with autism. Started with a prototype and with feedback made tweaks and increased features over time.
+5. Investigative Approach: Developed over an 18-month field trial with one student with autism. Then started with a prototype and with feedback made tweaks and increased features over time.
 
 6. Lessons Learned: A collective intelligence model can be applied to many different contexts—likely any context where the aggregated information from various contexts all surrounding the same issue or problem can yield revealing insights.
 
-7. Implications For Practice: Collective intelligence can be used in a variety of environments in order to yield insight that was not previously available.  In special education, documentation from various practictioners is created in silos.  An interface that can combine all that information can yield good insight.
+7. Implications For Practice: Collective intelligence can be used in a variety of environments to yield insight that was not previously available.  In special education, documentation from various practitioners is created in silos.  An interface that can combine all that information can yield good insight.
 
-8. Implication for Resarch:  Where else is collective intelligence currently not being applied?  Can collective intelligence strategies yield more insight?
+8. Implications for Research:  Where else is collective intelligence currently not being applied?  Can collective intelligence strategies yield more insight?
 
 D. G. Gregg, “Designing for collective intelligence,” Communications of the ACM, vol. 53, no. 4, p. 134, Jan. 2010.
 
@@ -644,20 +644,20 @@ Keywords: collective intelligence, Real-time systems, Decision making
 
 3. Contribution: Software makes it possible to conduct real-time negotiation
 
-4. Rationale: Various mechanisms in use can cause entrenchment, and polarizing view.  Hearding and snowballing effects are sometimes seen with existing mechanisms.
+4. Rationale: Various mechanisms in use can cause entrenchment and polarizing views.  Herding and snowballing effects are sometimes seen with existing mechanisms.
 
-5. Investigative Approach: Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy aware winners. They then did the same thing but with their human swarm software UNU
+5. Investigative Approach: Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy award winners. They then did the same thing but with their human swarm software UNU
 
 6. Lessons Learned:
 
-    - Collective intelligence has sub categories.
-    - Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation. In fact, polling can cause entrenchment.
-    - Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in their direction of their choice, but lots of people are doing this at the same time which reveals realtime feedback.
+    - Collective intelligence has subcategories.
+    - Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation. Polling can cause entrenchment.
+    - Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in the direction of their choice, but lots of people are doing this at the same time which reveals real-time feedback.
     - Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages.
 
 7. Implications for Practice:  Collective Intelligence, in general, can be used for predictive analysis.
 
-8. Implications for Research: What other contexts does collective intelligence yield high accurate predictive information?
+8. Implications for Research: What other contexts does collective intelligence yield highly accurate predictive information?
 
 L. B. Rosenberg, "Human swarming, a real-time method for parallel distributed intelligence," 2015 Swarm/Human Blended Intelligence Workshop (SHBI), Cleveland, OH, 2015, pp. 1-7.
 doi: 10.1109/SHBI.2015.7321685
@@ -668,7 +668,7 @@ doi: 10.1109/SHBI.2015.7321685
 
 2. Research Question(s):
 
-    - Can a better IDPS system be created with available tools.
+    - Can a better IDPS system be created with available tools?
 
 3. Contribution:
 
