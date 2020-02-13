@@ -1,20 +1,21 @@
 # Literature and Research Material
 
-### Process Automation Articles
+## Process Automation Articles
+
 
 Keywords: Process Automation, Risk, System Performance, Third-Party Communication, Interface Compatibility
 
 1. Problem Statement: The research paper looks to identify the sources of risk associated with process automation in petrochemical and similar energy companies. As well as find the viewpoints of the people that work there.
 
-2: Research Question:
+2. Research Question:
 
-  - The researchers focused on determining the risk sources associated with the equipment that is part of the process automation system.
-  - The second objective was to identify if the managers and technicians were aware of the risk and if they share the same viewpoint on the risk associated with process automation.
+    - The researchers focused on determining the risk sources associated with the equipment that is part of the process automation system.
+    - The second objective was to identify if the managers and technicians were aware of the risk and if they share the same viewpoint on the risk associated with process automation.
 
 3. Contribution:
 
-  - The researchers identify the most prevalent risk associated with process automation
-  - Obtained live data from multiple companies to see a larger view of the technician’s perspective
+    - The researchers identify the most prevalent risk associated with process automation
+    - Obtained live data from multiple companies to see a larger view of the technician’s perspective
 
 4. Rationale: The paper presents the information to the user and allows them to develop their own opinion while presenting the facts they found.
 
@@ -22,30 +23,31 @@ Keywords: Process Automation, Risk, System Performance, Third-Party Communicatio
 
 6. Lesson Learned:
 
-  - The five most prevalent risks associated with process automation in the research groups company’s area.
-  - What companies think is there biggest risk and how they would rate it to other risks
-  - The 7 common identified risks throughout the surveyed company.
+    - The five most prevalent risks associated with process automation in the research groups company’s area.
+    - What companies think is there biggest risk and how they would rate it to other risks
+    - The 7 common identified risks throughout the surveyed company.
 
 7. Implications for Practice:
 
- - Given these results, it will help identify and mitigate risk for companies.
+    - Given these results, it will help identify and mitigate risk for companies.
 
 8. Implications for Research:
 
-  - Allows for areas to be addressed for possible standard mitigation techniques and best practices to be used to develop process automation systems.
+   - Allows for areas to be addressed for possible standard mitigation techniques and best practices to be used to develop process automation systems.
 
 J. K. Visser and H. T. Malan, “Identification of risk associated with process automation systems,” Int. J. Econ. Manag. Eng, vol. 13, no. 7, pp. 1044–1051, 2019.
 
-URL: https://pdfs.semanticscholar.org/b845/bde145526fb9fff7517161337533982defc9.pdf 
+URL: https://pdfs.semanticscholar.org/b845/bde145526fb9fff7517161337533982defc9.pdf
 
+-----
 
-### API Integration / Middleware for Connecting APIs
+## API Integration / Middleware for Connecting APIs
 
 Keywords: Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Devices, Logs
 
 1. Problem Statement: Middleware is everywhere and everything is producing data now a day. A centralized tool is needed to make processing this data easier. The need for middleware for mobile nodes and mobile devices.
 
-2: Research Question: Interactive middleware architecture for lifelog based context-awareness in distributed and ubiquitous environments. As well, for mobile nodes and devices.
+2. Research Question: Interactive middleware architecture for lifelog based context-awareness in distributed and ubiquitous environments. As well, for mobile nodes and devices.
 
 3. Contribution: The paper strives to share information of designs for a system that can distribute and manage situational information for mobile nodes and devices in a distributed and ubiquitous environment and share the service content between the interactive middleware.
 
@@ -53,9 +55,9 @@ Keywords: Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Dev
 
 5. Investigative Approach:
 
-  - The researchers first identified the problem areas to fix and what will be needed.
-  - Developed a middleware architecture for lifelog based context-awareness.
-  - Test the middleware in a test development environment.
+   - The researchers first identified the problem areas to fix and what will be needed.
+   - Developed a middleware architecture for lifelog based context-awareness.
+   - Test the middleware in a test development environment.
 
 6. Lesson Learned: The researchers showed that for wireless and wired networks. It is possible to have an environment that provides automatic services any time any place and can be controlled using and interactive middleware.
 
@@ -65,8 +67,7 @@ Keywords: Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Dev
 
 S. Chang-Woo, L. Daesung, C. Kyung-Yong, R. Kee-Wook, and L. Jung-Hyun, “Interactive middleware architecture for lifelog based context awareness,” Multimedia Tools and Applications, vol. 71, Jan. 2013.
 
-URL: https://link.springer.com/article/10.1007/s11042-013-1362-7 
-
+URL: https://link.springer.com/article/10.1007/s11042-013-1362-7
 
 -----
 
@@ -76,23 +77,23 @@ Keywords: API development, API maintenance, software platform APIs, API review, 
 
 2. Research Question(s)
 
-  - Can the process of updating Tizen API be improved?
-  - How can they share information about Tizen API with other stakeholders if changes are made?
+    - Can the process of updating Tizen API be improved?
+    - How can they share information about Tizen API with other stakeholders if changes are made?
 
 3. Contribution:
 
-  - JIRA bug system was implemented to provide a submission-based/approval-based workflow, task search ability, status-change notifications, etc.
-  - API Change Requests (ACR) had different states in JIRA system for updates, reviews, preparations, approvals, etc. Stakeholders are applied with specified responsibilities/tasks for each state.
+    - JIRA bug system was implemented to provide a submission-based/approval-based workflow, task search ability, status-change notifications, etc.
+    - API Change Requests (ACR) had different states in JIRA system for updates, reviews, preparations, approvals, etc. Stakeholders are applied with specified responsibilities/tasks for each state.
 
 4. Rationale: The paper argues that research has been done improving API usability frameworks, but no report of API process that is designed and used in a large-scale software platform.
 
 5. Investigative Approach
 
-  - They took their time to come up with a detailed process of ACR when it came to the API and recognizing the environment it operates in. The paper claims the new process helps stakeholders work more efficiently while maintaining API consistency for usability and backward compatibility.
+    - They took their time to come up with a detailed process of ACR when it came to the API and recognizing the environment it operates in. The paper claims the new process helps stakeholders work more efficiently while maintaining API consistency for usability and backward compatibility.
 
 6. Lessons learned
 
-  - There are various ways and methods organizations and individuals try to improve their APIs and update process. Different organizations/devices will have different needs from each API
+    - There are various ways and methods organizations and individuals try to improve their APIs and update process. Different organizations/devices will have different needs from each API
 
 H. Kwon, J. Ahn, S. Choi, J. Siewierski, P. Kosko and P. Szydelko, "An Experience Report of the API Evolution and Maintenance for Software Platforms," 2018 IEEE International Conference on Software Maintenance and Evolution (ICSME), Madrid, 2018, pp. 587-590.
 doi: 10.1109/ICSME.2018.00034
@@ -106,47 +107,46 @@ Keywords: middleware, RPC, MOM, TOM, DOM, SOA, Web Service, SOM
 
 2. Research Question(s)
 
-  - What are the current paradigms for middleware?
-  - What is service-oriented middleware? How does it different from other types of middleware?
+    - What are the current paradigms for middleware?
+    - What is service-oriented middleware? How does it different from other types of middleware?
 
 3. Contribution
 
-  - This paper collect information about current paradigms for middleware and latest paradigm in the middleware area
-	
+    - This paper collect information about current paradigms for middleware and latest paradigm in the middleware area
 4. Rationale
 
-  - Paper defines current paradigms and how they can be applied
-  - Talks about service-oriented middleware and how it is used in Service-Oriented Architecture
+    - Paper defines current paradigms and how they can be applied
+    - Talks about service-oriented middleware and how it is used in Service-Oriented Architecture
 
 5. Investigative Approach
 
-  - This paper aims to be informative and explain different types of middleware that exist and how they are applied.
+    - This paper aims to be informative and explain different types of middleware that exist and how they are applied.
 
 6. Lessons learned
 
-  - Existing traditional middleware is explained (i.e., Remote Procedure Call, Message-Oriented Middleware, Transaction-Oriented Middleware, Distributed Object Middleware)
-  - Service-Oriented Architecture is explained (services are autonomous, platform-independent computational entities, etc.)
+   - Existing traditional middleware is explained (i.e., Remote Procedure Call, Message-Oriented Middleware, Transaction-Oriented Middleware, Distributed Object Middleware)
+   - Service-Oriented Architecture is explained (services are autonomous, platform-independent computational entities, etc.)
 
 7. Implications for practice:
 
-  - With introduction to SOA, it gives web services as an example of a technology based on SOA.
+    - With introduction to SOA, it gives web services as an example of a technology based on SOA.
 
 8. Implications for research:
 
-  - Paper introduces potential future research, such as have middleware address context awareness, open coordination paradigm of communication, and dependability.
+    - Paper introduces potential future research, such as have middleware address context awareness, open coordination paradigm of communication, and dependability.
 
 L. Qilin and Z. Mintian, "The State of the Art in Middleware," 2010 International Forum on Information Technology and Applications, Kunming, 2010, pp. 83-85.
 doi: 10.1109/IFITA.2010.118
 
 -----
 
-### Systems Architecture Integration
+## Systems Architecture Integration
 
 Keywords: IoT, System Architecture, Middleware, Security, Standard Architecture
 
 1. Problem Statement: To define a standard security architecture for service-oriented architecture based IoT middleware and analyzes concepts and existing work. To allow for sizable networks of IoT devices to be integrated.
 
-2: Research Question: To close the gap and expand the research of Service-Oriented Architecture (SAO) for IoT devices used on a network.
+2. Research Question: To close the gap and expand the research of Service-Oriented Architecture (SAO) for IoT devices used on a network.
 
 3. Contribution: This paper showed that to support SOA-based IoT middleware for most systems, the community will need to standardize security architecture for SOA-based IoT middleware.
 
@@ -164,14 +164,15 @@ R. T. Tiburski, L. A. Amaral, E. D. Matos, and F. Hessel, “The importance of a
 
 URL: https://www.researchgate.net/publication/290378256_The_Importance_of_a_Standard_Security_Architecture_for_SOA-based_IoT_Middleware 
 
+-----
 
-### Web Services Literature
+## Web Services Literature
 
 Keywords: Firewalls, Security patterns, Network security, Cloud Computing, Services
 
 1. Problem Statement: Researches developed a new firewall pattern to help cloud firewalls be used to the best of their ability.
 
-2: Research Question: Can you combine firewalls of similar customer requirements to help make the system more efficient.
+2. Research Question: Can you combine firewalls of similar customer requirements to help make the system more efficient.
 
 3. Contribution: If possible, it can make a firewall configuration for multiple organizations easier to configure because 1 cloud firewall could work for several customers.
 
@@ -189,66 +190,75 @@ E. B. Fernandez, N. Yoshioka, and H. Washizaki, “Patterns for Cloud Firewalls�
 
 URL: https://www.researchgate.net/publication/266385038_Patterns_for_cloud_firewalls 
 
-----
+------
 
 keywords: application program interfaces, Web APIs, API consumer applications, web API integration, webservices
-1.	Problem Statement
+1.	Problem Statement: 
+
 As Web APIs grow in complexity, so too does quantity and type of errors. At the time of this publication, no large scale evaluation has been conducted that identies and classifies all types of API errors that can happen.
+
 2.	Research Question(s)
     - What types of faults are impacting API consumers?
     - What is the prevalence of these fault types, and how many API consumers are impacted by them?
     - What are the current practices and challenges to avoid and reduce the impact of problems caused by faultus in API integration?
+
 3.	Contribution:
-  * Classification of API faults
-    - invalid user input
-    - missing user input
-    - expired request data
-    - invalid request data
-    - missing request data
-    - insufficient permissions
-    - double processing
-    - configuration
-    - missing server data
-    - internal and third party
-  * Recommendations for API providers and API consumers to reduce faults
+    - Classification of API faults
+      - invalid user input
+      - missing user input
+      - expired request data
+      - invalid request data
+      - missing request data
+      - insufficient permissions
+      - double processing
+      - configuration
+      - missing server data
+      - internal and third party
+    - Recommendations for API providers and API consumers to reduce faults
 4.	Rationale
 By identifying beforehand all possible API errors a user might run into, it can facilitate good documentation and help developers develop good API design which helps prevent errors from occurring.
+
 5.	Investigative Approach:
-  * Evaluated error responses to a large scale webserve (Adyen webservices)
-  * Evaluated 2.43 million error responses from the logs
-  * Surveyed API consumers
+
+    - Evaluated error responses to a large scale webserve (Adyen webservices)
+    - Evaluated 2.43 million error responses from the logs
+    - Surveyed API consumers
 6.	Lessons Learned:
-  * Most faults are caused by the following:
-    - invalid request data (received input that cannot be handled)
-    - missing request data (consumer fails to send needed info required for action)
-    - double processing (send same request to delete the same resource twice: second request produces a fault because the resource no longer exists)
-  * Faults caused by the API provider and third parties are must impactful (those originating by end user: not so much)
-    - API documentation is critical, followed by code examples
-    - Provide common implementation scenarios (instead of merely stating the different options of the API calls)
-    - Identify the most common API mistakes, and how to prevent them
-    - Details on error codes
+    - Most faults are caused by the following:
+      - invalid request data (received input that cannot be handled)
+      - missing request data (consumer fails to send needed info required for action)
+      - double processing (send same request to delete the same resource twice: second request produces a fault because the resource no longer exists)
+    - Faults caused by the API provider and third parties are must impactful (those originating by end user: not so much)
+      - API documentation is critical, followed by code examples
+      - Provide common implementation scenarios (instead of merely stating the different options of the API calls)
+      - Identify the most common API mistakes, and how to prevent them
+      - Details on error codes
 
 J. Aué, M. Aniche, M. Lobbezoo and A. van Deursen, "An Exploratory Study on Faults inWeb API Integration in a Large-Scale Payment Company," 2018 IEEE/ACM 40th International Conference on Software Engineering: Software Engineering in Practice Track (ICSE-SEIP), Gothenburg, 2018, pp. 13-22. URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8449231&isnumber=8449161
 
-----
+-----
 
-keywords: application program interfaces, systematic mapping study, API documentation generation approaches, API documentation process, API documentation 
+Keywords: application program interfaces, systematic mapping study, API documentation generation approaches, API documentation process, API documentation
 
 1. Problem Statement
 Maintaining API documentation is a burdensome task. Especially when code updates are frequent, documentation updates often get overlooked. Tools are required to aid in this process.
 
 2. Research Question(s)
-* What approaches exist for creating new and improving existing API documentation?
-* How do the approaches contribute to API documentation?
-* What are the sources for API documentation?
-* What are the quality properties of the approaches?
-* How are the documentation approaches evaluated?
+    - What approaches exist for creating new and improving existing API documentation?
+    - How do the approaches contribute to API documentation?
+    - What are the sources for API documentation?
+    - What are the quality properties of the approaches?
+    - How are the documentation approaches evaluated?
+
 3. Contribution:
 A representation of what the current literature in the domain of API documentation expresses is important in order to maintain up-to-date API documentation.
+
 4. Rationale
 Documentation is crucial. Without an authoritative source providing documentation for their code artifacts, users will turn towards the internet on crowd-sourced platforms where it is not guaranteed they will receive the best guidance.
+
 5. Investigative Approach:
 Conducted a systematic mapping study regarding various search terms related to APIs. They then analyzed the API documentation strategies discussed in those papers. Most approaches to
+
 6. Lessons Learned:
 The results from the study suggest that, if the quality of the API documentation is to be maintained: tools to generate the API documentation must be used. The study suggests that a significant amount of API documentation generation tools focus on producing natural language and code examples. This article thus postulates that these are the two areas that are most lacking in API documentation.
 Major of papers reference tools, while others use plugins, but which ultimately produce templates which include natural language documentation and code examples.
@@ -257,13 +267,15 @@ K. Nybom, A. Ashraf and I. Porres, "A Systematic Mapping Study on API Documentat
 doi: 10.1109/SEAA.2018.00081,
 URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8498248&isnumber=8498147
 
-### Dockerization Hardening
+-----
+
+## Dockerization Hardening
 
 Keywords: Security as a Service, Docker, Dockerization, Security, IoT
 
 1. Problem Statement: Deploying multiple instances of a security platform to meet scalability needs and perform for mobile devices and IoT.
 
-2: Research Question: Proving the plausibility of launching multiple security instances on the developed prototype edge platform.
+2. Research Question: Proving the plausibility of launching multiple security instances on the developed prototype edge platform.
 
 3. Contribution: Will show that adding a quick way to instances multiple security instances to provide coverage for IoT and mobile devices while using Docker. This is done by using Security as a service standard that leverages the MEC edge platform for providing.
 
@@ -281,23 +293,21 @@ P. Ranaweera, V. N. Imirth, M. Liyanage, and A. D. Jurcut, “Security as a Serv
 
 URL: https://www.researchgate.net/profile/Madhusanka_Liyanage/publication/338853880_Security_as_a_Service_Platform_Leveraging_Multi-Access_Edge_Computing_Infrastructure_Provisions/links/5e2fc88ea6fdcc309695b451/Security-as-a-Service-Platform-Leveraging-Multi-Access-Edge-Computing-Infrastructure-Provisions.pdf 
 
-
 -----
 Keywords: cloud computing, Docker container security, ;containerization, virtualization, Micro Services Architecture
-
 
 1. Problem Statement: Docker containers can be vulnerable to ARP spoofing, Mac flooding, DoS attacks, among others.
 
 2. Research Question(s)
 
-- What Threats and vulnerabilities exist surrounding the docker platform?
-- What mitigations exist to make the docker platform more secure?
+    - What Threats and vulnerabilities exist surrounding the docker platform?
+    - What mitigations exist to make the docker platform more secure?
 
 3. Contribution:
 
-- The paper lists known threats and vulnerabilities around docker, such as DoS attacks, docker daemon attack surface, integrity of docker host issue, etc.
-- Previous, related work to address security for the Docker container are listed, such as Mandatory access control (MAC), Secure Containers with Security-Enhanced Linux (SELinux), and best practices.
-- The paper introduces an experiment for addressing DoS attack concerns on the docker containers.
+    - The paper lists known threats and vulnerabilities around docker, such as DoS attacks, docker daemon attack surface, integrity of docker host issue, etc.
+    - Previous, related work to address security for the Docker container are listed, such as Mandatory access control (MAC), Secure Containers with Security-Enhanced Linux (SELinux), and best practices.
+    - The paper introduces an experiment for addressing DoS attack concerns on the docker containers.
 
 4. Rationale: The paper introduces an experiment model to prevent DoS attacks to the docker model. Test included assigning memory limit in the docker, assigning memory reservation in the default file, and providing a default memory. The tests were of subtle changes to the docker containers but helped the security and safety of the container.
 
@@ -314,13 +324,13 @@ URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber
 
 -----
 
-### CIF Literature
+## CIF Literature
 
 Keywords: CIF, Security, Threat Intelligence
 
 1. Problem Statement: Now day’s companies get data for possible threats from many sources. The problem here is sifting through it all and developing the Threat Intelligence.
 
-2: Research Question: Understand the reason for Threat intelligence and how to turn raw data into threat intelligence and advanced persistent threats.
+2. Research Question: Understand the reason for Threat intelligence and how to turn raw data into threat intelligence and advanced persistent threats.
 
 3. Contribution: This paper strives to give the community the ability to sort data and make it useable and share it for the best outcome and prevent threats.
 
@@ -334,11 +344,10 @@ Keywords: CIF, Security, Threat Intelligence
 
 8. Implications for Research: The research aspect allows for others to build off this paper and help shape TI to make it better and more predictive for users to find good information to use to help protect.
 
-J. Elmellas, “Knowledge is power: the evolution of threat intelligence” ScienceDirect, pp. 1–5, Jul. 2016. 
+J. Elmellas, “Knowledge is power: the evolution of threat intelligence” ScienceDirect, pp. 1–5, Jul. 2016.
 Keyword - CIF, Security, Threat Intelligence
 
 URL: https://www.sciencedirect.com/science/article/abs/pii/S1361372316300513 also in issue 11.
-
 
 ----------
 
@@ -346,11 +355,12 @@ Keywords - Cyber Threat Intelligence Capability, Super SEIM
 
 This book services as guidance for successful development and implementation of cyber threat intelligence capability. It derives its conclusions from the personal observations of the author.
 Two critical take aways:
-* It is critical that business objectives are clearly defined so that the most appropriate cyber threat intelligence capability can be built.
-* Threat Intelligence feed is different from data feed. Often intelligence is sold when in fact it is just data. Threat intelligence is data that has been vetted by some process or procedure and it satisfies three different requirements:
-  *	Relevant
-  *	Actionable
-  *	Valuable
+- It is critical that business objectives are clearly defined so that the most appropriate cyber threat intelligence capability can be built.
+
+- Threat Intelligence feed is different from data feed. Often intelligence is sold when in fact it is just data. Threat intelligence is data that has been vetted by some process or procedure and it satisfies three different requirements:
+  - Relevant
+  - Actionable
+  - Valuable
 
 H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber threat intelligence capability. Amsterdam: Syngress, an imprint of Elsevier, 2015.
 
@@ -358,9 +368,9 @@ H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber
 
 Keywords: Collective Intelligence, Web 2.0 Applications
 
-1.	Problem Statement
-There is currently no applications specifically tailored to the special education sector. An information system needs to be designed surrounding special education data—one which ingests data from a variety of different contexts and settings. Data input must have good UX design so as to easily sift through data and to easily utilize the data to make strategic and informed decisions for the clients.
-2.	Research Question(s)
+1.	Problem Statement: There is currently no applications specifically tailored to the special education sector. An information system needs to be designed surrounding special education data—one which ingests data from a variety of different contexts and settings. Data input must have good UX design so as to easily sift through data and to easily utilize the data to make strategic and informed decisions for the clients.
+
+2.	Research Question(s): 
 What is a design and implementation strategy for developing a special-purpose collective intelligence application within the domain of special education data?
 3.	Contribution:
 There is value in using the collective intelligence model in the special education sector because data is often collected in silos. A single application that ingests data from all the different sources can identify patterns and make more informed decisions on future endeavors.
@@ -383,24 +393,23 @@ D. G. Gregg, “Designing for collective intelligence,” Communications of the 
 
 ----
 
-keywords: collective intelligence, Real-time systems, Decision making
+Keywords: collective intelligence, Real-time systems, Decision making
 
 1. Problem Statement
-Aggregating individual opinion asynchronously, such as by polling, does not provide the opportunity for real-time collective intelligence to emerge. 
+Aggregating individual opinion asynchronously, such as by polling, does not provide the opportunity for real-time collective intelligence to emerge.
 2. Research Question(s)
 What is the comparison of human swarming to that of decision making done asynchronously?
 What are the critical components that yield successful human swarms?
-3. Contribution: 
-Software makes it possible to conduct real-time negotiation 
+3. Contribution:
+Software makes it possible to conduct real-time negotiation
 4. Rationale
 Various mechanisms in use can cause entrenchment, and polarizing view.  Hearding and snowballing effects are sometimes seen with existing mechanisms.
 5. Investigative Approach:
 Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy aware winners. They then did the same thing but with their human swarm software UNU
 6. Lessons Learned:
-Collective intelligence has sub categories.  Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation.   In fact, polling can cause entrenchment.   
+Collective intelligence has sub categories.  Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation. In fact, polling can cause entrenchment.
 Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in their direction of their choice, but lots of people are doing this at the same time which reveals realtime feedback.  
-Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages. 
+Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages.
 
 L. B. Rosenberg, "Human swarming, a real-time method for parallel distributed intelligence," 2015 Swarm/Human Blended Intelligence Workshop (SHBI), Cleveland, OH, 2015, pp. 1-7.
 doi: 10.1109/SHBI.2015.7321685
-
