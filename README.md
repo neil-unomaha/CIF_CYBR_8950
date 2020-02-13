@@ -68,8 +68,10 @@ Following setup of CIF, we hope to shift our focus on Palo Alto documentation to
 ### Technical Plan
 
 **High-Level Project Overview** 
+A high-level view of our plan is to first familiarize ourselves with the CIF version 4 system along with the Dockerized system.  Along with setting up a sandbox CIF instance that has similar configurations to the current CIF system implemented on the University network the code for CIF version 4 will be analyzed and researched such that it could be determined if this version would be usable within the desired University setting.  Along with researching CIF we must also research the Palo Alto system by examining the API documentation along with other resources that have been produced for this widely used system.
 
-- *Probaby a hierarchical bulleted list*
+After we have thoroughly researched both CIF version 4 and Palo Alto, our next task that will be undertaken within out plan is to integrate CIF and Palo Alto.  We propose that this will be able to be done using the APIs that are available for both systems and we will create a form of middleware that will accomplish of taking the threat data from the Palo Alto System and automatically put that data into the CIF server for threat mitigation that is more rapid than the current system.
+
 
 ## Resources/Technology Needed
 
