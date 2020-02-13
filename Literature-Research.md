@@ -191,7 +191,7 @@ URL: https://www.researchgate.net/publication/266385038_Patterns_for_cloud_firew
 
 ----
 
-keywords: {application program interfaces;financial data processing;Internet;service-oriented architecture;Web APIs;Adyen's payment service;API consumer applications;API related problems;API integration;invalid request data;large-scale payment company;service-oriented architectures;API error responses;Stakeholders;Production;Fault diagnosis;Companies;Complexity theory;Servers;web engineering;web API integration;webservices},
+keywords: application program interfaces, Web APIs, API consumer applications, web API integration;webservices
 1.	Problem Statement
 As Web APIs grow in complexity, so too does quantity and type of errors. At the time of this publication, no large scale evaluation has been conducted that identies and classifies all types of API errors that can happen.
 2.	Research Question(s)
@@ -232,7 +232,7 @@ J. Aué, M. Aniche, M. Lobbezoo and A. van Deursen, "An Exploratory Study on Fau
 
 ----
 
-keywords: {application program interfaces;software reusability;system documentation;systematic mapping study;API documentation generation approaches;software reuse;software developers;API documentation process;API documentation generation tools;natural language documentation;code examples;API users;API documentation approaches;Documentation;Data mining;Tools;Software;Libraries;Systematics;Application programming interfaces;API;API Documentation;Systematic mapping study}
+keywords: application program interfaces, systematic mapping study, API documentation generation approaches, API documentation process, API documentation 
 
 1. Problem Statement
 Maintaining API documentation is a burdensome task. Especially when code updates are frequent, documentation updates often get overlooked. Tools are required to aid in this process.
@@ -283,7 +283,7 @@ URL: https://www.researchgate.net/profile/Madhusanka_Liyanage/publication/338853
 
 
 -----
-Keywords: cloud computing;computer network security;operating systems (computers);virtualisation;Docker container security;Denial of Service attack;DoS attack;containerization;virtualization;cloud based IT environment;Docker engine;operating system;OS;Containers;Kernel;Computer crime;Linux;Access control;Cloud computing;Cloud Containers;Docker Technology;Security Issues;DoS Attacks;Micro Services Architecture
+Keywords: cloud computing, Docker container security, ;containerization, virtualization, Micro Services Architecture
 
 
 1. Problem Statement: Docker containers can be vulnerable to ARP spoofing, Mac flooding, DoS attacks, among others.
@@ -383,7 +383,7 @@ D. G. Gregg, “Designing for collective intelligence,” Communications of the 
 
 ----
 
-keywords: {multi-agent systems;human swarming method;parallel distributed intelligence;autonomous robots;simulated agents;UNU platform;artificial swarm intelligence;ASI;collective intelligence;Real-time systems;Sociology;Statistics;System recovery;Force;Decision making;Neurons}
+keywords: collective intelligence, Real-time systems, Decision making
 
 1. Problem Statement
 Aggregating individual opinion asynchronously, such as by polling, does not provide the opportunity for real-time collective intelligence to emerge. 
