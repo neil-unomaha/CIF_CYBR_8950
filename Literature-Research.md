@@ -41,6 +41,30 @@ URL: https://pdfs.semanticscholar.org/b845/bde145526fb9fff7517161337533982defc9.
 
 -----
 
+Ferreira da Silva, Rafael, et al. &quot;A Characterization of Workflow Management Systems for Extreme-Scale Applications.&quot; Future Generation Computer Systems, vol. 75, 2017, pp. 228–238., doi:10.1016/j.future.2017.02.026.
+
+Keywords - Scientific workflows, Workflow management systems, Extreme-scale computing, in situ processing
+
+1. Problem Statement: As workflows have been adopted by a number of scientific communities, they are becoming more complex and need more sophisticated workflow management capabilities.
+2. Research Questions:
+  - Are WMSs ready to support extreme-scale applications?
+3. Contribution:
+  - This paper analyses the information about automation in the scientific industry called workflows and their management.
+4. Rationale:
+  - Systems that manage information transfer between systems.
+  - Classification of different types of systems automation and integration.
+5. Investigation:
+  - Analyze available information and literature and create a classification and characterization for workflow management.
+6. Lessons Learned:
+  - As workflow management scales it needs to meet certain properties.
+7. Implications for practice:
+  - When creating tools for systems automation and management certain properties can be focused on.
+8. Implications for research:
+  - More properties can be found that can affect different industries.
+
+
+-----
+
 ## API Integration / Middleware for Connecting APIs
 
 Keywords: Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Devices, Logs
@@ -143,8 +167,32 @@ Keywords: middleware, RPC, MOM, TOM, DOM, SOA, Web Service, SOM
 
     - Paper introduces potential future research, such as have middleware address context awareness, open coordination paradigm of communication, and dependability.
 
+-----
+
 L. Qilin and Z. Mintian, "The State of the Art in Middleware," 2010 International Forum on Information Technology and Applications, Kunming, 2010, pp. 83-85.
 doi: 10.1109/IFITA.2010.118
+
+D. C. Schmidt and F. Buschmann, &quot;Patterns, frameworks, and middleware: their synergistic relationships,&quot; _25th International Conference on Software Engineering, 2003. Proceedings._, Portland, OR, USA, 2003, pp. 694-704.
+
+Middleware, Software tools, Software reusability, Computer architecture, Application software, Programming, Collaboration, Concrete, Bridges, Operating systems
+
+1. Problem Statement:
+  - There are shorter and shorter development cycles in software development and the reuse of software can be a tool to aid in development and not to recreate systems that already exist.
+2. Research Questions:
+  - How can middleware be developed to combine systems, and what patterns and frameworks are the most conducive for code reuse.
+3. Contribution:
+  - The most current methods in software development that allows for more widespread code reuse.
+4. Rationale:
+  - Frameworks, patterns, and middleware are the three most widespread methods that allow for code reuse.
+5. Investigation:
+  - Researth Framework and Patterns, their interaction with each other along with middleware that uses them.
+6. Lessons Learned:
+  - More and more code reuse is available with common frameworks and patters that allow for the creation of middleware in developing new systems.
+7. Implications for practice:
+  - More attention can be paid for reusable patterns and frameworks that would allow others to reuse code when developing new software, and what patterns and frameworks within software would allow for the simplest code reuse.
+8. Implications for research:
+  - Find pattern and frameworks that allow for code reuse and the creation of middleware that can be used within many industries.
+  URL: https://ieeexplore.ieee.org/document/1201256
 
 -----
 
@@ -171,6 +219,30 @@ Keywords: IoT, System Architecture, Middleware, Security, Standard Architecture
 R. T. Tiburski, L. A. Amaral, E. D. Matos, and F. Hessel, “The importance of a standard security architecture for SOA-based IoT middleware,” Institute of Electrical and Electronics Engineers, vol. 53, no. 12, pp. 20–26, Dec. 2015.
 
 URL: https://www.researchgate.net/publication/290378256_The_Importance_of_a_Standard_Security_Architecture_for_SOA-based_IoT_Middleware 
+
+-----
+
+R. Jain, A. Chandrasekaran, G. Elias and R. Cloutier, &quot;Exploring the Impact of Systems Architecture and Systems Requirements on Systems Integration Complexity,&quot; in _IEEE Systems Journal_, vol. 2, no. 2, pp. 209-223, June 2008.
+
+Keywords - Systems engineering and theory, Government, Environmental management, Industrial relations, Best practices, Performance analysis, Object oriented modeling, Electronic warfare
+
+1. Problem Statement:
+  - There is a need for systems integration in a system, and developers need to know how their design choices can affect the integration process complexity
+2. Research Questions:
+  - What is the relationship between system requirements, system architecture, and the complexity of system integration?
+3. Contribution:
+  - What factors are vital within a system that can affect system integration.
+4. Rationale:
+  - System requirements and architecture can alter the complexity of integrating systems.
+5. Investigation:
+  - Study a number of government projects and discover what factors affected the integration of a system.
+6. Lessons Learned:
+  - Clear identification of system requirements, prioritization of system requirements, commonality in hardware and software subsystems, increase in physical modularity, increase in operational commonality, decrease in orthogonality, and increase in percentage of familiar technology affected the complexity of system integration the most.
+7. Implications for practice:
+  - A focus on the areas above can make the complexity of integrating a system much easier that it would have otherwise be.
+8. Implications for research:
+  - There may be more areas that could reuse the complexity of systems integration.
+  URL: https://ieeexplore.ieee.org/abstract/document/4539770
 
 -----
 
@@ -239,9 +311,6 @@ By identifying beforehand all possible API errors a user might run into, it can 
       - Provide common implementation scenarios (instead of merely stating the different options of the API calls)
       - Identify the most common API mistakes, and how to prevent them
       - Details on error codes
-7. Implications for Practice: identification of the main API usage errors of the various documentation error types.  By being aware of these errors beforehand, it facilitates good documentaiton that can help mititigate those errors
-
-8. Implications for Research: Since this study identifies the main types of API errors, further research can be done on each of the individual types: what mitigation techniques are most effective for each API error type.     
 
 J. Aué, M. Aniche, M. Lobbezoo and A. van Deursen, "An Exploratory Study on Faults inWeb API Integration in a Large-Scale Payment Company," 2018 IEEE/ACM 40th International Conference on Software Engineering: Software Engineering in Practice Track (ICSE-SEIP), Gothenburg, 2018, pp. 13-22. URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8449231&isnumber=8449161
 
@@ -271,10 +340,6 @@ Conducted a systematic mapping study regarding various search terms related to A
 6. Lessons Learned:
 The results from the study suggest that, if the quality of the API documentation is to be maintained: tools to generate the API documentation must be used. The study suggests that a significant amount of API documentation generation tools focus on producing natural language and code examples. This article thus postulates that these are the two areas that are most lacking in API documentation.
 Major of papers reference tools, while others use plugins, but which ultimately produce templates which include natural language documentation and code examples.
-
-7. Implications for Practice: automation is best to help upkeep documentation. The end result, which is most important, is that code examples and natural human language for the documentation result.
-
-8. Implications for Research: Which tools are the most effective automated tools? What are the key components of good code example documentation?
 
 K. Nybom, A. Ashraf and I. Porres, "A Systematic Mapping Study on API Documentation Generation Approaches," 2018 44th Euromicro Conference on Software Engineering and Advanced Applications (SEAA), Prague, 2018, pp. 462-469.
 doi: 10.1109/SEAA.2018.00081,
@@ -346,6 +411,35 @@ URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber
 
 -----
 
+T. Combe, A. Martin and R. Di Pietro, &quot;To Docker or Not to Docker: A Security Perspective,&quot; in _IEEE Cloud Computing_, vol. 3, no. 5, pp. 54-62, Sept.-Oct. 2016.
+
+Keywords - Product life cycle management, Computer security, Cost benefit analysis, Cloud computing, Linux, Containers, Virtual networks
+
+1. Problem Statement:
+  - Docker is being used more often and that increases the attack surface of a system that may be using docker.
+2. Research Questions:
+  - What are the security concerns of using a Docker container not just in terms of interaction between containers or the base system?
+3. Contribution:
+  - The new security implications that Docker brings to a system are an area of great concern in the industy.
+4. Rationale:
+  - That Docker brings new attack surfaces, and many are focusing on the security of the containers and the underlying system, and not in the security of the containers itself.
+  - The claims are warranted because Docker introduces vulnerabilities just any part of a system.
+5. Investigation:
+  - Inspect the Docker and its internal structure.
+  - Create an adversarial model for Docker.
+6. Lessons Learned:
+  - Benefits that arise with using Docker:
+    1. Isolation, Host Hardening, and Network Security
+  - Security Concerns from Docker
+    1. Insecure Local Configuration, Weak Access Control, and Image Distribution.
+7. Implications for practice:
+  - Know when to use Docker containers, and what to be aware of when setting up Docker containers.
+8. Implications for research:
+  - New insights into the security of Docker containers.
+  URL: https://ieeexplore.ieee.org/abstract/document/7742298
+
+-----
+
 ## CIF Literature
 
 Keywords: CIF, Security, Threat Intelligence
@@ -375,21 +469,14 @@ URL: https://www.sciencedirect.com/science/article/abs/pii/S1361372316300513 als
 
 Keywords - Cyber Threat Intelligence Capability, Super SEIM
 
-1. Problem Statement: General overview of defining collective intelligence and factors to consider if using it as a strategy is appropriate for the business objectives you are trying to solve. 
+This book services as guidance for successful development and implementation of cyber threat intelligence capability. It derives its conclusions from the personal observations of the author.
+Two critical take aways:
+- It is critical that business objectives are clearly defined so that the most appropriate cyber threat intelligence capability can be built.
 
-2. Research Question(s): What is collective intelligence? How does an organization determine if a collective intelligence strategy is appropriate?
-
-3. Contribution: General overview of collective intelligence.  Key detail: data and intelligence are two different things.  Often, intelligence is sold when in fact it is really just data.  Intelligence is data that has been vetted by some process or procedure and that satisfies three different requirements: the data needs to be relevant, actionable, and valuable
-
-4. Rationale: This book functioned as an overview of collective intelligence.  It did not include research.
-
-5. Investigative Approach:  See above.  This book was tailored for administrative staff in a company to have a handle on what collective intelligence is, and to conduct a cost/benefit analysis of whether or not it is the best solution for their business objectives. 
-
-6. Lessons Learned: As discussed in the contribution section, the difference between data and intelligence. Make sure that the business objectives are clearly defined before even looking into whether a collective intelligence strategy is the best approach.
-
-7. Implications for practice:  Clearly identify business objectives beforehand.  Do cost/benefit analysis of various strategies to solve specific business objectives. 
-
-8. Implications for Research: Becuase the book discussed collective intelligence at such a high level, it leaves open many doors for further research.  Such as: what specific problems is collective intelligence best at solving?  Where should collective intelligence be avoided?
+- Threat Intelligence feed is different from data feed. Often intelligence is sold when in fact it is just data. Threat intelligence is data that has been vetted by some process or procedure and it satisfies three different requirements:
+  - Relevant
+  - Actionable
+  - Valuable
 
 H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber threat intelligence capability. Amsterdam: Syngress, an imprint of Elsevier, 2015.
 
@@ -436,14 +523,34 @@ Keywords: collective intelligence, Real-time systems, Decision making
 5. Investigative Approach: Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy aware winners. They then did the same thing but with their human swarm software UNU
 
 6. Lessons Learned:
+
     - Collective intelligence has sub categories.  
     - Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation. In fact, polling can cause entrenchment.  
     - Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in their direction of their choice, but lots of people are doing this at the same time which reveals realtime feedback.  
     - Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages.
 
-7. Implications for practice: A common interface that pulls together information from various sources can yield significant insight.  Some contexts, such as special education, collect data in silos which prevents significant insights.
-
-8. Implications for Research:  This article shows how a web application harnessing the power of collective intelligence can be applied within a specific environment.  In this case: special education.  What other environments are not currently applying collective intelligence and could see significant gains from doing so? 
-
 L. B. Rosenberg, "Human swarming, a real-time method for parallel distributed intelligence," 2015 Swarm/Human Blended Intelligence Workshop (SHBI), Cleveland, OH, 2015, pp. 1-7.
 doi: 10.1109/SHBI.2015.7321685
+
+
+-----
+
+Ancieta, J., and C. Rothenberg. &quot;IntelFlow: Towards adding Cyber Threat Intelligence to Software Defined Networks.&quot; (2015).
+
+1. Problem Statement:
+  - There are more and more network security threats, and an intrusion detection prevention system is one of the best ways to protect a network.
+2. Research Questions:
+  - Can a better IDPS system be created with available tools.
+3. Contribution:
+  - An intelligent and effective IDPS system has been created with multiple available tools.
+4. Rationale:
+  - That using current tools a better IDPS system can be created and implemented that protects a network.
+5. Investigation:
+  - Research many of the commonly used tools and integrate them into a single IDPS system.
+6. Lessons Learned:
+  - By using a variety of tools, new methods of discovering and mitigating threats can be created.
+7. Implications for practice:
+  - Integrating several disparate systems can create a new system that is more versatile and effective than any single system.
+8. Implications for research:
+  - It would be worthwhile to research combining different systems to achieve the most effective system for network intrusion detection and prevention.
+URL: https://pdfs.semanticscholar.org/05d9/abe609436a60e9969d6fdaa4be9272f16810.pdf
