@@ -369,6 +369,10 @@ Conducted a systematic mapping study regarding various search terms related to A
 The results from the study suggest that, if the quality of the API documentation is to be maintained: tools to generate the API documentation must be used. The study suggests that a significant amount of API documentation generation tools focus on producing natural language and code examples. This article thus postulates that these are the two areas that are most lacking in API documentation.
 Major of papers reference tools, while others use plugins, but which ultimately produce templates which include natural language documentation and code examples.
 
+7. Implications for Practice: automation is best to help upkeep documentation. The end result, which is most important, is that code examples and natural human language for the documentation result.
+
+8. Implications for Research: Which tools are the most effective automated tools? What are the key components of good code example documentation?
+
 K. Nybom, A. Ashraf and I. Porres, "A Systematic Mapping Study on API Documentation Generation Approaches," 2018 44th Euromicro Conference on Software Engineering and Advanced Applications (SEAA), Prague, 2018, pp. 462-469.
 doi: 10.1109/SEAA.2018.00081,
 URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8498248&isnumber=8498147
@@ -497,14 +501,21 @@ URL: https://www.sciencedirect.com/science/article/abs/pii/S1361372316300513 als
 
 Keywords - Cyber Threat Intelligence Capability, Super SEIM
 
-This book services as guidance for successful development and implementation of cyber threat intelligence capability. It derives its conclusions from the personal observations of the author.
-Two critical take aways:
-- It is critical that business objectives are clearly defined so that the most appropriate cyber threat intelligence capability can be built.
+1. Problem Statement: General overview of defining collective intelligence and factors to consider if using it as a strategy is appropriate for the business objectives you are trying to solve. 
 
-- Threat Intelligence feed is different from data feed. Often intelligence is sold when in fact it is just data. Threat intelligence is data that has been vetted by some process or procedure and it satisfies three different requirements:
-  - Relevant
-  - Actionable
-  - Valuable
+2. Research Question(s): What is collective intelligence? How does an organization determine if a collective intelligence strategy is appropriate?
+
+3. Contribution: General overview of collective intelligence.  Key detail: data and intelligence are two different things.  Often, intelligence is sold when in fact it is really just data.  Intelligence is data that has been vetted by some process or procedure and that satisfies three different requirements: the data needs to be relevant, actionable, and valuable
+
+4. Rationale: This book functioned as an overview of collective intelligence.  It did not include research.
+
+5. Investigative Approach:  See above.  This book was tailored for administrative staff in a company to have a handle on what collective intelligence is, and to conduct a cost/benefit analysis of whether or not it is the best solution for their business objectives. 
+
+6. Lessons Learned: As discussed in the contribution section, the difference between data and intelligence. Make sure that the business objectives are clearly defined before even looking into whether a collective intelligence strategy is the best approach.
+
+7. Implications for practice:  Clearly identify business objectives beforehand.  Do cost/benefit analysis of various strategies to solve specific business objectives. 
+
+8. Implications for Research: Becuase the book discussed collective intelligence at such a high level, it leaves open many doors for further research.  Such as: what specific problems is collective intelligence best at solving?  Where should collective intelligence be avoided?
 
 H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber threat intelligence capability. Amsterdam: Syngress, an imprint of Elsevier, 2015.
 
@@ -527,9 +538,11 @@ This paper identifies seven principle collective intelligence requirements:
     - Facilitate data access
     - Facilitate access for all devices
     - The perpetual beta (continuous improvement)
-4.	Rationale: Researchers claim that, at the time of this publication, there did not exist a tailored application to the special education sector.
-5.	Investigative Approach: Developed over 18 month field trial with one student with autism. Started with a prototype and with feedback made tweaks and increased features over time.
-6.	Lessons Learned: A collective intelligence model can be applied to many different contexts—likely any context where the aggregated information from various contexts all surrounding the same issue or problem can yield revealing insights.
+4. Rationale: Researchers claim that, at the time of this publication, there did not exist a tailored application to the special education sector.
+5. Investigative Approach: Developed over 18 month field trial with one student with autism. Started with a prototype and with feedback made tweaks and increased features over time.
+6. Lessons Learned: A collective intelligence model can be applied to many different contexts—likely any context where the aggregated information from various contexts all surrounding the same issue or problem can yield revealing insights.
+7. Implications For Practice:  Collective intelligence can be used in a variety of environments in order to yield insight that was not previously available.  In special education, documentation from various practictioners is created in silos.  An interface that can combine all that information can yield good insight. 
+8. Implication for Resarch:  Where else is collective intelligence currently not being applied?  Can collective intelligence strategies yield more insight?
 
 D. G. Gregg, “Designing for collective intelligence,” Communications of the ACM, vol. 53, no. 4, p. 134, Jan. 2010.
 
@@ -551,11 +564,12 @@ Keywords: collective intelligence, Real-time systems, Decision making
 5. Investigative Approach: Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy aware winners. They then did the same thing but with their human swarm software UNU
 
 6. Lessons Learned:
-
     - Collective intelligence has sub categories.  
     - Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation. In fact, polling can cause entrenchment.  
     - Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in their direction of their choice, but lots of people are doing this at the same time which reveals realtime feedback.  
     - Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages.
+7. Implications for Practice:  Collective Intelligence, in general, can be used for predictive analysis.    
+8. Implications for Research: What other contexts does collective intelligence yield high accurate predictive information?
 
 L. B. Rosenberg, "Human swarming, a real-time method for parallel distributed intelligence," 2015 Swarm/Human Blended Intelligence Workshop (SHBI), Cleveland, OH, 2015, pp. 1-7.
 doi: 10.1109/SHBI.2015.7321685
