@@ -192,10 +192,8 @@ URL: https://www.researchgate.net/publication/266385038_Patterns_for_cloud_firew
 
 ------
 
-keywords: application program interfaces, Web APIs, API consumer applications, web API integration, webservices
-1.	Problem Statement: 
-
-As Web APIs grow in complexity, so too does quantity and type of errors. At the time of this publication, no large scale evaluation has been conducted that identies and classifies all types of API errors that can happen.
+Keywords: application program interfaces, Web APIs, API consumer applications, web API integration, webservices
+1.	Problem Statement: As Web APIs grow in complexity, so too does quantity and type of errors. At the time of this publication, no large scale evaluation has been conducted that identies and classifies all types of API errors that can happen.
 
 2.	Research Question(s)
     - What types of faults are impacting API consumers?
