@@ -83,7 +83,9 @@ Keywords: Middleware, Centralized Storage, DBMS, Multiple Middleware, Mobile Dev
 
 1. Problem Statement: Middleware is everywhere and everything is producing data now a day. A centralized tool is needed to make processing this data easier. The need for middleware for mobile nodes and mobile devices.
 
-2. Research Question(s): Interactive middleware architecture for lifelog based context-awareness in distributed and ubiquitous environments. As well, for mobile nodes and devices.
+2. Research Question(s):
+
+    - Interactive middleware architecture for lifelog based context-awareness in distributed and ubiquitous environments. As well, for mobile nodes and devices.
 
 3. Contribution: The paper strives to share information of designs for a system that can distribute and manage situational information for mobile nodes and devices in a distributed and ubiquitous environment and share the service content between the interactive middleware.
 
@@ -262,7 +264,9 @@ Keywords: IoT, System Architecture, Middleware, Security, Standard Architecture
 
 1. Problem Statement: To define a standard security architecture for service-oriented architecture based IoT middleware and analyzes concepts and existing work. To allow for sizable networks of IoT devices to be integrated.
 
-2. Research Question(s): To close the gap and expand the research of Service-Oriented Architecture (SAO) for IoT devices used on a network.
+2. Research Question(s):
+
+    - To close the gap and expand the research of Service-Oriented Architecture (SAO) for IoT devices used on a network.
 
 3. Contribution: This paper showed that to support SOA-based IoT middleware for most systems, the community will need to standardize security architecture for SOA-based IoT middleware.
 
@@ -284,13 +288,12 @@ URL: https://www.researchgate.net/publication/290378256_The_Importance_of_a_Stan
 
 Keywords: Systems engineering and theory, Government, Environmental management, Industrial relations, Best practices, Performance analysis, Object oriented modeling, Electronic warfare
 
-1. Problem Statement:
-
-    - There is a need for systems integration in a system, and developers need to know how their design choices can affect the integration process complexity
+1. Problem Statement: There is a need for systems integration in a system, and developers need to know how their design choices can affect the integration process complexity
 
 2. Research Question(s):
 
     - What is the relationship between system requirements, system architecture, and the complexity of system integration?
+
 3. Contribution:
 
     - What factors are vital within a system that can affect system integration.
@@ -327,7 +330,9 @@ Keywords: Firewalls, Security patterns, Network security, Cloud Computing, Servi
 
 1. Problem Statement: Researches developed a new firewall pattern to help cloud firewalls be used to the best of their ability.
 
-2. Research Question(s): Can you combine firewalls of similar customer requirements to help make the system more efficient.
+2. Research Question(s):
+
+    - Can you combine firewalls of similar customer requirements to help make the system more efficient.
 
 3. Contribution: If possible, it can make a firewall configuration for multiple organizations easier to configure because 1 cloud firewall could work for several customers.
 
@@ -439,7 +444,9 @@ Keywords: Security as a Service, Docker, Dockerization, Security, IoT
 
 1. Problem Statement: Deploying multiple instances of a security platform to meet scalability needs and perform for mobile devices and IoT.
 
-2. Research Question(s): Proving the plausibility of launching multiple security instances on the developed prototype edge platform.
+2. Research Question(s):
+
+    - Proving the plausibility of launching multiple security instances on the developed prototype edge platform.
 
 3. Contribution: Will show that adding a quick way to instances multiple security instances to provide coverage for IoT and mobile devices while using Docker. This is done by using Security as a service standard that leverages the MEC edge platform for providing.
 
@@ -547,7 +554,9 @@ Keywords: CIF, Security, Threat Intelligence
 
 1. Problem Statement: Now day’s companies get data for possible threats from many sources. The problem here is sifting through it all and developing the Threat Intelligence.
 
-2. Research Question(s): Understand the reason for Threat intelligence and how to turn raw data into threat intelligence and advanced persistent threats.
+2. Research Question(s):
+
+    - Understand the reason for Threat intelligence and how to turn raw data into threat intelligence and advanced persistent threats.
 
 3. Contribution: This paper strives to give the community the ability to sort data and make it useable and share it for the best outcome and prevent threats.
 
@@ -571,7 +580,9 @@ Keywords: Cyber Threat Intelligence Capability, Super SEIM
 
 1. Problem Statement: General overview of defining collective intelligence and factors to consider if using it as a strategy is appropriate for the business objectives you are trying to solve.
 
-2. Research Question(s): What is collective intelligence? How does an organization determine if a collective intelligence strategy is appropriate?
+2. Research Question(s):
+
+    - What is collective intelligence? How does an organization determine if a collective intelligence strategy is appropriate?
 
 3. Contribution: General overview of collective intelligence.  Key detail: data and intelligence are two different things.  Often, intelligence is sold when in fact it is really just data.  Intelligence is data that has been vetted by some process or procedure and that satisfies three different requirements: the data needs to be relevant, actionable, and valuable
 
