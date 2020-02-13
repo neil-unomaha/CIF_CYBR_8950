@@ -436,11 +436,13 @@ Keywords: collective intelligence, Real-time systems, Decision making
 5. Investigative Approach: Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy aware winners. They then did the same thing but with their human swarm software UNU
 
 6. Lessons Learned:
-
     - Collective intelligence has sub categories.  
     - Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation. In fact, polling can cause entrenchment.  
     - Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in their direction of their choice, but lots of people are doing this at the same time which reveals realtime feedback.  
     - Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages.
 
+7. Implications for practice: A common interface that pulls together information from various sources can yield significant insight.  Some contexts, such as special education, collect data in silos which prevents significant insights.
+
+8. Implications for Research:  This article shows how a web application harnessing the power of collective intelligence can be applied within a specific environment.  In this case: special education.  What other environments are not currently applying collective intelligence and could see significant gains from doing so? 
 L. B. Rosenberg, "Human swarming, a real-time method for parallel distributed intelligence," 2015 Swarm/Human Blended Intelligence Workshop (SHBI), Cleveland, OH, 2015, pp. 1-7.
 doi: 10.1109/SHBI.2015.7321685
