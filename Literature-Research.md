@@ -93,7 +93,15 @@ Keywords: API development, API maintenance, software platform APIs, API review, 
 
 6. Lessons learned
 
-    - There are various ways and methods organizations and individuals try to improve their APIs and update process. Different organizations/devices will have different needs from each API
+    - There are various ways and methods organizations and individuals try to improve their APIs and update process. Different organizations/devices will have different needs from each API.
+
+7. Implications for practice:
+
+    - This study surrounding ACR is useful for other organizations to consider for updating and improving their APIs for stakeholders in a more efficient manner.
+
+8. Implications for research:
+
+   - Other organizations could look at this model to see if there are ways they may tweak it or approve the process.
 
 H. Kwon, J. Ahn, S. Choi, J. Siewierski, P. Kosko and P. Szydelko, "An Experience Report of the API Evolution and Maintenance for Software Platforms," 2018 IEEE International Conference on Software Maintenance and Evolution (ICSME), Madrid, 2018, pp. 587-590.
 doi: 10.1109/ICSME.2018.00034
@@ -310,11 +318,20 @@ Keywords: cloud computing, Docker container security, ;containerization, virtual
 4. Rationale: The paper introduces an experiment model to prevent DoS attacks to the docker model. Test included assigning memory limit in the docker, assigning memory reservation in the default file, and providing a default memory. The tests were of subtle changes to the docker containers but helped the security and safety of the container.
 
 5. Investigative Approach
-What is the approach (e.g. field study, experience with a new or existing or existing method, review, empirical, etc.)? or what is the paper’s empirical rationale?
+
+    - The paper identified known vulnerabilities related to docker containers and tried to introduce potential methods to deter DoS attacks on docker containers.
 
 6. Lessons learned:
 
-- The tests were of subtle changes to the docker containers but helped the security and safety of the container.
+    - The tests were of subtle changes to the docker containers but helped the security and safety of the container.
+
+7. Implications for practice
+
+   - This study could be a helpful resouce for those wanting to secure their docker container.
+
+8. Implications for research
+
+    - Other organizations or teams may be interested in researching different ways to harden docker containers so they are more secure. This could be a good jumping-off point.
 
 J. Chelladhurai, P. R. Chelliah and S. A. Kumar, "Securing Docker Containers from Denial of Service (DoS) Attacks," 2016 IEEE International Conference on Services Computing (SCC), San Francisco, CA, 2016, pp. 856-859.
 doi: 10.1109/SCC.2016.123
@@ -368,10 +385,11 @@ Keywords: Collective Intelligence, Web 2.0 Applications
 
 1.	Problem Statement: There is currently no applications specifically tailored to the special education sector. An information system needs to be designed surrounding special education data—one which ingests data from a variety of different contexts and settings. Data input must have good UX design so as to easily sift through data and to easily utilize the data to make strategic and informed decisions for the clients.
 
-2.	Research Question(s): 
-What is a design and implementation strategy for developing a special-purpose collective intelligence application within the domain of special education data?
-3.	Contribution:
-There is value in using the collective intelligence model in the special education sector because data is often collected in silos. A single application that ingests data from all the different sources can identify patterns and make more informed decisions on future endeavors.
+2.	Research Question(s):
+
+    -  What is a design and implementation strategy for developing a special-purpose collective intelligence application within the domain of special education data?
+
+3.	Contribution: There is value in using the collective intelligence model in the special education sector because data is often collected in silos. A single application that ingests data from all the different sources can identify patterns and make more informed decisions on future endeavors.
 This paper identifies seven principle collective intelligence requirements:
     - Task specific representations
     - Data is the key
@@ -380,34 +398,35 @@ This paper identifies seven principle collective intelligence requirements:
     - Facilitate data access
     - Facilitate access for all devices
     - The perpetual beta (continuous improvement)
-4.	Rationale
-Researchers claim that, at the time of this publication, there did not exist a tailored application to the special education sector.
-5.	Investigative Approach:
-Developed over 18 month field trial with one student with autism. Started with a prototype and with feedback made tweaks and increased features over time.
-6.	Lessons Learned:
-A collective intelligence model can be applied to many different contexts—likely any context where the aggregated information from various contexts all surrounding the same issue or problem can yield revealing insights.
+4.	Rationale: Researchers claim that, at the time of this publication, there did not exist a tailored application to the special education sector.
+5.	Investigative Approach: Developed over 18 month field trial with one student with autism. Started with a prototype and with feedback made tweaks and increased features over time.
+6.	Lessons Learned: A collective intelligence model can be applied to many different contexts—likely any context where the aggregated information from various contexts all surrounding the same issue or problem can yield revealing insights.
 
 D. G. Gregg, “Designing for collective intelligence,” Communications of the ACM, vol. 53, no. 4, p. 134, Jan. 2010.
 
-----
+-----
 
 Keywords: collective intelligence, Real-time systems, Decision making
 
-1. Problem Statement
-Aggregating individual opinion asynchronously, such as by polling, does not provide the opportunity for real-time collective intelligence to emerge.
+1. Problem Statement: Aggregating individual opinion asynchronously, such as by polling, does not provide the opportunity for real-time collective intelligence to emerge.
+
 2. Research Question(s)
-What is the comparison of human swarming to that of decision making done asynchronously?
-What are the critical components that yield successful human swarms?
-3. Contribution:
-Software makes it possible to conduct real-time negotiation
-4. Rationale
-Various mechanisms in use can cause entrenchment, and polarizing view.  Hearding and snowballing effects are sometimes seen with existing mechanisms.
-5. Investigative Approach:
-Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy aware winners. They then did the same thing but with their human swarm software UNU
+
+    - What is the comparison of human swarming to that of decision making done asynchronously?
+    - What are the critical components that yield successful human swarms?
+
+3. Contribution: Software makes it possible to conduct real-time negotiation
+
+4. Rationale: Various mechanisms in use can cause entrenchment, and polarizing view.  Hearding and snowballing effects are sometimes seen with existing mechanisms.
+
+5. Investigative Approach: Baseline was using surveys to ask participants asynchronously two pilot studies: the weight of a cow in a picture, and the 2015 academy aware winners. They then did the same thing but with their human swarm software UNU
+
 6. Lessons Learned:
-Collective intelligence has sub categories.  Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation. In fact, polling can cause entrenchment.
-Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in their direction of their choice, but lots of people are doing this at the same time which reveals realtime feedback.  
-Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages.
+
+    - Collective intelligence has sub categories.  
+    - Collective intelligence such as polling is good for reviewing average sentiment and popular opinion, but it is not a mechanism for negotiation. In fact, polling can cause entrenchment.  
+    - Designed software where each user controls a magnet on a puck,  The puck is in the center of the screen.  A question is asked, and the various options are at the edges of their screen.  They position their magnet to pull in their direction of their choice, but lots of people are doing this at the same time which reveals realtime feedback.  
+    - Human swarming, a type of collective intelligence, can be more efficient, and even more accurate, than individual experts, or even traditional statistical means of using averages.
 
 L. B. Rosenberg, "Human swarming, a real-time method for parallel distributed intelligence," 2015 Swarm/Human Blended Intelligence Workshop (SHBI), Cleveland, OH, 2015, pp. 1-7.
 doi: 10.1109/SHBI.2015.7321685
