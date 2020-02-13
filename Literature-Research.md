@@ -132,6 +132,34 @@ doi: 10.1109/ICSME.2018.00034
 URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8530070&isnumber=8529823
 
 -----
+Keywords: process tracking, data model, plug-in, multithread
+
+1. Problem Statement: Traditional development mode of process tracking has shortcoming such as low expansibility, difficulty in update and maintenance, etc.
+
+2. Research Question(s):
+
+- Can a new middleware data model be introduced to be more efficient in lower developing cost, development, scalability and flexibility?
+
+3. Contribution:
+    - The paper introduces a data model design for middleware with important entities
+    - Goes into details of the system architecture of middleware
+    - Discusses implementation of middleware
+	
+4. Rationale: The paper introduces a data model concept that aims to mitigate the shortcomings mentioned in the problem statement.
+
+5. Investigative Approach: The paper introduced ways to implement the model, and claimed it was implemented in different projects but did not details the methodology they went into.
+
+6. Lessons learned: Even with no methodology from this paper, some information from it could be applied and learned from, such as their explanations of the track service schedule program, and data acquisition program.
+
+7. Implications for practice: This paper tries to introduce a data model to make middleware more efficient and overcome shortcomings that exist.
+
+8. Implications for research: Concepts from the study could be applied and further researched to better design middleware to be more efficient.
+
+J. Liu and J. Wu, "Design and implementation of general process tracking middleware," 2012 IEEE International Conference on Computer Science and Automation Engineering (CSAE), Zhangjiajie, 2012, pp. 573-576.
+doi: 10.1109/CSAE.2012.6273018
+URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=6273018&isnumber=6272893
+
+-----
 
 Keywords: middleware, RPC, MOM, TOM, DOM, SOA, Web Service, SOM
 
