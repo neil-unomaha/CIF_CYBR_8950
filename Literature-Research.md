@@ -47,20 +47,27 @@ Keywords - Scientific workflows, Workflow management systems, Extreme-scale comp
 
 1. Problem Statement: As workflows have been adopted by a number of scientific communities, they are becoming more complex and need more sophisticated workflow management capabilities.
 2. Research Questions:
-  - Are WMSs ready to support extreme-scale applications?
+  
+    - Are WMSs ready to support extreme-scale applications?
 3. Contribution:
-  - This paper analyses the information about automation in the scientific industry called workflows and their management.
+  
+    - This paper analyses the information about automation in the scientific industry called workflows and their management.
 4. Rationale:
-  - Systems that manage information transfer between systems.
-  - Classification of different types of systems automation and integration.
+  
+    - Systems that manage information transfer between systems.
+    - Classification of different types of systems automation and integration.
 5. Investigation:
-  - Analyze available information and literature and create a classification and characterization for workflow management.
+  
+    - Analyze available information and literature and create a classification and characterization for workflow management.
 6. Lessons Learned:
-  - As workflow management scales it needs to meet certain properties.
+  
+    - As workflow management scales it needs to meet certain properties.
 7. Implications for practice:
-  - When creating tools for systems automation and management certain properties can be focused on.
+  
+    - When creating tools for systems automation and management certain properties can be focused on.
 8. Implications for research:
-  - More properties can be found that can affect different industries.
+  
+    - More properties can be found that can affect different industries.
 
 
 -----
@@ -205,21 +212,29 @@ D. C. Schmidt and F. Buschmann, &quot;Patterns, frameworks, and middleware: thei
 Middleware, Software tools, Software reusability, Computer architecture, Application software, Programming, Collaboration, Concrete, Bridges, Operating systems
 
 1. Problem Statement:
-  - There are shorter and shorter development cycles in software development and the reuse of software can be a tool to aid in development and not to recreate systems that already exist.
+  
+    - There are shorter and shorter development cycles in software development and the reuse of software can be a tool to aid in development and not to recreate systems that already exist.
 2. Research Questions:
-  - How can middleware be developed to combine systems, and what patterns and frameworks are the most conducive for code reuse.
+  
+    - How can middleware be developed to combine systems, and what patterns and frameworks are the most conducive for code reuse.
 3. Contribution:
-  - The most current methods in software development that allows for more widespread code reuse.
+  
+    - The most current methods in software development that allows for more widespread code reuse.
 4. Rationale:
-  - Frameworks, patterns, and middleware are the three most widespread methods that allow for code reuse.
+  
+    - Frameworks, patterns, and middleware are the three most widespread methods that allow for code reuse.
 5. Investigation:
-  - Researth Framework and Patterns, their interaction with each other along with middleware that uses them.
+  
+    - Researth Framework and Patterns, their interaction with each other along with middleware that uses them.
 6. Lessons Learned:
-  - More and more code reuse is available with common frameworks and patters that allow for the creation of middleware in developing new systems.
+  
+    - More and more code reuse is available with common frameworks and patters that allow for the creation of middleware in developing new systems.
 7. Implications for practice:
-  - More attention can be paid for reusable patterns and frameworks that would allow others to reuse code when developing new software, and what patterns and frameworks within software would allow for the simplest code reuse.
+  
+    - More attention can be paid for reusable patterns and frameworks that would allow others to reuse code when developing new software, and what patterns and frameworks within software would allow for the simplest code reuse.
 8. Implications for research:
-  - Find pattern and frameworks that allow for code reuse and the creation of middleware that can be used within many industries.
+  
+    - Find pattern and frameworks that allow for code reuse and the creation of middleware that can be used within many industries.
   URL: https://ieeexplore.ieee.org/document/1201256
 
 -----
@@ -255,21 +270,29 @@ R. Jain, A. Chandrasekaran, G. Elias and R. Cloutier, &quot;Exploring the Impact
 Keywords - Systems engineering and theory, Government, Environmental management, Industrial relations, Best practices, Performance analysis, Object oriented modeling, Electronic warfare
 
 1. Problem Statement:
-  - There is a need for systems integration in a system, and developers need to know how their design choices can affect the integration process complexity
+  
+    - There is a need for systems integration in a system, and developers need to know how their design choices can affect the integration process complexity
 2. Research Questions:
-  - What is the relationship between system requirements, system architecture, and the complexity of system integration?
+  
+    - What is the relationship between system requirements, system architecture, and the complexity of system integration?
 3. Contribution:
-  - What factors are vital within a system that can affect system integration.
+  
+    - What factors are vital within a system that can affect system integration.
 4. Rationale:
-  - System requirements and architecture can alter the complexity of integrating systems.
+  
+    - System requirements and architecture can alter the complexity of integrating systems.
 5. Investigation:
-  - Study a number of government projects and discover what factors affected the integration of a system.
+  
+    - Study a number of government projects and discover what factors affected the integration of a system.
 6. Lessons Learned:
-  - Clear identification of system requirements, prioritization of system requirements, commonality in hardware and software subsystems, increase in physical modularity, increase in operational commonality, decrease in orthogonality, and increase in percentage of familiar technology affected the complexity of system integration the most.
+  
+    - Clear identification of system requirements, prioritization of system requirements, commonality in hardware and software subsystems, increase in physical modularity, increase in operational commonality, decrease in orthogonality, and increase in percentage of familiar technology affected the complexity of system integration the most.
 7. Implications for practice:
-  - A focus on the areas above can make the complexity of integrating a system much easier that it would have otherwise be.
+  
+    - A focus on the areas above can make the complexity of integrating a system much easier that it would have otherwise be.
 8. Implications for research:
-  - There may be more areas that could reuse the complexity of systems integration.
+  
+    - There may be more areas that could reuse the complexity of systems integration.
   URL: https://ieeexplore.ieee.org/abstract/document/4539770
 
 -----
@@ -350,6 +373,7 @@ Keywords: application program interfaces, systematic mapping study, API document
 Maintaining API documentation is a burdensome task. Especially when code updates are frequent, documentation updates often get overlooked. Tools are required to aid in this process.
 
 2. Research Question(s)
+    
     - What approaches exist for creating new and improving existing API documentation?
     - How do the approaches contribute to API documentation?
     - What are the sources for API documentation?
@@ -448,26 +472,35 @@ T. Combe, A. Martin and R. Di Pietro, &quot;To Docker or Not to Docker: A Securi
 Keywords - Product life cycle management, Computer security, Cost benefit analysis, Cloud computing, Linux, Containers, Virtual networks
 
 1. Problem Statement:
-  - Docker is being used more often and that increases the attack surface of a system that may be using docker.
+  
+    - Docker is being used more often and that increases the attack surface of a system that may be using docker.
 2. Research Questions:
-  - What are the security concerns of using a Docker container not just in terms of interaction between containers or the base system?
+  
+    - What are the security concerns of using a Docker container not just in terms of interaction between containers or the base system?
 3. Contribution:
-  - The new security implications that Docker brings to a system are an area of great concern in the industy.
+  
+    - The new security implications that Docker brings to a system are an area of great concern in the industy.
 4. Rationale:
-  - That Docker brings new attack surfaces, and many are focusing on the security of the containers and the underlying system, and not in the security of the containers itself.
-  - The claims are warranted because Docker introduces vulnerabilities just any part of a system.
+  
+    - That Docker brings new attack surfaces, and many are focusing on the security of the containers and the underlying system, and not in the security of the containers itself.
+  
+    - The claims are warranted because Docker introduces vulnerabilities just any part of a system.
 5. Investigation:
-  - Inspect the Docker and its internal structure.
-  - Create an adversarial model for Docker.
+  
+    - Inspect the Docker and its internal structure.
+    - Create an adversarial model for Docker.
 6. Lessons Learned:
-  - Benefits that arise with using Docker:
+  
+    - Benefits that arise with using Docker:
     1. Isolation, Host Hardening, and Network Security
-  - Security Concerns from Docker
+    - Security Concerns from Docker
     1. Insecure Local Configuration, Weak Access Control, and Image Distribution.
 7. Implications for practice:
-  - Know when to use Docker containers, and what to be aware of when setting up Docker containers.
+  
+    - Know when to use Docker containers, and what to be aware of when setting up Docker containers.
 8. Implications for research:
-  - New insights into the security of Docker containers.
+  
+    - New insights into the security of Docker containers.
   URL: https://ieeexplore.ieee.org/abstract/document/7742298
 
 -----
@@ -580,19 +613,27 @@ doi: 10.1109/SHBI.2015.7321685
 Ancieta, J., and C. Rothenberg. &quot;IntelFlow: Towards adding Cyber Threat Intelligence to Software Defined Networks.&quot; (2015).
 
 1. Problem Statement:
-  - There are more and more network security threats, and an intrusion detection prevention system is one of the best ways to protect a network.
+  
+    - There are more and more network security threats, and an intrusion detection prevention system is one of the best ways to protect a network.
 2. Research Questions:
-  - Can a better IDPS system be created with available tools.
+  
+    - Can a better IDPS system be created with available tools.
 3. Contribution:
-  - An intelligent and effective IDPS system has been created with multiple available tools.
+  
+    - An intelligent and effective IDPS system has been created with multiple available tools.
 4. Rationale:
-  - That using current tools a better IDPS system can be created and implemented that protects a network.
+  
+    - That using current tools a better IDPS system can be created and implemented that protects a network.
 5. Investigation:
-  - Research many of the commonly used tools and integrate them into a single IDPS system.
+  
+    - Research many of the commonly used tools and integrate them into a single IDPS system.
 6. Lessons Learned:
-  - By using a variety of tools, new methods of discovering and mitigating threats can be created.
+  
+    - By using a variety of tools, new methods of discovering and mitigating threats can be created.
 7. Implications for practice:
-  - Integrating several disparate systems can create a new system that is more versatile and effective than any single system.
+  
+    - Integrating several disparate systems can create a new system that is more versatile and effective than any single system.
 8. Implications for research:
-  - It would be worthwhile to research combining different systems to achieve the most effective system for network intrusion detection and prevention.
+  
+    - It would be worthwhile to research combining different systems to achieve the most effective system for network intrusion detection and prevention.
 URL: https://pdfs.semanticscholar.org/05d9/abe609436a60e9969d6fdaa4be9272f16810.pdf
