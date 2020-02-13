@@ -141,7 +141,7 @@ Keywords: API development, API maintenance, software platform APIs, API review, 
 
     - Other organizations could look at this model to see if there are ways they may tweak it or approve the process.
 
-H. Kwon, J. Ahn, S. Choi, J. Siewierski, P. Kosko and P. Szydelko, "An Experience Report of the API Evolution and Maintenance for Software Platforms," 2018 IEEE International Conference on Software Maintenance and Evolution (ICSME), Madrid, 2018, pp. 587-590.
+H. Kwon, J. Ahn, S. Choi, J. Siewierski, P. Kosko, and P. Szydelko, "An Experience Report of the API Evolution and Maintenance for Software Platforms," 2018 IEEE International Conference on Software Maintenance and Evolution (ICSME), Madrid, 2018, pp. 587-590.
 doi: 10.1109/ICSME.2018.00034
 
 URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8530070&isnumber=8529823
@@ -318,7 +318,7 @@ Keywords: Systems engineering and theory, Government, Environmental management, 
 
     - There may be more areas that could reuse the complexity of systems integration.
 
-  R. Jain, A. Chandrasekaran, G. Elias and R. Cloutier, "Exploring the Impact of Systems Architecture and Systems Requirements on Systems Integration Complexity", in _IEEE Systems Journal_, vol. 2, no. 2, pp. 209-223, June 2008.
+  R. Jain, A. Chandrasekaran, G. Elias, and R. Cloutier, "Exploring the Impact of Systems Architecture and Systems Requirements on Systems Integration Complexity", in _IEEE Systems Journal_, vol. 2, no. 2, pp. 209-223, June 2008.
 
   URL: https://ieeexplore.ieee.org/abstract/document/4539770
 
@@ -398,7 +398,7 @@ By identifying beforehand all possible API errors a user might run into, it can 
       - Identify the most common API mistakes, and how to prevent them
       - Details on error codes
 
-J. Aué, M. Aniche, M. Lobbezoo and A. van Deursen, "An Exploratory Study on Faults inWeb API Integration in a Large-Scale Payment Company," 2018 IEEE/ACM 40th International Conference on Software Engineering: Software Engineering in Practice Track (ICSE-SEIP), Gothenburg, 2018, pp. 13-22.
+J. Aué, M. Aniche, M. Lobbezoo, and A. van Deursen, "An Exploratory Study on Faults inWeb API Integration in a Large-Scale Payment Company," 2018 IEEE/ACM 40th International Conference on Software Engineering: Software Engineering in Practice Track (ICSE-SEIP), Gothenburg, 2018, pp. 13-22.
 
 URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8449231&isnumber=8449161
 
@@ -427,7 +427,7 @@ Keywords: application program interfaces, systematic mapping study, API document
     - The results from the study suggest that, if the quality of the API documentation is to be maintained: tools to generate the API documentation must be used. The study suggests that a significant amount of API documentation generation tools focus on producing natural language and code examples. This article thus postulates that these are the two areas that are most lacking in the API documentation.
     - Major of paper reference tools, while others use plugins, but which ultimately produce templates which include natural language documentation and code examples.
 
-7. Implications for Practice: Automation is best to help upkeep documentation. The most important result, is that code examples and natural human language for the documentation result.
+7. Implications for Practice: Automation is best to help upkeep documentation. The most important result is that code examples and natural human language for the documentation result.
 
 8. Implications for Research: Which tools are the most effective automated tools? What are the key components of good code example documentation?
 
