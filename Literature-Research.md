@@ -239,6 +239,9 @@ By identifying beforehand all possible API errors a user might run into, it can 
       - Provide common implementation scenarios (instead of merely stating the different options of the API calls)
       - Identify the most common API mistakes, and how to prevent them
       - Details on error codes
+7. Implications for Practice: identification of the main API usage errors of the various documentation error types.  By being aware of these errors beforehand, it facilitates good documentaiton that can help mititigate those errors
+
+8. Implications for Research: Since this study identifies the main types of API errors, further research can be done on each of the individual types: what mitigation techniques are most effective for each API error type.     
 
 J. Aué, M. Aniche, M. Lobbezoo and A. van Deursen, "An Exploratory Study on Faults inWeb API Integration in a Large-Scale Payment Company," 2018 IEEE/ACM 40th International Conference on Software Engineering: Software Engineering in Practice Track (ICSE-SEIP), Gothenburg, 2018, pp. 13-22. URL: http://ieeexplore.ieee.org.leo.lib.unomaha.edu/stamp/stamp.jsp?tp=&arnumber=8449231&isnumber=8449161
 
@@ -268,6 +271,10 @@ Conducted a systematic mapping study regarding various search terms related to A
 6. Lessons Learned:
 The results from the study suggest that, if the quality of the API documentation is to be maintained: tools to generate the API documentation must be used. The study suggests that a significant amount of API documentation generation tools focus on producing natural language and code examples. This article thus postulates that these are the two areas that are most lacking in API documentation.
 Major of papers reference tools, while others use plugins, but which ultimately produce templates which include natural language documentation and code examples.
+
+7. Implications for Practice: automation is best to help upkeep documentation. The end result, which is most important, is that code examples and natural human language for the documentation result.
+
+8. Implications for Research: Which tools are the most effective automated tools? What are the key components of good code example documentation?
 
 K. Nybom, A. Ashraf and I. Porres, "A Systematic Mapping Study on API Documentation Generation Approaches," 2018 44th Euromicro Conference on Software Engineering and Advanced Applications (SEAA), Prague, 2018, pp. 462-469.
 doi: 10.1109/SEAA.2018.00081,
@@ -368,14 +375,21 @@ URL: https://www.sciencedirect.com/science/article/abs/pii/S1361372316300513 als
 
 Keywords - Cyber Threat Intelligence Capability, Super SEIM
 
-This book services as guidance for successful development and implementation of cyber threat intelligence capability. It derives its conclusions from the personal observations of the author.
-Two critical take aways:
-- It is critical that business objectives are clearly defined so that the most appropriate cyber threat intelligence capability can be built.
+1. Problem Statement: General overview of defining collective intelligence and factors to consider if using it as a strategy is appropriate for the business objectives you are trying to solve. 
 
-- Threat Intelligence feed is different from data feed. Often intelligence is sold when in fact it is just data. Threat intelligence is data that has been vetted by some process or procedure and it satisfies three different requirements:
-  - Relevant
-  - Actionable
-  - Valuable
+2. Research Question(s): What is collective intelligence? How does an organization determine if a collective intelligence strategy is appropriate?
+
+3. Contribution: General overview of collective intelligence.  Key detail: data and intelligence are two different things.  Often, intelligence is sold when in fact it is really just data.  Intelligence is data that has been vetted by some process or procedure and that satisfies three different requirements: the data needs to be relevant, actionable, and valuable
+
+4. Rationale: This book functioned as an overview of collective intelligence.  It did not include research.
+
+5. Investigative Approach:  See above.  This book was tailored for administrative staff in a company to have a handle on what collective intelligence is, and to conduct a cost/benefit analysis of whether or not it is the best solution for their business objectives. 
+
+6. Lessons Learned: As discussed in the contribution section, the difference between data and intelligence. Make sure that the business objectives are clearly defined before even looking into whether a collective intelligence strategy is the best approach.
+
+7. Implications for practice:  Clearly identify business objectives beforehand.  Do cost/benefit analysis of various strategies to solve specific business objectives. 
+
+8. Implications for Research: Becuase the book discussed collective intelligence at such a high level, it leaves open many doors for further research.  Such as: what specific problems is collective intelligence best at solving?  Where should collective intelligence be avoided?
 
 H. Dalziel, E. Olson, and J. Carnall, How to define and build an effective cyber threat intelligence capability. Amsterdam: Syngress, an imprint of Elsevier, 2015.
 
