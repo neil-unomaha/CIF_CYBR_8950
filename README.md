@@ -11,12 +11,13 @@ Within this existing framework, the project will focus on the store portion of t
 * Familiarize ourselves with the CIF framework to better understand the system
 * Setup sandbox environment with CIF
 * Research Palo Alto documentation and other resources to better understand the API
-* Look into using the Palo Alto API to automate any processes within the CIF framework
+* Reduce threat intelligence collection and distribution from one day to 15 minutes
+* Enable process automation between CIF framework and Palo Alto by using/creating appropriate APIs
 * Document key findings and processes that were attempted in the sandbox environment
 
 ### Merit
 
-If we can effectively implement tools from the Palo Alto API to the CIF Framework, this will help to automate some of the processes within the system. This can remove some of the manual, tedious task(s) that must be done with the framework. With proper implementation, this could also eliminate the risk associated with human error within the framework, as it would be done automatically. If deemed appropriate, this could also be shared with other colleges/organizations that utilize the CIF framework. However, if in the event we are unable to accomplish this, the fallback would be to pull threat from the CIF, and automatically push them to the Palo Alto devices. This would still accomplish a more automated process.
+If successful, our contribution will reduce the time it takes to propogate threat intelligence within an enterprise environment.  As a result security risk will be reduced.  It is noteworthy that the middleware removes a process that is currently conducted manually.  The automated nature of the midddleware removes the factor of human error, thus increasing overall security reliability.  Lastly, middleware that fuses together threat intelligence with a next generation firewall makes said firewall more effective.  Our solution could be incorporated, or in the very least serve as a template, for enterprises looking for ways to augment their firewall and further develop their security landscape. 
 
 ## Project Timeline
 
