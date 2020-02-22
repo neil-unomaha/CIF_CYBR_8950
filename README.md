@@ -57,11 +57,7 @@ Following set up of CIF, we hope to shift our focus on Palo Alto documentation t
 
 #### Research Questions
 
-* What are the barriers/enablers of API integration for a CIF?
-* If there are barriers, how can they be mitigated?
-* How does mitigating the barriers increase efficiency?
-* What are the required attributes for a CIF framework to be used in a university setting?
-* To what degree does the current CIF satisfy those required API  endpoints?
+* To what extent does the timeliness of threat intelligence gathering, aggregation, and sharing affect risk profile reduction within a university enterprise setting?
 
 **Keywords:** Dockerization Hardening, Web Services, Systems Architecture Integration, Process Automation
 
