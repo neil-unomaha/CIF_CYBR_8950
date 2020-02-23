@@ -697,3 +697,53 @@ doi: 10.1109/SHBI.2015.7321685
 Ancieta, J., and C. Rothenberg. "IntelFlow: Towards adding Cyber Threat Intelligence to Software Defined Networks." (2015).
 
 URL: https://pdfs.semanticscholar.org/05d9/abe609436a60e9969d6fdaa4be9272f16810.pdf
+
+## Cyberthreat Statistics 
+
+Keywords: Cyber Resilience, Cyber attacks, cybersecurity
+
+1. Problem Statement:  To justify the costs associated with cyber resilience, the cyber threat landscape needs to be surveyed. 
+
+2. Research Question(s):  How well are companies doing at detecting cyber attacks?  How often are breaches occurring per month? Is Cyber resilience getting better at stopping attacks?  How seriously are organizations taking cyber threats in terms of allotting additional resources to the issue? 
+
+3. Contribution: Provides great data on the threat landscape, how often and how successful cyber attackers are occurring
+
+
+4. Rationale: With sufficient knowledge of the threat landscape, key stakeholders can justify their expenditures on cybersecurity budgets. 
+
+5. Investigative Approach: Interviewed 4,600 executives that represent companies with $1 billion or more in revenue, from 19 industries and 15 countries.  98% respondents were key decision makers in cyber security. 
+
+6. Lesson Learned:
+* Doing better in preventing attacks, 87% in 2018 as opposed to 70% in 2017
+* 2-3 security breaches per month
+* 89% said breaches detected within one month compared to 2017: 32%
+* Malicious insiders are the most frequent type of attack, and second highest impact
+* 83% agreed that breakthrough technologies, such as artificial intelligence, machine or deep learning, user behavior analytics, and blockchain, are essential to securing the future of the organization. 
+*  More than three times as many respondent’s report spending more than 10 percent of their IT budget on security compared with 2017 (74 percent versus 22 percent). 
+*  90% of organizations report an increase in their budgets over the last three years compared with only 64 percent in the last survey (previous survey was 2017)
+7. Implications for Practice:
+Based on survey, identified 5 steps to Cyber resilience 
+  (1). build on a strong foundation: harden and protect core assets
+    * identify your high value assets
+    * harden your high value assets
+    * prioritize legacy applications
+    * prepare for the worst
+
+(2) pressure test your resilience
+
+(3) Employ breakthrough technologies
+    * automate defenses
+    * automated orchestration capabilities
+    * advanced identify access management
+
+(4) Use intelligence and data to be proactive
+    * threat hunting
+    * develop strategic and tactical threat intelligence
+    * monitor for anomalous and suspicious activity
+(5) Evolve the role of the CISO: Business leadership
+
+8. Implications for Research:  What are the specific types of attacks that are occurring?  What is the average cost per attack?
+
+Kelly Bissell, Ryan Lasalle, Floris Van Den Dool, and Josh Kennedy-White. 2018. Gaining Ground on the Cyber Attacker: 2018 State of Cyber Resilence. (April 2018). Retrieved February 23, 2020 from https://www.accenture.com/in-en/insights/security/2018-state-of-cyber-resilience-index
+
+
