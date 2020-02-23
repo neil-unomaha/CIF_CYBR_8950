@@ -698,6 +698,8 @@ Ancieta, J., and C. Rothenberg. "IntelFlow: Towards adding Cyber Threat Intellig
 
 URL: https://pdfs.semanticscholar.org/05d9/abe609436a60e9969d6fdaa4be9272f16810.pdf
 
+----
+
 ## Cyberthreat Statistics 
 
 Keywords: Cyber Resilience, Cyber attacks, cybersecurity
