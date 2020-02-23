@@ -743,6 +743,7 @@ Based on survey, identified 5 steps to Cyber resilience
     * threat hunting
     * develop strategic and tactical threat intelligence
     * monitor for anomalous and suspicious activity
+    
 (5) Evolve the role of the CISO: Business leadership
 
 8. Implications for Research:  What are the specific types of attacks that are occurring?  What is the average cost per attack?
