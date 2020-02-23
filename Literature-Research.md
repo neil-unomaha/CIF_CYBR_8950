@@ -750,4 +750,49 @@ Based on survey, identified 5 steps to Cyber resilience
 
 Kelly Bissell, Ryan Lasalle, Floris Van Den Dool, and Josh Kennedy-White. 2018. Gaining Ground on the Cyber Attacker: 2018 State of Cyber Resilence. (April 2018). Retrieved February 23, 2020 from https://www.accenture.com/in-en/insights/security/2018-state-of-cyber-resilience-index
 
+----
+
+Keywords: cybercrime, cybersecurity investment
+
+1. Problem Statement:  It is difficult to justify cyber security expenditure without knowing the cost savings it provides. 
+
+2. Research Question(s):   What are the costs of cyber attacks?  What are the cost savings of various cyber security solutions? How has the threat landscape changed?
+
+3. Contribution: Provides cost justification for cybersecurity expenditures
+
+4. Rationale: By know the costs savings, Management C-level executives can make informed decisions on cybersecurity expenditures
+
+5. Investigative Approach: 
+They collected qualitative data through 2,647 separate interviews in 355 companies in eleven countries. They defined cyber attacks as "criminal activity conducted through the organization’s IT infrastructure via the internal or external networks or the Internet. Cyber attacks also include attacks against industrial controls. A successful cyberattack is one that results in the infiltration of a company’s core networks or enterprise systems. It does not include the plethora of attacks stopped by a company’s firewall defenses."
+
+6. Lesson Learned:
+* Violations due to data loss are expensive: can be up to %4 annual revenue for GDPR violations, French data regulator issued highest GDPR fine so far: $57million
+* 68% of business leaders said their cybersecurity risks are increasing
+* Security breaches are increasing.  130 average number of breaches in 2017, 145 average number in 2018.  Security breaches increased 67% increase in the last 5 years
+* the average cost of cybercrime for each company increased from $11.7 million in 2017 to $13.0 million.  12% increase percent from last year. 72% increase in the last 5 years.
+* Malware most expensive attack, Web-based attacks is second.  (malware, web-based attacks, denial of service, malicious insider, phishing and social engineering, malicious code, stolen devices, ransomware, botnets)
+* ransomware attacks increased by 15% , most expense
+* Phishing and social  engineering attacks are now experienced by 85%, 8% increase
+* Value at risk: 2018 revenue of $20 billion -> 2.8%, or $580 each year for next five years
+* break down investments by discovery, investigation, containment, recovery.  Discovery receives the most expenditure
+* Security intelligence and threat sharing has the highest cost savings. 67% respondents use it, average 2.26 million savings (includes costs of tech)
+* Automation, (AI and machine learning) second amount of cost savings: 2.09 million
+
+7. Implications for Practice:
+Based on survey, identified 5 steps to Cyber resilience 
+
+(1) Prioritize protecting people-based attacks
+* people are the weakest link, 85% respondents said they get this attack
+
+(2). Invest to limit information loss and business disruption
+
+(3). Target technologies that reduce rising costs
+
+8. Implications for Research:  
+What specific security sharing and threat intelligence are most commonly used?
+
+Kelly Bissell, Ryan M. Lasalle, and Paolo Dal Cin. 2019. Ninth Annual Cost of Cybercrime Study. (March 2019). Retrieved February 23, 2020 from https://www.accenture.com/us-en/insights/security/cost-cybercrime-study
+
+
+
 
