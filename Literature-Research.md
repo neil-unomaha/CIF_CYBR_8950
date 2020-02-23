@@ -719,7 +719,7 @@ Keywords: Cyber Resilience, Cyber attacks, cybersecurity
 * Doing better in preventing attacks, 87% in 2018 as opposed to 70% in 2017
 * 2-3 security breaches per month
 * 89% said breaches detected within one month compared to 2017: 32%
-* Malicious insiders are the most frequent type of attack, and second highest impact
+* Accidental publication of confidential information by employees and insider attacks as having the greatest impact, second only to hacker attacks
 * 83% agreed that breakthrough technologies, such as artificial intelligence, machine or deep learning, user behavior analytics, and blockchain, are essential to securing the future of the organization. 
 *  More than three times as many respondent’s report spending more than 10 percent of their IT budget on security compared with 2017 (74 percent versus 22 percent). 
 *  90% of organizations report an increase in their budgets over the last three years compared with only 64 percent in the last survey (previous survey was 2017)
