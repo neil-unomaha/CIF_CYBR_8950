@@ -725,7 +725,8 @@ Keywords: Cyber Resilience, Cyber attacks, cybersecurity
 *  90% of organizations report an increase in their budgets over the last three years compared with only 64 percent in the last survey (previous survey was 2017)
 7. Implications for Practice:
 Based on survey, identified 5 steps to Cyber resilience 
-  (1). build on a strong foundation: harden and protect core assets
+  
+(1). build on a strong foundation: harden and protect core assets
     * identify your high value assets
     * harden your high value assets
     * prioritize legacy applications
