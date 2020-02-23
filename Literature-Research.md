@@ -716,15 +716,14 @@ Keywords: Cyber Resilience, Cyber attacks, cybersecurity
 5. Investigative Approach: Interviewed 4,600 executives that represent companies with $1 billion or more in revenue, from 19 industries and 15 countries.  98% respondents were key decision makers in cyber security. 
 
 6. Lesson Learned:
-* Doing better in preventing attacks, 87% in 2018 as opposed to 70% in 2017
+* 87% said they are doing better in preventing attacks in 2018 as opposed to 70% in 2017
 * 2-3 security breaches per month
-* 89% said breaches detected within one month compared to 2017: 32%
-* Accidental publication of confidential information by employees and insider attacks as having the greatest impact, second only to hacker attacks
-* 83% agreed that breakthrough technologies, such as artificial intelligence, machine or deep learning, user behavior analytics, and blockchain, are essential to securing the future of the organization. 
-*  More than three times as many respondent’s report spending more than 10 percent of their IT budget on security compared with 2017 (74 percent versus 22 percent). 
-*  90% of organizations report an increase in their budgets over the last three years compared with only 64 percent in the last survey (previous survey was 2017)
+* 89% said breaches were detected within one month compared to 2017: 32%
+* Accidental publication of confidential information by employees and insider attacks as having the greatest impact 
+*  More than three times as many respondent’s report spending more than 10 percent of their IT budget on security compared with 2017 (74% versus 22%). 
+*  90% of organizations said they increased in their budgets over the last three years compared with only 64 percent in the last survey (previous survey was 2017)
 7. Implications for Practice:
-Based on survey, identified 5 steps to Cyber resilience 
+Based on survey, they identified the  steps and include the following activites for Cyber resilience 
   
 (1). build on a strong foundation: harden and protect core assets
     * identify your high value assets
