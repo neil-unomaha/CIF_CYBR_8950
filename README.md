@@ -49,23 +49,23 @@ This is a rough outline of each weeks project goals. The team came together to m
 
 **Note:** Brian mentioned that most Universities in this collective intelligence network only push every 24hrs.  However, at least one University, Duke, pushes more often.  This provides us the opportunity to perform before/after measurements as described below. 
 
-## Baseline Measurement:
+### Baseline Measurement:
 - Measure how many new threats are ingested into Palo Alto currently within a 24hr period.  (The current process in place only pulls in new threats once every 24 hours).
 
 
-## Build and Implement Solution
+### Build and Implement Solution
 - Build an extension into CIF 3  and/or CIF 4 Python library which does the following:
   - Pulls in IP indicators into Palo Alto in ingestible format.  Saves to file.  No more than 5,000 indicators per file [referencing page 60 of Palo Alto API](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).   
   - Every 15 minutes: CIF pushes generated files to Palo Alto via the Palo Alto API. [API section on Importing files](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).
 
-## Conduct Post-Solution Measurement
+### Conduct Post-Solution Measurement
 - Measure temporal threat ingestion differences. 
     - Example: a threat reported in 24 hrs (before) vs a threat reported at 1am (23hrs savings)
     - Example: a threat reported in 24hrs (before) vs a threat reported at 5am (19hrs savings).
 
 ----
 
-## Technical Plan:
+### Technical Plan:
 In order to arrive at our solution, it is necessary to break it down into pieces.  Here are a list of activities that will need to be conducted in order to arrive at our solution:
 - Familiarize ourselves with Python
   - CIF is written in Python.
