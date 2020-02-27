@@ -17,14 +17,14 @@ Within this existing framework, the project will focus on the store portion of t
 
 ### Merit
 
-If successful, our contribution will reduce the time it takes to propogate threat intelligence within an enterprise environment.  As a result, security risk will be reduced.  It is noteworthy that the middleware removes a process that is currently conducted manually.  The automated nature of the midddleware removes the factor of human error, thus increasing overall security reliability.  Lastly, middleware that fuses together threat intelligence with a next generation firewall makes said firewall more effective.  Our solution could be incorporated, or in the very least serve as a template, for enterprises looking for ways to augment their firewall and further develop their security landscape. 
+If successful, our contribution will reduce the time it takes to propogate threat intelligence within an enterprise environment.  As a result, security risk will be reduced.  It is noteworthy that the middleware removes a process that is currently conducted manually.  The automated nature of the midddleware removes the factor of human error, thus increasing overall security reliability.  Lastly, middleware that fuses together threat intelligence with a next generation firewall makes said firewall more effective.  Our solution could be incorporated, or in the very least serve as a template, for enterprises looking for ways to augment their firewall and further develop their security landscape.
 
 ## Project Timeline
 
 This is a rough outline of each weeks project goals. The team came together to make a timeline that follows the milestone markers and other events that might occur. This timeline is suspected to change as the project goes on or if the team hits any faults along the way. A Gantt chart can be seen below for a better look at the team distribution of work.
 
 | Week          | Area of Focus    |
-| ------------- | ------------- |
+| ------------* | ------------* |
 | 0-3           | CIF Environment set up and stabilization.<br> Project Realization will be used to develop a plan for the future. As well as documentation. |
 | 4-6           | Finishing goals and Project Realization.<br> Documentation and Presentation planning for the milestone two presentation. |
 | 7-10           | Progress of Realization report and Handling any unforeseen events.<br> Packaging of the API and testing will be done.<br> The final report will be started. |
@@ -42,46 +42,84 @@ This is a rough outline of each weeks project goals. The team came together to m
 |Developed API contains errors| 5 | 2 | Errors in code must be avoided at all costs. |Include peer review and pair programming practices throughout the code development process.  Conduct manual and automated tests. |
 |Developed API product has poor documentation| 4 | 1 | Poorly written documentation can sabotage even the best software products. It is important that just as much effort goes into creating the documentation about the software as the software itself. | Research what comprises state of the art documentation.  Discover what principles and best practices should be followed. |
 
-
-
-
 ## Project Methodology
 
-**Note:** Brian mentioned that most Universities in this collective intelligence network only push every 24hrs.  However, at least one University, Duke, pushes more often.  This provides us the opportunity to perform before/after measurements as described below. 
+**Note:** Brian mentioned that most Universities in this collective intelligence network only push every 24hrs.  However, at least one University, Duke, pushes more often. This provides us the opportunity to perform before/after measurements as described below.
 
-### Baseline Measurement:
-- Measure how many new threats are ingested into Palo Alto currently within a 24hr period.  (The current process in place only pulls in new threats once every 24 hours).
+### Baseline Measurement
 
+* Measure the number of new threats ingested into Palo Alto firewalls within a 24hr period within the current system.
 
 ### Build and Implement Solution
-- Build an extension into CIF 3  and/or CIF 4 Python library which does the following:
-  - Pulls in IP indicators into Palo Alto in ingestible format.  Saves to file.  No more than 5,000 indicators per file [referencing page 60 of Palo Alto API](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).   
-  - Every 15 minutes: CIF pushes generated files to Palo Alto via the Palo Alto API. [API section on Importing files](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).
+
+* Build an extension into CIFv3  and/or CIFv4 Python library to:
+  * Pull retrieved IP indicators for Palo Alto in ingestible format.
+    * Indicators are retrieved from other universities under the CIF framework
+
+  * Save retrieved IP indicators to file with no more than 5,000 indicators per file, as [referenced in page 60 of Palo Alto API](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).
+
+  * Have CIF push generated files to Palo Alto via the Palo Alto API every 15 minutes.
+    * [Palo Alto API Documentation on importing files](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf)
 
 ### Conduct Post-Solution Measurement
-- Measure temporal threat ingestion differences. 
-    - Example: a threat reported in 24 hrs (before) vs a threat reported at 1am (23hrs savings)
-    - Example: a threat reported in 24hrs (before) vs a threat reported at 5am (19hrs savings).
+
+* Gather metrics and compare before/after extension implementation
+
+  * Example: a threat reported in 24 hrs (before) vs a threat reported at 1am (23hrs savings)
+
+  * Example: a threat reported in 24hrs (before) vs a threat reported at 5am (19hrs savings)
+
+* Calculate and document any differences perceived following implementation
 
 ----
 
-### Technical Plan:
-In order to arrive at our solution, it is necessary to break it down into pieces.  Here are a list of activities that will need to be conducted in order to arrive at our solution:
-- Familiarize ourselves with Python
-  - CIF is written in Python.
--  Setup a test environment for CIF
-    - Bryan will set us up with an environment that mirrors production and has CIF 3 preloaded.
-- Familiarize ourselves with CIF at the user-interface level
-  - We will want to familiarize ourselves with the major commands and features of CIF.  Examples include: querying CIf database, adding/removing feeds
--  Gain a sufficient level of understanding of CIF at the code-level
-    - Like most software applications, CIF is a an aggregate application which is composed of a number of other libraries all working together.  In order to extend CIF, it is necessary to gain sufficient knowledge of the CIF ecosystem.  The [requirements.txt](https://github.com/csirtgadgets/bearded-avenger/blob/master/requirements.txt) file is a good starting place.  Here we notice that CIF is modularized into at least 5  CIF-related libraries, and has additional dependencies, and also possesses dependencies on other libraries.  Flask is one particular library that jumps out at us because that is a web application framework, so we will likely want to familiarize ourselves with Flask to see how that library might apply to developing our solution.
-- Create the solution
-- Test the solution
-    - Ensure our extension is properly creating Palo Alto ingestible files of IP indicators within 15 minute or less intervals. 
-    - Ensure the files do not exceeed 5,000 IP indicators
-    - Ensure our extension pushes the indicators to Palo Alto, and Palo Alto successfully ingests the indicators. 
-- Deploy the solution to production
-- Submit pull request 
+### Technical Plan
+
+In order to arrive at our solution, it is necessary to break it down into pieces.  Below are a list of tasks to complete in order to accomplish our desired solution.
+
+* Familiarize ourselves with Python
+
+  * CIF is written in Python
+
+* Setup a test environment for CIF
+
+  * Brian will provide to us a test environment with CIFv3.
+  
+  * We will set up our own VMs with CIFv4
+
+* Familiarize ourselves with CIF at the UI
+ level
+  
+  * This includes common commands and features of CIF, including but not limited to: querying CIF database, adding/removing feeds
+
+* Familiarize ourselves with CIF at the code level
+
+  * Like most software applications, CIF is a an aggregate application which is composed of several other libraries working together.   The [requirements.txt](https://github.com/csirtgadgets/bearded-avenger/blob/master/requirements.txt) file is a good starting place.
+  * CIF is modularized into at least 5  CIF-related libraries, and has additional dependencies, and also possesses dependencies on other libraries.
+  * Flask is used as a web application framework and used within this project, thus we may look into this framework to build our solution based off of it
+
+* Develop the solution
+  * Develop extension to work in conjuction of YML files that bidirectionally share CIF information between universities
+    * Require extension to ingest IP indicators from YML files
+    * Format retrieved IP indicators into Palo Alto ingestible file format
+    * Have extension refer to specific file directory to place files of retrieved IP indicators
+    * Check if latest file in directory is less than or equal to 5,000
+
+      * If less, add IP indicators until it equals 5,000
+      * If at 5,000, create new file in directory and add up to 5,000 IP entries
+  * Implement Palo Alto API to refer to directory on CIF server to import files from
+
+* Test the solution
+
+  * Ensure our extension is properly creating Palo Alto ingestible files of IP indicators within 15 minute or less intervals.
+
+  * Ensure the files do not exceeed 5,000 IP indicators
+
+  * Ensure our extension pushes the indicators to Palo Alto, and Palo Alto successfully ingests the indicators.
+
+* Deploy the solution to production
+
+* Submit pull request
 
 ### Literature Review and Research
 
@@ -92,7 +130,6 @@ In order to arrive at our solution, it is necessary to break it down into pieces
 * To what extent does the timeliness of threat intelligence gathering, aggregation, and sharing affect risk profile reduction within a university enterprise setting?
 
 **Keywords:** Web Services, Systems Architecture Integration, Process Automation
-
 
 ## Resources/Technology Needed
 
@@ -106,9 +143,10 @@ In order to arrive at our solution, it is necessary to break it down into pieces
 |Python| No | All | CIF4 is written in Python.  |
 |Text Editor| No | All | For developing the code |
 
-
 ## First Sprint Plan
+
 Progress of the Project is [tracked via Github issues](https://github.com/neil-unomaha/CIF_CYBR_8950/issues). Tracking sprints on [kanban board](https://github.com/neil-unomaha/CIF_CYBR_8950/projects)
 
 ## License
+
 [MIT License](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/MIT-LICENSE)
