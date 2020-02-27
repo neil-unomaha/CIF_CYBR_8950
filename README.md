@@ -47,9 +47,39 @@ This is a rough outline of each weeks project goals. The team came together to m
 
 ## Project Methodology
 
-We will begin this project by conducting thorough research and reviewing literature that pertains to the research questions listed below. Any notes or interesting information that could be useful for the project that accesses the research questions will be documented. Following the research, we will read through the documentation to better understand the CIF framework, how it is implemented, how it is set up, how it is used, etc. Following, a test environment will be set up using the CIF documentation provided to get a better understanding of the framework.  
+**Note:** Brian mentioned that most Universities in this collective intelligence network only push every 24hrs.  However, at least one University, Duke, pushes more often.  This provides us the opportunity to perform before/after measurements as described below. 
 
-Following set up of CIF, we hope to shift our focus on Palo Alto documentation to learn more about its API and try to find ways to implement it in such a way that we can pull information from the organization and upload it to CIF. Barriers that could affect this API integration will be identified and investigated for any mitigations. Any information that could be of significance throughout the entire process will be documented for other team members, or for others that work with CIF to refer to.  
+## Baseline Measurement:
+- Measure how many new threats are ingested into Palo Alto currently within a 24hr period.  (The current process in place only pulls in new threats once every 24 hours).
+
+
+## Build and Implement Solution
+- Build an extension into CIF 3  and/or CIF 4 Python library which does the following:
+  - Pulls in IP indicators into Palo Alto in ingestible format.  Saves to file.  No more than 5,000 indicators per file [referencing page 60 of Palo Alto API](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).   
+  - Every 15 minutes: CIF pushes generated files to Palo Alto via the Palo Alto API. [API section on Importing files](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).
+
+## Conduct Post-Solution Measurement
+- Measure temporal threat ingestion differences. 
+    - Example: a threat reported in 24 hrs (before) vs a threat reported at 1am (23hrs savings)
+    - Example: a threat reported in 24hrs (before) vs a threat reported at 5am (19hrs savings).
+
+## Technical breakdown of Implementing our solution:
+In order to arrive at our solution, it is necessary to break it down.  Here are a list of activities that will need to be conducted in order to arrive at our solution:
+- Familiarize ourselves with Python
+  - CIF is written in Python.
+-  Setup a test environment for CIF
+    - Bryan will set us up with an environment that mirrors production and has CIF 3 preloaded.
+- Familiarize ourselves with CIF at the user-interface level
+  - We will want to familiarize ourselves with the major commands and features of CIF.  Examples include: querying CIf database, adding/removing feeds
+-  Gain a sufficient level of understanding of CIF at the code-level
+    - Like most software applications, CIF is a an aggregate application which is composed of a number of other libraries all working together.  In order to extend CIF, it is necessary to gain sufficient knowledge of the CIF ecosystem.  The [requirements.txt](https://github.com/csirtgadgets/bearded-avenger/blob/master/requirements.txt) file is a good starting place.  Here we notice that CIF is modularized into at least 5  CIF-related libraries, and has additional dependencies, and also possesses dependencies on other libraries.  Flask is one particular library that jumps out at us because that is a web application framework, so we will likely want to familiarize ourselves with Flask to see how that library might apply to developing our solution.
+- Create the solution
+- Test the solution
+    - Ensure our extension is properly creating Palo Alto ingestible files of IP indicators within 15 minute or less intervals. 
+    - Ensure the files do not exceeed 5,000 IP indicators
+    - Ensure our extension pushes the indicators to Palo Alto, and Palo Alto successfully ingests the indicators. 
+- Deploy the solution to production
+- Submit pull request 
 
 ### Literature Review and Research
 
@@ -59,14 +89,7 @@ Following set up of CIF, we hope to shift our focus on Palo Alto documentation t
 
 * To what extent does the timeliness of threat intelligence gathering, aggregation, and sharing affect risk profile reduction within a university enterprise setting?
 
-**Keywords:** Dockerization Hardening, Web Services, Systems Architecture Integration, Process Automation
-
-### Technical Plan
-
-**High-Level Project Overview** 
-A high-level view of our plan is to first familiarize ourselves with the CIF version 4 system along with the Dockerized system.  Along with setting up a sandbox CIF instance that has similar configurations to the current CIF system implemented on the University network the code for CIF version 4 will be analyzed and researched such that it could be determined if this version would be usable within the desired University setting.  Along with researching CIF, we must also research the Palo Alto system by examining the API documentation along with other resources that have been produced for this widely used system.
-
-After we have thoroughly researched both CIF version 4 and Palo Alto, our next task that will be undertaken within our plan is to integrate CIF and Palo Alto.  We propose that this will be able to be done using the APIs that are available for both systems and we will create a form of middleware that will accomplish of taking the threat data from the Palo Alto System and automatically put that data into the CIF server for threat mitigation that is more rapid than the current system.
+**Keywords:** Web Services, Systems Architecture Integration, Process Automation
 
 
 ## Resources/Technology Needed
