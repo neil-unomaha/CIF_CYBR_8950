@@ -63,8 +63,10 @@ This is a rough outline of each weeks project goals. The team came together to m
     - Example: a threat reported in 24 hrs (before) vs a threat reported at 1am (23hrs savings)
     - Example: a threat reported in 24hrs (before) vs a threat reported at 5am (19hrs savings).
 
-## Technical breakdown of Implementing our solution:
-In order to arrive at our solution, it is necessary to break it down.  Here are a list of activities that will need to be conducted in order to arrive at our solution:
+----
+
+## Technical Plan:
+In order to arrive at our solution, it is necessary to break it down into pieces.  Here are a list of activities that will need to be conducted in order to arrive at our solution:
 - Familiarize ourselves with Python
   - CIF is written in Python.
 -  Setup a test environment for CIF
