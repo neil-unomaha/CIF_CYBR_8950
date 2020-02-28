@@ -106,7 +106,8 @@ In order to arrive at our solution, it is necessary to break it down into pieces
     * Check if latest file in directory is less than or equal to 5,000
 
       * If less, add IP indicators until it equals 5,000
-      * If at 5,000, create new file in directory and add up to 5,000 IP entries
+      * If at 5,000, create new file in directory and add up to 5,000 IP entries  
+
   * Implement Palo Alto API to refer to directory on CIF server to import files from
 
 * Test the solution
