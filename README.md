@@ -52,13 +52,15 @@ This is a rough outline of each weeks project goals. The team came together to m
 
 ### Build and Implement Solution
 
-* Build an extension into CIFv3  and/or CIFv4 Python library to:
-  * Pull retrieved IP indicators for Palo Alto in ingestible format.
+* Build an extension into CIFv4 Python library to:
+
+  * Pull retrieved IP indicators from CIF server Database for Palo Alto in ingestible format.
     * Indicators are retrieved from other universities under the CIF framework
 
   * Save retrieved IP indicators to file with no more than 5,000 indicators per file, as [referenced in page 60 of Palo Alto API](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).
 
-  * Have CIF push generated files to Palo Alto via the Palo Alto API every 15 minutes.
+  * Have extension push generated files to Palo Alto via the Palo Alto API
+    * Palo Alto devices will request files every 15 minutes
     * [Palo Alto API Documentation on importing files](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf)
 
 ### Conduct Post-Solution Measurement
@@ -83,7 +85,7 @@ In order to arrive at our solution, it is necessary to break it down into pieces
 
 * Setup a test environment for CIF
 
-  * Brian will provide to us a test environment with CIFv3.
+  * Brian will provide to us a test environment with CIFv3
   
   * We will set up our own VMs with CIFv4
 
@@ -94,8 +96,10 @@ In order to arrive at our solution, it is necessary to break it down into pieces
 
 * Familiarize ourselves with CIF at the code level
 
-  * Like most software applications, CIF is a an aggregate application which is composed of several other libraries working together.   The [requirements.txt](https://github.com/csirtgadgets/bearded-avenger/blob/master/requirements.txt) file is a good starting place.
-  * CIF is modularized into at least 5  CIF-related libraries, and has additional dependencies, and also possesses dependencies on other libraries.
+  * Like most software applications, CIF is a an aggregate application which is composed of several other libraries working together.   The [requirements.txt](https://github.com/csirtgadgets/bearded-avenger/blob/master/requirements.txt) file is a good starting place
+
+  * CIF is modularized into at least 5 CIF-related libraries, and has additional dependencies, and also possesses dependencies on other libraries.
+
   * Flask is used as a web application framework and used within this project, thus we may look into this framework to build our solution based off of it
 
 * Develop the solution
@@ -103,20 +107,19 @@ In order to arrive at our solution, it is necessary to break it down into pieces
     * Require extension to ingest IP indicators from YML files
     * Format retrieved IP indicators into Palo Alto ingestible file format
     * Have extension refer to specific file directory to place files of retrieved IP indicators
-    * Check if latest file in directory is less than or equal to 5,000
-
-      * If less, add IP indicators until it equals 5,000
-      * If at 5,000, create new file in directory and add up to 5,000 IP entries  
 
   * Implement Palo Alto API to refer to directory on CIF server to import files from
 
 * Test the solution
 
-  * Ensure our extension is properly creating Palo Alto ingestible files of IP indicators within 15 minute or less intervals.
+  * Ensure the extension properly formats and put IP indicators into Palo Alto ingestible format
 
-  * Ensure the files do not exceeed 5,000 IP indicators
+  * Ensure it is gathering the correct information from Palo Alto requests from CIF database
 
-  * Ensure our extension pushes the indicators to Palo Alto, and Palo Alto successfully ingests the indicators.
+  * Ensure extension is sending off requested information to Palo Alto devices efficiently
+
+  * Ensure Palo Alto devices are ingesting files as expected
+
 
 * Deploy the solution to production
 
