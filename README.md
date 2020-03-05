@@ -51,7 +51,7 @@ This is a rough outline of each weeks project goals. The team came together to m
 ### Baseline Measurement
 
 * Measure the number of new threats ingested into Palo Alto firewalls within a 24hr period within the current system.
-  * Spoke with customer and he confirmed he can set up a Palo Alto firewall with a rule to collect a 7-day log report for us to use as a baseline measurement for blocked IPs during that period
+  * Spoke with customer and he confirmed he can set up a Palo Alto firewall with a rule to collect a 7-day log report for us to use as a baseline measurement for blocked IPs during that period to show how much traffic is being passed during that timeframe.
 
 ### Build and Implement Solution
 
@@ -62,7 +62,7 @@ This is a rough outline of each weeks project goals. The team came together to m
 
 ### Conduct Post-Solution Measurement
 
-* Generate Palo Alto report to show blocked IPs after endpoint implementation and compare with baseline metrics gathered
+* Generate Palo Alto report to show blocked IPs after endpoint implementation and compare with baseline metrics gathered from the original baseline. This is to show that bocking the IPs every 15 minutes can cut down on traffic that is making its way into the network. This will require a 7-day log of post implmentation. 
 
 * Calculate and document any differences perceived following implementation
 
