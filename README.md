@@ -103,7 +103,6 @@ At a UI level, we will want to ensure we can successfully pull feeds, add feeds,
 
 At the programatic level, we will want to ensure we can properly setup a secure endpoint that ultimately returns Palo Alto ingestible threat feeds. 
 
-
 #### Develop the solution
 
 The solution will be an endpoint that returns Palo Alto ingestible threat feed.  In flask, endpoints typically exist in a **app.py** file.  We will need to find the appropriate file in order to add our endpoing.  
@@ -116,25 +115,17 @@ We could also implement a solution where a separate endpoint returns the maximum
 
 #### Test the solution
 
-We need to ensure that our end point is accessible by the Palo Alto server, and that it can properly ingest the feeds.  
+In our testing environment, we will want to manually add some IP addresses, and confirm that our endpoint is returning the newly added IP address.
 
+We need to ensure that our endpoint is accessible by the Palo Alto server, and that it can properly ingest the generated output. Palo Alto has documentation on [how to configure external block lists](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClFOCA0).  One thing we notice is that CIF out of the box uses a bearer token, passed in thorugh the request header, to ensure security.  This feature in Palo Alto does not have a placeholder for specifying the token.  We will need to problem solve this. 
 
-  * Implement Palo Alto API to refer to directory on CIF server to import files from
+#### Deploy the solution
 
-* Test the solution
+Once the above tests provide assurance that our endpoint is both accessible and ingestible by Palo Alto, it is time to deploy.  The customer will deploy a box with CIF4 running on it.  He will setup the .yml configuration files which specify the university feeds.  We will provide the customer our custom code and where it needs to go, along with documentation on how it works. 
 
-  * Ensure the extension properly formats and put IP indicators into Palo Alto ingestible format
+#### Submit Merge Request
 
-  * Ensure it is gathering the correct information from Palo Alto requests from CIF database
-
-  * Ensure extension is sending off requested information to Palo Alto devices efficiently
-
-  * Ensure Palo Alto devices are ingesting files as expected
-
-
-* Deploy the solution to production
-
-* Submit pull request
+We will fork the verbose-robot project, insert our code in a branch, and then do a pull request.  
 
 ### Literature Review and Research
 
