@@ -70,7 +70,18 @@ This is a rough outline of each weeks project goals. The team came together to m
 
 ### Technical Plan
 
-In order to arrive at our solution, it is necessary to break it down into pieces.  Below are a list of tasks to complete in order to accomplish our desired solution.
+In order to arrive at our solution, it is necessary to break it down into pieces.  In this section we hope to do just that. 
+
+After doing an initial review of the [CIFv4 codce](https://github.com/csirtgadgets/verbose-robot), as well as the [CIFv4 documentation](https://github.com/csirtgadgets/verbose-robot/wiki), we recognized that there are various technologies that we need to learn:
+
+* Python
+
+CIFv4 is mostly written in Python.  Some of the team members had a limited amount of experience with Python, while others had none.  Resources available which we will reference is the [Python Documentation](https://docs.python.org/3/), a course on [lynda.com](https://www.lynda.com/Python-tutorials/Python-Essential-Training/614299-2.html?srchtrk=index%3a21%0alinktypeid%3a2%0aq%3apython%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2), as well as [w3 schools](https://www.w3schools.com/python/default.asp).
+
+* Flask
+
+Flask is a web framework and is used in CIF.  We will familiarize ourselves with Flask via the [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/), as well as [this course](https://www.lynda.com/Flask-tutorials/Flask-Essential-Training/2822169-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aflask%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2), and [thish course](https://www.lynda.com/Flask-tutorials/Building-RESTful-APIs-Flask/794143-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aflask%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2) on Lynda.com
+
 
 * Familiarize ourselves with Python
 
