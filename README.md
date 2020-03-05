@@ -97,22 +97,27 @@ This module makes a more streamlined approach to creating API's in flask, and it
 
 * CIF projects
 
-There are a variety of project that make up the composition that is CIF.  The (verbose-robot)[https://github.com/csirtgadgets/verbose-robot] project is the central CIF project that pulls in various other CIF projects.  It will be necessary for us to read through the source code and understand it enough to be able to implement our solution. 
+There are a variety of project that make up the composition that is CIF.  The [verbose-robot](https://github.com/csirtgadgets/verbose-robot) project is the central CIF project that pulls in various other CIF projects.  It will be necessary for us to read through the source code and understand it enough to be able to implement our solution. 
 
 At a UI level, we will want to ensure we can successfully pull feeds, add feeds, add indicators, and remove indicators so that we can successfully test our solution.  
 
 At the programatic level, we will want to ensure we can properly setup a secure endpoint that ultimately returns Palo Alto ingestible threat feeds. 
 
 
+#### Develop the solution
 
-https://flask-restplus.readthedocs.io/en/stable/
+The solution will be an endpoint that returns Palo Alto ingestible threat feed.  In flask, endpoints typically exist in a **app.py** file.  We will need to find the appropriate file in order to add our endpoing.  
 
+The Palo Alto documention on [working with external blocklists](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClVYCA0) states that the endpoint cannont return babck more than 5000 IP addresses.  Each IP address must exist on a separate line.  What's more, the customer expressed that the University's Palo Alto can only contain a total 150,000 IP addresses.  These specifications denote the following requirements for the endpoint:
 
-* Develop the solution
-  * Develop extension to work in conjuction of YML files that bidirectionally share CIF information between universities
-    * Require extension to ingest IP indicators from YML files
-    * Format retrieved IP indicators into Palo Alto ingestible file format
-    * Have extension refer to specific file directory to place files of retrieved IP indicators
+* the endpoint must specify [variable rules](https://flask.palletsprojects.com/en/1.1.x/quickstart/#routing) to represeent a paging feature.  For example `/palo-alto/1` would return the first 5,000 IPs, `palo-alto/2` would return the second set of IPs, and so on up until the maximum of 150,000 IP addresses.  
+
+We could also implement a solution where a separate endpoint returns the maximum of all 150,000 IP addresses within a JSON format.  This will be useful if a client wished to ingest all the IP addresses, parse them, and push them to the firewall itself.  From our exploration so far, it does not look like Palo Alto is capable of this.  
+
+#### Test the solution
+
+We need to ensure that our end point is accessible by the Palo Alto server, and that it can properly ingest the feeds.  
+
 
   * Implement Palo Alto API to refer to directory on CIF server to import files from
 
