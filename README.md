@@ -51,27 +51,18 @@ This is a rough outline of each weeks project goals. The team came together to m
 ### Baseline Measurement
 
 * Measure the number of new threats ingested into Palo Alto firewalls within a 24hr period within the current system.
+  * Spoke with customer and he confirmed he can set up a Palo Alto firewall with a rule to collect a 7-day log report for us to use as a baseline measurement for blocked IPs during that period
 
 ### Build and Implement Solution
 
-* Build an extension into CIFv4 Python library to:
+* Extend CIFv4 API
 
-  * Pull retrieved IP indicators from CIF server Database for Palo Alto in ingestible format.
+  * Build an additional endpoint into CIF server which outputs a list of IP indicators in Palo Alto ingestible format
     * Indicators are retrieved from other universities under the CIF framework
-
-  * Save retrieved IP indicators to file with no more than 5,000 indicators per file, as [referenced in page 60 of Palo Alto API](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf).
-
-  * Have extension push generated files to Palo Alto via the Palo Alto API
-    * Palo Alto devices will request files every 15 minutes
-    * [Palo Alto API Documentation on importing files](https://docs.paloaltonetworks.com/content/dam/techdocs/en_US/pdf/framemaker/pan-os/7-1/pan-os-panorama-api.pdf)
 
 ### Conduct Post-Solution Measurement
 
-* Gather metrics and compare before/after extension implementation
-
-  * Example: a threat reported in 24 hrs (before) vs a threat reported at 1am (23hrs savings)
-
-  * Example: a threat reported in 24hrs (before) vs a threat reported at 5am (19hrs savings)
+* Generate Palo Alto report to show blocked IPs after endpoint implementation and compare with baseline metrics gathered
 
 * Calculate and document any differences perceived following implementation
 
