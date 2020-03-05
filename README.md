@@ -70,38 +70,37 @@ This is a rough outline of each weeks project goals. The team came together to m
 
 ### Technical Plan
 
-In order to arrive at our solution, it is necessary to break it down into pieces.  In this section we hope to do just that. 
+In order to arrive at our solution, it is necessary to break it down into pieces.  In this section we hope to do just that.
 
-After doing an initial review of the [CIFv4 codce](https://github.com/csirtgadgets/verbose-robot), specifically the [requirements.txt file](https://github.com/csirtgadgets/verbose-robot/blob/master/requirements.txt), as well as the [CIFv4 documentation](https://github.com/csirtgadgets/verbose-robot/wiki), we recognized that there are various technologies that we need to learn:
+After doing an initial review of the [CIFv4 code](https://github.com/csirtgadgets/verbose-robot), specifically the [requirements.txt file](https://github.com/csirtgadgets/verbose-robot/blob/master/requirements.txt), as well as the [CIFv4 documentation](https://github.com/csirtgadgets/verbose-robot/wiki), we recognized that there are various technologies that we need to learn:
 
-* Docker
+ __Docker__
 
 The [installation steps](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton) of CIF4 specify running the CIF4 server in a docker container.  Our team has limited knowledge of docker.  We will reference [this lynda.com course](https://www.lynda.com/search?q=docker), as well as the [docker documentation](https://docs.docker.com/).
 
-* Python
+__Python__
 
 CIFv4 is mostly written in Python.  Some of the team members had a limited amount of experience with Python, while others had none.  Resources available which we will reference is the [Python Documentation](https://docs.python.org/3/), a course on [lynda.com](https://www.lynda.com/Python-tutorials/Python-Essential-Training/614299-2.html?srchtrk=index%3a21%0alinktypeid%3a2%0aq%3apython%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2), as well as [w3 schools](https://www.w3schools.com/python/default.asp).
 
-* Flask
+__Flask__
 
 Flask is a web framework and is used in CIF.  We will familiarize ourselves with Flask via the [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/), as well as [this course](https://www.lynda.com/Flask-tutorials/Flask-Essential-Training/2822169-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aflask%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2), and [thish course](https://www.lynda.com/Flask-tutorials/Building-RESTful-APIs-Flask/794143-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aflask%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2) on Lynda.com
 
-* Swagger
+__Swagger__
 
 Swagger is a a REST gui that CIF is using.  We will familiarize ourselves with swagger via [this course](https://www.lynda.com/search?q=swagger) on lynda.com.
 
-
-* Flask-restplus
+__Flask-restplus__
 
 This module makes a more streamlined approach to creating API's in flask, and it is currently referenced in the CIF.  CIF may require us to use Flask-restplus functions in order to create the additional endpoint.  We will familiarize ourselves with the (Flask-restplus documentation)[https://github.com/csirtgadgets/verbose-robot/blob/master/requirements.txt].
 
-* CIF projects
+__CIF projects__
 
-There are a variety of project that make up the composition that is CIF.  The [verbose-robot](https://github.com/csirtgadgets/verbose-robot) project is the central CIF project that pulls in various other CIF projects.  It will be necessary for us to read through the source code and understand it enough to be able to implement our solution. 
+There are a variety of project that make up the composition that is CIF.  The [verbose-robot](https://github.com/csirtgadgets/verbose-robot) project is the central CIF project that pulls in various other CIF projects.  It will be necessary for us to read through the source code and understand it enough to be able to implement our solution.
 
 At a UI level, we will want to ensure we can successfully pull feeds, add feeds, add indicators, and remove indicators so that we can successfully test our solution.  
 
-At the programatic level, we will want to ensure we can properly setup a secure endpoint that ultimately returns Palo Alto ingestible threat feeds. 
+At the programatic level, we will want to ensure we can properly setup a secure endpoint that ultimately returns Palo Alto ingestible threat feeds.
 
 #### Develop the solution
 
