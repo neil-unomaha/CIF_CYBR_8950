@@ -74,41 +74,41 @@ In order to arrive at our solution, it is necessary to break it down into pieces
 
 After doing an initial review of the [CIFv4 code](https://github.com/csirtgadgets/verbose-robot), specifically the [requirements.txt file](https://github.com/csirtgadgets/verbose-robot/blob/master/requirements.txt), as well as the [CIFv4 documentation](https://github.com/csirtgadgets/verbose-robot/wiki), we recognized that there are various technologies that we need to learn:
 
- __Docker__
+* Docker
 
-The [installation steps](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton) of CIF4 specify running the CIF4 server in a docker container.  Our team has limited knowledge of docker.  We will reference [this lynda.com course](https://www.lynda.com/search?q=docker), as well as the [docker documentation](https://docs.docker.com/).
+  *  The [installation steps](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton) of CIF4 specify running the CIF4 server in a docker container.  Our team has limited knowledge of docker.  We will reference [this lynda.com course](https://www.lynda.com/search?q=docker), as well as the [docker documentation](https://docs.docker.com/).
 
-__Python__
+* Python
 
-CIFv4 is mostly written in Python.  Some of the team members had a limited amount of experience with Python, while others had none.  Resources available which we will reference is the [Python Documentation](https://docs.python.org/3/), a course on [lynda.com](https://www.lynda.com/Python-tutorials/Python-Essential-Training/614299-2.html?srchtrk=index%3a21%0alinktypeid%3a2%0aq%3apython%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2), as well as [w3 schools](https://www.w3schools.com/python/default.asp).
+  * CIFv4 is mostly written in Python.  Some of the team members had a limited amount of experience with Python, while others had none.  Resources available which we will reference is the [Python Documentation](https://docs.python.org/3/), a course on [lynda.com](https://www.lynda.com/Python-tutorials/Python-Essential-Training/614299-2.html?srchtrk=index%3a21%0alinktypeid%3a2%0aq%3apython%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2), as well as [w3 schools](https://www.w3schools.com/python/default.asp).
 
-__Flask__
+* Flask
 
-Flask is a web framework and is used in CIF.  We will familiarize ourselves with Flask via the [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/), as well as [this course](https://www.lynda.com/Flask-tutorials/Flask-Essential-Training/2822169-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aflask%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2), and [thish course](https://www.lynda.com/Flask-tutorials/Building-RESTful-APIs-Flask/794143-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aflask%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2) on Lynda.com
+  * Flask is a web framework and is used in CIF.  We will familiarize ourselves with Flask via the [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/), as well as [this course](https://www.lynda.com/Flask-tutorials/Flask-Essential-Training/2822169-2.html?srchtrk=index%3a1%0alinktypeid%3a2%0aq%3aflask%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2), and [this course](https://www.lynda.com/Flask-tutorials/Building-RESTful-APIs-Flask/794143-2.html?srchtrk=index%3a3%0alinktypeid%3a2%0aq%3aflask%0apage%3a1%0as%3arelevance%0asa%3atrue%0aproducttypeid%3a2) on Lynda.com
 
-__Swagger__
+* Swagger
 
-Swagger is a a REST gui that CIF is using.  We will familiarize ourselves with swagger via [this course](https://www.lynda.com/search?q=swagger) on lynda.com.
+  * Swagger is a a REST GUI that CIF is using.  We will familiarize ourselves with swagger via [this course](https://www.lynda.com/search?q=swagger) on lynda.com.
 
-__Flask-restplus__
+* Flask-restplus
 
-This module makes a more streamlined approach to creating API's in flask, and it is currently referenced in the CIF.  CIF may require us to use Flask-restplus functions in order to create the additional endpoint.  We will familiarize ourselves with the (Flask-restplus documentation)[https://github.com/csirtgadgets/verbose-robot/blob/master/requirements.txt].
+  * This module makes a more streamlined approach to creating API's in flask, and it is currently referenced in the CIF.  CIF may require us to use Flask-restplus functions in order to create the additional endpoint.  We will familiarize ourselves with the [Flask-restplus documentation](https://github.com/csirtgadgets/verbose-robot/blob/master/requirements.txt).
 
-__CIF projects__
+* CIF projects
 
-There are a variety of project that make up the composition that is CIF.  The [verbose-robot](https://github.com/csirtgadgets/verbose-robot) project is the central CIF project that pulls in various other CIF projects.  It will be necessary for us to read through the source code and understand it enough to be able to implement our solution.
+  * There are a variety of project that make up the composition that is CIF.  The [verbose-robot](https://github.com/csirtgadgets/verbose-robot) project is the central CIF project that pulls in various other CIF projects.  It will be necessary for us to read through the source code and understand it enough to be able to implement our solution.
 
-At a UI level, we will want to ensure we can successfully pull feeds, add feeds, add indicators, and remove indicators so that we can successfully test our solution.  
+  * At a UI level, we will want to ensure we can successfully pull feeds, add feeds, add indicators, and remove indicators so that we can successfully test our solution.  
 
-At the programatic level, we will want to ensure we can properly setup a secure endpoint that ultimately returns Palo Alto ingestible threat feeds.
+  * At the programatic level, we will want to ensure we can properly setup a secure endpoint that ultimately returns Palo Alto ingestible threat feeds.
 
 #### Develop the solution
 
-The solution will be an endpoint that returns Palo Alto ingestible threat feed.  In flask, endpoints typically exist in a **app.py** file.  We will need to find the appropriate file in order to add our endpoing.  
+The solution will be an endpoint that returns Palo Alto ingestible threat feed.  In flask, endpoints typically exist in a **app.py** file.  We will need to find the appropriate file in order to add our endpoint.  
 
-The Palo Alto documention on [working with external blocklists](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClVYCA0) states that the endpoint cannont return babck more than 5000 IP addresses.  Each IP address must exist on a separate line.  What's more, the customer expressed that the University's Palo Alto can only contain a total 150,000 IP addresses.  These specifications denote the following requirements for the endpoint:
+The Palo Alto documention on [working with external blocklists](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClVYCA0) states that the endpoint cannont return babck more than 5,000 IP addresses.  Each IP address must exist on a separate line.  What's more, the customer expressed that the University's Palo Alto can only contain a total 150,000 IP addresses.  These specifications denote the following requirements for the endpoint:
 
-* the endpoint must specify [variable rules](https://flask.palletsprojects.com/en/1.1.x/quickstart/#routing) to represeent a paging feature.  For example `/palo-alto/1` would return the first 5,000 IPs, `palo-alto/2` would return the second set of IPs, and so on up until the maximum of 150,000 IP addresses.  
+* The endpoint must specify [variable rules](https://flask.palletsprojects.com/en/1.1.x/quickstart/#routing) to represeent a paging feature.  For example `/palo-alto/1` would return the first 5,000 IPs, `palo-alto/2` would return the second set of IPs, and so on up until the maximum of 150,000 IP addresses.  
 
 We could also implement a solution where a separate endpoint returns the maximum of all 150,000 IP addresses within a JSON format.  This will be useful if a client wished to ingest all the IP addresses, parse them, and push them to the firewall itself.  From our exploration so far, it does not look like Palo Alto is capable of this.  
 
@@ -120,9 +120,9 @@ We need to ensure that our endpoint is accessible by the Palo Alto server, and t
 
 #### Deploy the solution
 
-Once the above tests provide assurance that our endpoint is both accessible and ingestible by Palo Alto, it is time to deploy.  The customer will deploy a box with CIF4 running on it.  He will setup the .yml configuration files which specify the university feeds.  We will provide the customer our custom code and where it needs to go, along with documentation on how it works. 
+Once the above tests provide assurance that our endpoint is both accessible and ingestible by Palo Alto, it is time to deploy.  The customer will deploy a box with CIF4 running on it.  He will setup the .yml configuration files which specify the university feeds.  We will provide the customer our custom code and where it needs to go, along with documentation on how it works.
 
-#### Submit Merge Request
+#### Submit Pull Request
 
 We will fork the verbose-robot project, insert our code in a branch, and then do a pull request.  
 
