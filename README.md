@@ -132,7 +132,7 @@ We will fork the verbose-robot project, insert our code in a branch, and then do
 
 #### Research Questions
 
-* To what extent does the timeliness of threat intelligence gathering, aggregation, and sharing affect risk profile reduction within a university enterprise setting?
+* To what extent does the timeliness of threat intelligence gathering, aggregation, and sharing affect risk profile reduction within a university enterprise setting? If there are security efficacy outcomes, what are the costs?
 
 **Keywords:** Web Services, Systems Architecture Integration, Process Automation
 
