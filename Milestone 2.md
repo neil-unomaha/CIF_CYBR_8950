@@ -1,7 +1,7 @@
 # Milestone 2
 
 
-## Research Outline/Abstract
+## Research Outline
 
 * Introduction
 
@@ -68,3 +68,5 @@
   * Submit pull request for CIFv4
 
 -----
+
+## Research Abstract
