@@ -1,5 +1,12 @@
 # Milestone 2
 
+## Environment Setup and Hardships
+
+-----
+
+## Project Realization
+
+-----
 
 ## Research Outline
 
@@ -83,4 +90,11 @@
 
 ## Research Abstract
 
-The Universities of Nebraska have a shared IP database management system call CIF (Collective Intelligence Framework). That it uses to manage IPs that will be blocked across all the university’s campus by Pal Alto Firewall. The problem with this system that it is only updating the firewall once a day when it is ran by a cron job. This is allowing IP addresses that need to be blocked to continually enter the network for a day before it can be stopped. Some companies are using blocking IP address by possible attack on the network by using honeywords which are fake password when entered while trigger the system to block the IP address associated with user who entered the password. (K. Naik, V. Bhosale, and V. D. Shinde) Other companies share intel reports with each other to see possible threats and even sell reports so other can block malicious sources. (J. Elmellas, “Knowledge is power: the evolution of threat intelligence”) This is to prevent a malicious source before it ever touches one’s networks. Our capstone group is aiming to reduce the time for the blocks to be put into effect to reduce the potential traffic from these malicious IP addresses. To achieve this goal our group is building a plug-in for the CIF database to do these IP blocks every 15 minutes without having to have human interference. To show that this solution will provide a positive effect on the network the capstone group will be doing a 7-day report before and after on network traffic metrics to show if traffic is changed from adding in our plugin to the system. (INSERT FINDING HERE) (Conclusion)
+The Universities of Nebraska have a shared IP database management system call CIF (Collective Intelligence Framework). That it uses to manage IPs that will be blocked across all the university’s campus by Pal Alto Firewall. The problem with this system that it is only updating the firewall once a day when it is run by a cron job. This is allowing IP addresses that need to be blocked to continually enter the network for a day before it can be stopped. Some companies are using blocking IP addresses by possible attacks on the network by using honeywords which are fake passwords when entered while triggering the system to block the IP address associated with the user who entered the password. (K. Naik, V. Bhosale, and V. D. Shinde) Other companies share intel reports to see possible threats and even sell reports so others can block malicious sources. (J. Elmellas, “Knowledge is power: the evolution of threat intelligence”) This is to prevent a malicious source before it ever touches one’s networks. Our capstone group is aiming to reduce the time for the blocks to be put into effect to reduce the potential traffic from these malicious IP addresses. To achieve this goal our group is building a plug-in for the CIF database to do these IP blocks every 15 minutes without having to have human interference. To show that this solution will provide a positive effect on the network the capstone group will be doing a 7-day report before and after on network traffic metrics to show if traffic is changed from adding in our plugin to the system. (INSERT FINDING HERE) (Conclusion)
+
+-----
+
+## Visuals and Diagrams
+
+
+-----
