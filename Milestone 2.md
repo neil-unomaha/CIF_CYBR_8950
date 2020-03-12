@@ -31,6 +31,9 @@
     * Ransomware attacks, phishing, breaches, etc. are increasing (Bissell, et. al, 2019)
     * Companies blocking IP addresses by using honeywords, fake passwords entered (K. Naik, V. Bhosale, and V. D. Shinde)
     * Other companies sharing intel reports for possible threats (J. Elmellas, “Knowledge is power: the evolution of threat intelligence”)
+    * Security intelligence and threat sharing has the highest cost savings. 67% respondents use it, average 2.26 million savings (includes costs of tech) (Bissell, et al. 2020)
+    * Average cost of successful cyber attack is $1.1 million (Radware, 2018)
+    * Equifax hack as so far cost $439 million, and projected to exceed $600 million
   * Collective Intelligence
     * Describe the goals
       * Multiple organizations collecting and sharing information could benefit all members better than individually
@@ -128,6 +131,8 @@ Kashiwazaki, Hiroki. “Personal Information Leak in a University, and Its Clean
 Kelly Bissell, Ryan Lasalle, Floris Van Den Dool, and Josh Kennedy-White. 2018. Gaining Ground on the Cyber Attacker: 2018 State of Cyber Resilence. (April 2018). Retrieved February 23, 2020 from https://www.accenture.com/in-en/insights/security/2018-state-of-cyber-resilience-index
 
 Kelly Bissell, Ryan M. Lasalle, and Paolo Dal Cin. 2019. Ninth Annual Cost of Cybercrime Study. (March 2019). Retrieved February 23, 2020 from https://www.accenture.com/us-en/insights/security/cost-cybercrime-study
+
+Radware. “The Trust Factor.” Radware, www.radware.com/ert-report-2018/.
 
 Stevenson, Alastair. “A Hacker Group Claims It Breached over 300 Websites and Leaked 13,000 People's Details Online.” Business Insider, Business Insider, 1 July 2015, www.businessinsider.com/ghostshell-hackers-hack-300-websites.
 
