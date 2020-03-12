@@ -96,5 +96,8 @@ The Universities of Nebraska have a shared IP database management system call CI
 
 ## Visuals and Diagrams
 
+### Current CIF Infrastructure
 
+### Goal CIF Infrastructure
+![Diagram](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/Existing_Setup.png?raw=true)
 -----
