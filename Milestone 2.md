@@ -255,7 +255,7 @@ We will have to try this.
       * Explain how information is only exchanged once a day with other universities
       * This once-a-day exchange is not ideal, as some potential threats or attacks could be mitigated if the organizations and hardware is made aware of them within a more acceptable time window
   * Goal of paper/project
-    * Set up test environment in such a way that the universities may exchange information every 15 minutes
+    * Answer Research question(s): To what extent does the timeliness of threat intelligence gathering, aggregation, and sharing affect risk profile reduction within a university enterprise setting? If there are security efficacy outcomes, what are the costs?
   * Rest of paper will flow as...
     * Previous research/work
     * Methodology
@@ -282,37 +282,33 @@ We will have to try this.
         * Included name, affiliation, Email. For students, it also included year of entrance and student ID
       * Information from insiders such as spreadsheets for internal work, and information from outsiders such as job applicants.
 
-* Methodology
+* CIF Information
   * CIF Architecture
     * Display diagram of current CIF process
       * Current pull and push process with Palo Alto firewalls
-    * Explain CIF process
-      * YML files with tokens from each university within CIF
-      * Cron job that is run daily to retrieve updated information
-      * Python and Flask details
-    * Explain why current process is not most efficient
-      * Current cron job works in roundabout way
-
-  * CIF Environment Research and Setup
-
+      * Explain CIF process
+        * YML files with tokens from each university within CIF
+        * Cron job that is run daily to retrieve updated information
+        * Python and Flask details
+      * Explain why current process is not most efficient
+        * Current cron job works in roundabout way
+  * CIF Versions
     * Explain our reasoning to use CIFv4 and not v3
       * CIFv3 is in process of getting deprecated, so v4 is preferred
-    * Explain environment setup
-      * VMs for v4
-        * Built on Ubuntu Server 16.04
-        * Document challenges and issues that came about
-          * [Challenges Issue for CIF](https://github.com/neil-unomaha/CIF_CYBR_8950/issues/20)
       * Mention CIFv3 server we were given access to for getting familiar with CIF
+
+* Methodology
+  * CIF Environment Research
+    * Iterate again the research question
     * CIF Research
       * Uses Python >3.6 and Flask framework
       * Mention resources we used to learn more about Python and Flask
-    * Challenges in research and setup
-      * CIFv3 connection issues
-        * Unable to connect with VPN most of the time
-          * Connection refuse messages abound
       * Getting familiar with Python and Flask
         * Used Lynda to research
-          * Free with Omaha Public Library card
+  * CIF Test Environment Setup
+    * VMs for v4
+      * Built on Ubuntu Serer 16.04
+    * Refer to Environment setup in Milestone 2 document for reference
 
   * Project goals to improve CIF
     * Build plug-in to listen from Palo Alto for database update requests
