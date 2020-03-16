@@ -5,36 +5,45 @@
 ## CIF Installation and Commands Notes
 
 ### Installation
+
 The installation notes specifically for the [Docker installation strategy](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton) worked very well for me.  I will provide a few pointers I gathered along the way
 
 *  I did **first** have to create an account on Maxmind.
+
 ```
 ## MAXMIND Credentials
 username: nthorne@unomaha.edu
 Account_user ID: *****
 License Key: *****
 ```
+
 * Install on `Ubuntu 16.04 Server` (example: Ubuntu 16.04 Desktop doesn't work)
 * Install the docker image via `docker pull csirtgadgets/verbose-robot`
 * As indicated in the instructions, either `export` your Maxmind credientals, or (as I did) put them in your `.bashrc` file and `source` it
 * Run your docker container:
+
 ```
 sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
 ```
+
 * Remember that `CIF 4` is running in a docker container.  You still need to shell into the container in order to install additional software.  
   * Shell into your running container via:
+
 ```
   sudo docker exec -it verbose-robot /bin/bash
 ```
-  * Now that you are at a command prompt inside the container, [as indicated here](https://github.com/csirtgadgets/verbose-robot/wiki/Where-do-I-start) install the CIF client via:  `pip install 'cifsdk>=4.0.0a0'`
+
+* Now that you are at a command prompt inside the container, [as indicated here](https://github.com/csirtgadgets/verbose-robot/wiki/Where-do-I-start) install the CIF client via:  `pip install 'cifsdk>=4.0.0a0'`
 
 Now that you have the  Python CIF SDK installed, you should be good to go!  Be sure that all your CIF commands are run within the docker container.
 
 ### Usage / Commands
+
 * The main command is `cif`.  The client specifies a number of different options and arguments in order to get the desired response.  [Good Examples Here](https://github.com/csirtgadgets/verbose-robot/wiki/Introducing-the-CIF-client).
 * The process of ingesting threats/sharing threats within a network is unclear to me via the documentation
 * Appending to CIF threats is also unclear to me via the documentation.
 * The provided examples don't work because they are missing required options (apparently you must provide `--tags` now
+
 ```
 cif --itype ipv4 --tags phishing --format table
 ```
@@ -45,172 +54,190 @@ The `--feed` option as [specified here is unrecognized](https://github.com/csirt
 
 ## Setup CIF 4 Test Environment
 
-    The following example shows how to setup a CIF test environment with Ubuntu 16.04 server running in a virtual machine
+The following example shows how to setup a CIF test environment with Ubuntu 16.04 server running in a virtual machine
 
 ### Installation
 
 #### Install Ubuntu 16.04 server
-    First you will need to download an [Ubuntu 16.04 server image](http://releases.ubuntu.com/16.04/) and create a virtual machine.  
 
-    Once you startup your virtual machine and login, there are a couple more steps for our guide.  We wanted a GUI, so we installed the ubuntu-desktop extension:
+First you will need to download an [Ubuntu 16.04 server image](http://releases.ubuntu.com/16.04/) and create a virtual machine.  
 
-        sudo apt-get update
-        sudo apt-get install ubuntu-desktop
+Once you startup your virtual machine and login, there are a couple more steps for our guide.  We wanted a GUI, so we installed the ubuntu-desktop extension:
+
+`sudo apt-get update`  
+`sudo apt-get install ubuntu-desktop`
 
 #### Install Docker
-    Next you need to install docker:
 
-        sudo apt install docker.io
+Next you need to install docker:
+
+`sudo apt install docker.io`
 
 #### Install CIF4 Docker Image
-    Install the CIF 4 container from docker hub
 
-        sudo docker pull csirtgadgets/verbose-robot
+Install the CIF 4 container from docker hub
+
+`sudo docker pull csirtgadgets/verbose-robot`
 
 ### Setup Prior to running Docker Container
 
-    Before running the docker container, you need to create some environment variables.
+Before running the docker container, you need to create some environment variables.
 
-    The first is `CIF_TOKEN` which will contain a randomly generated string.  This string ultimately becomes the bearer token passed into for all of your `GET` and `POST` requests via the request header for security. You can generate a random string with the following command on Ubuntu:
+The first is `CIF_TOKEN` which will contain a randomly generated string.  This string ultimately becomes the bearer token passed into for all of your `GET` and `POST` requests via the request header for security. You can generate a random string with the following command on Ubuntu:
 
-        head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'
+`head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'`
 
-    An example ouptut string is the following:
+An example ouptut string is the following:
 
-        525ff70def1b2b4eff3119451eabfa0ce3fa6316efb55fda075db08ac4a2feda
+`525ff70def1b2b4eff3119451eabfa0ce3fa6316efb55fda075db08ac4a2feda`
+
+The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_LICENSE_KEY`.  CIF depends on [as mentioned here](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton). Head over to [Maxmind](https://www.maxmind.com/en/home), create a free account, and within the settings you can find your account id and license key.
+
+![maxmind_key](https://user-images.githubusercontent.com/38234505/75952477-74fa4f00-5e74-11ea-8ace-ab3a8f594e15.PNG)
 
 
-     The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_LICENSE_KEY`.  CIF depends on [as mentioned here](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton). Head over to [Maxmind](https://www.maxmind.com/en/home), create a free account, and within the settings you can find your account id and license key.
+Here is an example command to setup these environment variables.  Note that you'll want to swap out the values for `MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`
 
-    ![maxmind_key](https://user-images.githubusercontent.com/38234505/75952477-74fa4f00-5e74-11ea-8ace-ab3a8f594e15.PNG)
+Setup those environment variables.
 
-
-    Here is an example command to setup these environment variables.  Note that you'll want to swap out the values for `MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`
-    Setup those environment variables.
-
-        export CIF_TOKEN=`head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'`
-        export MAXMIND_USER_ID=201001
-        export MAXMIND_LICENSE_KEY=3r8ESHRiFIsF
+```
+export CIF_TOKEN=`head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'
+export MAXMIND_USER_ID=201001
+export MAXMIND_LICENSE_KEY=3r8ESHRiFIsF
+```
 
 ### Run CIF Container
-    With the environment variables all setup, you can now run your CIF docker image:
 
-        sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
+With the environment variables all setup, you can now run your CIF docker image:
 
-    - We pass into the running docker container the three environment variables we specified above with the `-e` flag
-    - We setup port forwarding on port 5000 with the `-p` flag
-    - We run the docker container in a  daemon with `-d`
-    - For ease of referencing our docker container in the future, we labeled the container `verbose-robot`
+```
+sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
+```
 
-    To confirm our docker container is running, we can run `sudo docker ps`
+* We pass into the running docker container the three environment variables we specified above with the `-e` flag
+* We setup port forwarding on port 5000 with the `-p` flag
+* We run the docker container in a  daemon with `-d`
+* For ease of referencing our docker container in the future, we labeled the container `verbose-robot`
 
+To confirm our docker container is running, we can run `sudo docker ps`
 
 ### Execute CIF Commands
-    In order to interact with CIF, we can do so in two ways.  The command prompt or with Swagger.
+
+In order to interact with CIF, we can do so in two ways: the command prompt or with Swagger.
 
 #### Command Prompt
-    To do this we need to `bash` into our running container.  We can do that with the following:
 
-        sudo docker exec -it verbose-robot /bin/bash
+To do this we need to `bash` into our running container.  We can do that with the following:
 
-    Now that we are inside the container, we can execute the `cif` command with various options in order to query the CIF database.  Here are some example commands:
+`sudo docker exec -it verbose-robot /bin/bash`
 
-        cif --itype ipv4 --tags scanner
-        cif --itype url --tags phishing
-        cif --itype url --tags malware
-        cif --itype ipv4 --tags botnet
+Now that we are inside the container, we can execute the `cif` command with various options in order to query the CIF database.  Here are some example commands:
 
-    ![example_output](https://user-images.githubusercontent.com/38234505/75954931-70389980-5e7a-11ea-978a-03042c36aef5.PNG)
+`cif --itype ipv4 --tags scanner`  
+`cif --itype url --tags phishing`  
+`cif --itype url --tags malware`  
+`cif --itype ipv4 --tags botnet`  
 
+![example_output](https://user-images.githubusercontent.com/38234505/75954931-70389980-5e7a-11ea-978a-03042c36aef5.PNG)
 
-    Note that by default, CIF is pulling feeds from providers you specified every three minutes.  
+Note that by default, CIF is pulling feeds from providers you specified every three minutes.  
 
 #### Swagger
-    On the VM running CIF you can visit http://localhost:5000 which displays a rest api gui.   
-    ![swagger](https://user-images.githubusercontent.com/38234505/75951890-cb668e00-5e72-11ea-9d7d-0d9364429e6c.PNG)
 
-    It is important to note that the lock symbol next to each endpoint indicates that the a token is required to be passed in for each request.  This is the string that we created and stored within the `CIF_TOKEN` environment variable earlier.  Click the **Authorize** button and add the token.
+On the VM running CIF you can visit http://localhost:5000 which displays a rest api gui.
 
-    Once you add the token, you should be able to interact with the api in the GUI.  click the **Try it Out** button which toggles the endpoint, then click **Execute**.
-    ![execute_swagger](https://user-images.githubusercontent.com/38234505/75952373-29e03c00-5e74-11ea-88e8-4272a9dc2bf8.PNG)
+![swagger](https://user-images.githubusercontent.com/38234505/75951890-cb668e00-5e72-11ea-9d7d-0d9364429e6c.PNG)
 
-    You can then scroll down to see the response:
-    ![swagger_response](https://user-images.githubusercontent.com/38234505/75952410-4a0ffb00-5e74-11ea-9208-89ef01f53014.PNG)
+It is important to note that the lock symbol next to each endpoint indicates that the a token is required to be passed in for each request.  This is the string that we created and stored within the `CIF_TOKEN` environment variable earlier.  Click the **Authorize** button and add the token.
+
+Once you add the token, you should be able to interact with the api in the GUI.  click the **Try it Out** button which toggles the endpoint, then click **Execute**.
+
+![execute_swagger](https://user-images.githubusercontent.com/38234505/75952373-29e03c00-5e74-11ea-88e8-4272a9dc2bf8.PNG)
+
+You can then scroll down to see the response:
+
+![swagger_response](https://user-images.githubusercontent.com/38234505/75952410-4a0ffb00-5e74-11ea-9208-89ef01f53014.PNG)
 
 ### Create Endpoints
-    The CIF file that specifies endpoints is in `app.py`.  We think, in this docker container, the specific file is located here:
 
-        /usr/local/lib/python3.6/site-packages/verbose_robot-4.0.1-py3.6.egg/cif/httpd/app.py
+The CIF file that specifies endpoints is in `app.py`.  We think, in this docker container, the specific file is located here:
 
-    Adding an endpoint should be as simple as the following:
+`/usr/local/lib/python3.6/site-packages/verbose_robot-4.0.1-py3.6.egg/cif/httpd/app.py`
 
-        @app.route('/')
-          def hello_world():
-          return 'Hello, World!'
+Adding an endpoint should be as simple as the following:
+```
+@app.route('/')
+  def hello_world():
+    return 'Hello, World!'
+```
 
-    Restart the server and try it out.  Initial attempts did not work.
+Restart the server and try it out. Initial attempts did not work.
 
-    One possible explanation is becuase CIF is using [Flask-RESTPlus](https://flask-restplus.readthedocs.io/en/stable/index.html#), so the config might actually be this:
+One possible explanation is becuase CIF is using [Flask-RESTPlus](https://flask-restplus.readthedocs.io/en/stable/index.html#), so the config might actually be this:
+```
+@api.route('/hello')
+  class HelloWorld(Resource):
+  def get(self):
+    return {'hello': 'world'}
+```
 
-        @api.route('/hello')
-          class HelloWorld(Resource):
-          def get(self):
-              return {'hello': 'world'}
-
-    We will have to try this.
+We will have to try this.
 
 -----
 
-## Roadblocks :
+## Roadblocks:
 
 ### Getting CIF4 Environment Setup and Familiarizing ourselves with How it Works
 
 #### Setup Steps Taken
 
-- Setup account on Maxmind because it is a [dependency for CIF4](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton)
-- Installed VMware
-- Installed Ubuntu 16.04 server on VMWare
-    - (Note: [Cannot run on 16.04 Desktop](https://github.com/csirtgadgets/verbose-robot/wiki/FAQ#ubuntu-lts-desktop))
-- Inside 16.04 server: installed Docker
-- With Docker installed on the 16.04 Server: installed the CIF image from dockerhub
-    - Follow [documentation installation steps under docker strategy](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton)
-- Run the container
-    - Command to run the container with necessary options [specified in documentation](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton)
-- Open up a shell on the running container to query the running CIF server
-    - [Command from documentation](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton): `sudo docker exec -it verbose-robot /bin/bash`
-    - [Step to install the CIF CLI/Client inside the container](https://github.com/csirtgadgets/verbose-robot/wiki/Where-do-I-start) appears to be unnecessary because the image already contains it, but ran the command anyways just in case: `pip install 'cifsdk>=4.0.0a0'`
-- Specify queries against the CIF server
+* Setup account on Maxmind because it is a [dependency for CIF4](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton)
+* Installed VMware
+* Installed Ubuntu 16.04 server on VMWare
+  * (Note: [Cannot run on 16.04 Desktop](https://github.com/csirtgadgets/verbose-robot/wiki/FAQ#ubuntu-lts-desktop))
+* Inside 16.04 server: installed Docker
+* With Docker installed on the 16.04 Server: installed the CIF image from dockerhub
+  * Follow [documentation installation steps under docker strategy](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton)
+* Run the container
+    * Command to run the container with necessary options [specified in documentation](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton)
+* Open up a shell on the running container to query the running CIF server
+  * [Command from documentation](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton): `sudo docker exec -it verbose-robot /bin/bash`
+  *  [Step to install the CIF CLI/Client inside the container](https://github.com/csirtgadgets/verbose-robot/wiki/Where-do-I-start) appears to be unnecessary because the image already contains it, but ran the command anyways just in case: `pip install 'cifsdk>=4.0.0a0'`
+* Specify queries against the CIF server
 
 #### Issues Encountered
-- Documentation contains gaps in explanations (implication that reader already has significant familiarity with the topic and related technology).
-- Majority of [code examples specified in documentation](https://github.com/csirtgadgets/verbose-robot/wiki/Introducing-the-CIF-client) do not work as specified.  Almost always require additional options
-- It appears we can successfully query `CIF` right now, but the issue is that in our test environment: there are no existing feeds, so it doesn't return anything.
-  - Example: `cif --itype ipv4 --tags malware`
+
+* Documentation contains gaps in explanations (implication that reader already has significant familiarity with the topic and related technology).
+* Majority of [code examples specified in documentation](https://github.com/csirtgadgets/verbose-robot/wiki/Introducing-the-CIF-client) do not work as specified.  Almost always require additional options
+* It appears we can successfully query `CIF` right now, but the issue is that in our test environment: there are no existing feeds, so it doesn't return anything.
+  * Example: `cif --itype ipv4 --tags malware`
 ![example](https://user-images.githubusercontent.com/38234505/74463773-f4899500-4e57-11ea-9c73-cdd43b43e466.PNG)
 
-
 #### Questions to be Answered
+
 **- Is CIF currently pulling feeds in real time, Or is pulling from feeds disabled by default?  If it is disabled, how do we enable it?**
-  - It appears like the [Rules Directory](https://github.com/csirtgadgets/verbose-robot/tree/master/rules) is where the feeds are specified
+  * It appears like the [Rules Directory](https://github.com/csirtgadgets/verbose-robot/tree/master/rules) is where the feeds are specified
 
 **- How do we add additional feeds?**
 
 #### Currently Known CIF Resources/Tutorials/Documentation
-- [CIF4 Server Code](https://github.com/csirtgadgets/verbose-robot)
-- [CIF4 CLI Client in Python](https://github.com/csirtgadgets/cifsdk-py-v4)
-- [CIF4 CLI Client in Go](https://github.com/JustinAzoff/cifsdk-go)
-- [CIF4 Wiki](https://github.com/csirtgadgets/verbose-robot/wiki/The-CIFv4-Book)
-- [CIF3 Wiki](https://github.com/csirtgadgets/bearded-avenger-deploymentkit/wiki/The-CIFv3-Book)
-- [CIF Maintainer's Blog](https://csirtgadgets.com/collective-intelligence-framework)
-	- Wes Young (appears to be the creator behind CIF4)
-	- Posts are not tutorials, mostly like journal entries/reflection on topics such as threat intelligence and writing open source code.  
-	- [Payment required to answer questions surrounding CIF](https://csirtg.io/support)
-- [Presentation on CIF](https://www.youtube.com/watch?v=wrfMnGyQIU8)
-	- Video discussing version 2 of CIF, provides a good overview of CIF, but beyond an introduction to CIF, the processes/procedures mentioned are outdated.
+
+* [CIF4 Server Code](https://github.com/csirtgadgets/verbose-robot)
+* [CIF4 CLI Client in Python](https://github.com/csirtgadgets/cifsdk-py-v4)
+* [CIF4 CLI Client in Go](https://github.com/JustinAzoff/cifsdk-go)
+* [CIF4 Wiki](https://github.com/csirtgadgets/verbose-robot/wiki/The-CIFv4-Book)
+* [CIF3 Wiki](https://github.com/csirtgadgets/bearded-avenger-deploymentkit/wiki/The-CIFv3-Book)
+* [CIF Maintainer's Blog](https://csirtgadgets.com/collective-intelligence-framework)
+  * Wes Young (appears to be the creator behind CIF4)
+  * Posts are not tutorials, mostly like journal entries/reflection on topics such as threat intelligence and writing open source code.  
+  * [Payment required to answer questions surrounding CIF](https://csirtg.io/support)
+* [Presentation on CIF](https://www.youtube.com/watch?v=wrfMnGyQIU8)
+  * Video discussing version 2 of CIF, provides a good overview of CIF, but beyond an introduction to CIF, the processes/procedures mentioned are outdated.
 
 #### Forcasted Obstacles
-- Our middleware will need to be in an environment where it has the necessary privileges to talk to both the Palo Alto API, and to access the CIF CLI
-    - We will need to work closely with Brian in order to make sure that this environment exists, or we will need to work together in order to create this environment.
+
+* Our middleware will need to be in an environment where it has the necessary privileges to talk to both the Palo Alto API, and to access the CIF CLI
+  *  We will need to work closely with Brian in order to make sure that this environment exists, or we will need to work together in order to create this environment.
 
 -----
 
