@@ -6,9 +6,9 @@
 
 ### Installation
 
-The installation notes specifically for the [Docker installation strategy](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton) worked very well for me.  I will provide a few pointers I gathered along the way
+The installation notes specifically for the [Docker installation strategy](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton) worked very well.  This guide will show how to install and common isssues the user may run into.
 
-*  I did **first** have to create an account on Maxmind.
+*  **First** the user has to create an account on Maxmind.
 
 ```
 ## MAXMIND Credentials
@@ -19,7 +19,7 @@ License Key: *****
 
 * Install on `Ubuntu 16.04 Server` (example: Ubuntu 16.04 Desktop doesn't work)
 * Install the docker image via `docker pull csirtgadgets/verbose-robot`
-* As indicated in the instructions, either `export` your Maxmind credientals, or (as I did) put them in your `.bashrc` file and `source` it
+* As indicated in the instructions, either `export` your Maxmind credientals, or put them in your `.bashrc` file and `source` it
 * Run your docker container:
 
 ```
@@ -114,16 +114,16 @@ With the environment variables all setup, you can now run your CIF docker image:
 sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
 ```
 
-* We pass into the running docker container the three environment variables we specified above with the `-e` flag
-* We setup port forwarding on port 5000 with the `-p` flag
-* We run the docker container in a  daemon with `-d`
-* For ease of referencing our docker container in the future, we labeled the container `verbose-robot`
+* User will pass into the running docker container the three environment variables we specified above with the `-e` flag
+* User will setup port forwarding on port 5000 with the `-p` flag
+* User will need to run the docker container in a  daemon with `-d`
+* For ease of referencing the docker container in the future, will have the container name `verbose-robot`
 
-To confirm our docker container is running, we can run `sudo docker ps`
+To confirm the docker container is running, user can run `sudo docker ps`
 
 ### Execute CIF Commands
 
-In order to interact with CIF, we can do so in two ways: the command prompt or with Swagger.
+In order to interact with CIF, user can do so in two ways: the command prompt or with Swagger.
 
 #### Command Prompt
 
@@ -148,7 +148,7 @@ On the VM running CIF you can visit http://localhost:5000 which displays a rest 
 
 ![swagger](https://user-images.githubusercontent.com/38234505/75951890-cb668e00-5e72-11ea-9d7d-0d9364429e6c.PNG)
 
-It is important to note that the lock symbol next to each endpoint indicates that the a token is required to be passed in for each request.  This is the string that we created and stored within the `CIF_TOKEN` environment variable earlier.  Click the **Authorize** button and add the token.
+It is important to note that the lock symbol next to each endpoint indicates that the a token is required to be passed in for each request.  This is the string that was created and stored within the `CIF_TOKEN` environment variable earlier.  Click the **Authorize** button and add the token.
 
 Once you add the token, you should be able to interact with the api in the GUI.  click the **Try it Out** button which toggles the endpoint, then click **Execute**.
 
