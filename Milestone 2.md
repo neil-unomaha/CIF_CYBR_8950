@@ -2,9 +2,7 @@
 
 ## Environment Setup and Hardships
 
-## Setup CIF 4 Test Environment
-
-The following example shows how to setup a CIF test environment with Ubuntu 16.04 server running in a virtual machine
+The following example shows how to setup a CIF 4 test environment with Ubuntu 16.04 server running in a virtual machine
 
 ### Installation
 
