@@ -2,56 +2,6 @@
 
 ## Environment Setup and Hardships
 
-## CIF Installation and Commands Notes
-
-### Installation
-
-The installation notes specifically for the [Docker installation strategy](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton) worked very well.  This guide will show how to install and common isssues the user may run into.
-
-*  **First** the user has to create an account on Maxmind.
-
-```
-## MAXMIND Credentials
-username: nthorne@unomaha.edu
-Account_user ID: *****
-License Key: *****
-```
-
-* Install on `Ubuntu 16.04 Server` (example: Ubuntu 16.04 Desktop doesn't work)
-* Install the docker image via `docker pull csirtgadgets/verbose-robot`
-* As indicated in the instructions, either `export` your Maxmind credientals, or put them in your `.bashrc` file and `source` it
-* Run your docker container:
-
-```
-sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
-```
-
-* Remember that `CIF 4` is running in a docker container.  You still need to shell into the container in order to install additional software.  
-  * Shell into your running container via:
-
-```
-  sudo docker exec -it verbose-robot /bin/bash
-```
-
-* Now that you are at a command prompt inside the container, [as indicated here](https://github.com/csirtgadgets/verbose-robot/wiki/Where-do-I-start) install the CIF client via:  `pip install 'cifsdk>=4.0.0a0'`
-
-Now that you have the  Python CIF SDK installed, you should be good to go!  Be sure that all your CIF commands are run within the docker container.
-
-### Usage / Commands
-
-* The main command is `cif`.  The client specifies a number of different options and arguments in order to get the desired response.  [Good Examples Here](https://github.com/csirtgadgets/verbose-robot/wiki/Introducing-the-CIF-client).
-* The process of ingesting threats/sharing threats within a network is unclear to me via the documentation
-* Appending to CIF threats is also unclear to me via the documentation.
-* The provided examples don't work because they are missing required options (apparently you must provide `--tags` now
-
-```
-cif --itype ipv4 --tags phishing --format table
-```
-
-The `--feed` option as [specified here is unrecognized](https://github.com/csirtgadgets/verbose-robot/wiki/Where-do-I-start-Feeds).  Apparently that is how you pull data from feeds in CIF?
-
------
-
 ## Setup CIF 4 Test Environment
 
 The following example shows how to setup a CIF test environment with Ubuntu 16.04 server running in a virtual machine
@@ -95,6 +45,12 @@ The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_
 
 ![maxmind_key](https://user-images.githubusercontent.com/38234505/75952477-74fa4f00-5e74-11ea-8ace-ab3a8f594e15.PNG)
 
+```
+## MAXMIND Credentials
+username: nthorne@unomaha.edu
+Account_user ID: *****
+License Key: *****
+```
 
 Here is an example command to setup these environment variables.  Note that you'll want to swap out the values for `MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`
 
@@ -130,6 +86,8 @@ In order to interact with CIF, user can do so in two ways: the command prompt or
 To do this we need to `bash` into our running container.  We can do that with the following:
 
 `sudo docker exec -it verbose-robot /bin/bash`
+
+* Now that you are at a command prompt inside the container, [as indicated here](https://github.com/csirtgadgets/verbose-robot/wiki/Where-do-I-start) install the CIF client via:  `pip install 'cifsdk>=4.0.0a0'`
 
 Now that we are inside the container, we can execute the `cif` command with various options in order to query the CIF database.  Here are some example commands:
 
