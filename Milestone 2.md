@@ -302,8 +302,6 @@ Recently, due to the amount of intelligence being collected by intrusion detecti
 
 ## Visuals and Diagrams
 
-### Current CIF Infrastructure
-
 ### Goal CIF Infrastructure
 
 ![Diagram](https://user-images.githubusercontent.com/46516728/75945728-ad902d80-5e60-11ea-8fd1-db981db1027c.png)
