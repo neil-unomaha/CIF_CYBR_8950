@@ -296,7 +296,7 @@ We will have to try this.
 
 ## Research Abstract
 
-Security attacks on organizations have increased in frequency. Intrusion detection systems, network monitors, and threat intelligence sharing frameworks have struggled to handle the increased load of information. Timeliness of firewall updates is a crucial concern. Updates are taking hours instead of minutes and can leave system and individuals vulnerable to attacks. This paper will delve into the effects of threat intelligence sharing timeliness with a university enterprise setting and a development effort focused on rapid dissemination of threat intelligence to perimeter firewalls. This paper addresses the security efficacy and cost of updating the firewalls in a timely and consistent manner.
+Malicious cyber-attacks on organizations have increased in frequency. Intrusion detection systems, network monitors, and threat intelligence sharing frameworks have struggled to handle the increased load of information. Timeliness of firewall updates is a crucial issue. Updates are taking hours instead of minutes and can leave system and individuals vulnerable to attacks. This paper will delve into the effects of threat intelligence sharing timeliness with a university enterprise setting and a development effort focused on rapid dissemination of threat intelligence to perimeter firewalls. This paper addresses the security efficacy and cost of updating the firewalls in a timely and consistent manner.
 
 -----
 
