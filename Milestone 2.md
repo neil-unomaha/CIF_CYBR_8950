@@ -199,6 +199,21 @@ We will have to try this.
 
 ## Project Realization
 
+In order to fully realize the project what is needed is to gain a full understanding of both the CIF framework and Palo Alto.  Setting up a functional CIF test environment was the first step that needs to be overcome as we need to use a new version of the technology.  There is not a need to have a test environment for Palo Alto as the real work to fully realize the project is done on the CIF server side.  As we have done more research and gained a better understanding of Palo Alto and the interaction with CIF we have come to the understanding that a middleware would be less efficient than our new plan to have Palo Alto retrieve threat information from CIF directly through a new API on CIF that responds to requests for paginated threat information.
+
+### CIF Test Environment
+
+The first task that needed to be accomplished to go forward with project realization was to setup the CIF environment.  The documentation for setting up the CIF environment is relatively sparse and thus it was necessary to create our own installation document that allowed for more consistent installation.  The completed instructions as well as the issues that had to be overcome are documented above.
+
+### Palo Alto
+
+Along with setting up the CIF environment was to setup a Palo Alto test environment to understand how we could be interfacing these two systems.  Due to the fact that Palo Alto is a system that is enterprise grade paid software it was not possible for us to setup a test environment.  We were able to understand how Palo Alto functions with retrieving new threat information from the documentation due to the fact that the documentation is very extensive, and it was through this that it was discovered that our original plan of creating a middleware to interface between Palo Alto and CIF would be not the most optimal method of realizing or project of using CIF to automatically update Palo Alto threat information.
+
+### API Endpoint
+
+The final form that our project has taken after accomplishing the previous tasks is to have Palo Alto use Dynamic Block Lists to directly access the CIF server.  The CIF server will then respond to the HTTP request to an API that will now be created with the threat information.  To create this API endpoint, it is necessary to get an understanding of how CIF server serves its APIs.  CIF uses Flask to serve APIs so it should be as simple as creating a new API with flask that responds to a HTTP request with paginated threat information.  This task is not as simple as first thought due to the CIF server requiring a bearer token for access to its APIs.  Unfortunately, the Palo Alto system for Dynamic Block Lists does not allow for the insertion of header information in the requests that would have allowed for the insertion of a bearer token, and thus another solution had to be found.  In stead of having Palo Alto give a token somehow it was decided that the better solution would be to have an API that did not require a token whatsoever.  Creating the new API endpoint was a relatively easy task that only required copying an other API endpoint and changing it so it is now an endpoint called “palo”.
+
+
 -----
 
 ## Research Outline
