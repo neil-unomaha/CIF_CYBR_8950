@@ -318,7 +318,7 @@ Malicious cyber-attacks on organizations have increased in frequency. Intrusion 
 * Existing middelware solutions exist, such as mindmeld and panhandler
 * Concern is about maintainability of the middleware.  Is there a solution where middleware isn't needed?
 
-### API Soltuion
+### API Solution
 ![API Solution](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-api-solution.png)
 * API solution: have an endpoint that a firewall calls, which returns indicators in an ingestible format for that firewall
 
