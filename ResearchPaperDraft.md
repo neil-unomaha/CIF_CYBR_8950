@@ -37,19 +37,14 @@ The rest of the paper will be organized as follows. Section 2 will introduce pre
     * Ransomware attacks, phishing, breaches, etc. are increasing (Bissell, et. al, 2019)
     * Companies blocking IP addresses by using honeywords, fake passwords entered (K. Naik, V. Bhosale, and V. D. Shinde)
     * Other companies sharing intel reports for possible threats (J. Elmellas, “Knowledge is power: the evolution of threat intelligence”)
-    * Security intelligence and threat sharing has the highest cost savings. 67% respondents use it, average 2.26 million savings (includes costs of tech) (Bissell, et al. 2020)
+    * Security intelligence and threat sharing has the highest cost savings. 67% respondents use it, average 2.26 million savings (includes costs of tech) (Bissell, et al. 2019)
     * Average cost of successful cyber attack is $1.1 million (Radware, 2018)
-    * Equifax hack as so far cost $439 million, and projected to exceed $600 million
-  * Collective Intelligence
-    * Describe the goals
-      * Multiple organizations collecting and sharing information could benefit all members better than individually
-    * Zhao and White try to define and create a baseline for a collaborative intelligence framework in their paper, based of the g-SIS model (2012)
-  * University setting relevant to CIF project
-    * In 2012, there was a GhostShell hack that attacked educational institutions from Australia to Korean music services. It caused the release of 13,000 users' personal details online (Stevenson, 2015).
-    * Unnamed university in Japan announced a large-scale personal leak, caused by unauthorized access to Office365 (Kashiwazaki, 2018).
-      * 24,000+ students, 23,000+ alumni, 12,451 members of staff, etc. laked information
-        * Included name, affiliation, Email. For students, it also included year of entrance and student ID
-      * Information from insiders such as spreadsheets for internal work, and information from outsiders such as job applicants.
+
+Many organizations and researchers have been looking at collective intelligence solutions. With collective intelligence, multiple organizations work in conjunction to collect and sharing information that could be useful for others. Zhao and White in their paper talk about how collective information sharing can help a community prevent cyber attacks and detect any potential risks in an early stage. They define different types of information sources (internal and external), different methods of communication, etc. The model is very defined with various aspects however the framework is not applied in a test environment for further evaluation (2012).
+
+For previous research that pertains to an academic setting, in 2012 there was a large attack from a hacker group, Team GhostShell, that claimed to have attacked over 300 websites and more than 13,000 users' data. The attack reached institutions in areas such as Australia and Korean music services (Stevenson, 2015).
+
+Another paper from the author Hiroki Hashiwazaki goes into detail in his report about an unnamed Japanese university that had a large-scale leak due to unauthorized access to Office365. Over 24,000 students, 23,000 alumni, 12,000 staff members, etc. had their information leaked. This information included their name, affiliation, email, Student ID, and others. Other information leaked was internal spreadsheets and job applicants who applied at the university. The university learned a hard lesson and in its cleanup implemented new preventative measures, such as next generation endpoint security solutions, increase log generation from systems and network equipment, and testing for a new vulnerability scanner (Kashiwazaki, 2018).
 
 ## 3. CIF Information
 
