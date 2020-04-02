@@ -302,10 +302,30 @@ Malicious cyber-attacks on organizations have increased in frequency. Intrusion 
 
 ## Visuals and Diagrams
 
-### Goal CIF Infrastructure
+### Basic CIF Infrastructure
+![Diagram of CIF](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-basic.png)
+* CIF is constantly making requests to the various threat feeds you configure it to pull from.  It takes the results from those threat feeds and stores it in a database.  
+* Feed configurations are specified in `/etc/cif/rules` directory
+* Clients will make requests to your CIF server too, at which point the server will pull out data from its database, format it, and return it as a response. 
 
-![Diagram](https://user-images.githubusercontent.com/46516728/75945728-ad902d80-5e60-11ea-8fd1-db981db1027c.png)
+### CIF Challenge
+![CIF Challenge](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-challenge.png)
+* The challenge is that CIF is not immediately able to integrate into popular firewalls such as Palo Alto
+* Work is required to pull in indicators from CIF, format the output, and push those indicators to your network's firewall
 
+### Middleware Solution
+![Middleware Solution](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-middle_solution.png)
+* Existing middelware solutions exist, such as mindmeld and panhandler
+* Concern is about maintainability of the middleware.  Is there a solution where middleware isn't needed?
+
+### API Soltuion
+![API Solution](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-api-solution.png)
+* API solution: have an endpoint that a firewall calls, which returns indicators in an ingestible format for that firewall
+
+### NU CIF Infrastructure
+![NU CIF Infrastructure](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-nu-setup.png)
+* NU uses the Palo Alto framework
+* Currently, a CIF server sits on the UNL netowrk
 -----
 
 ## References
