@@ -5,6 +5,8 @@
 [Research Outline](#Research-Outline)  
 [Research Abstract](#Research-Abstract)  
 [Visuals and Diagrams](#Visuals-and-Diagrams)  
+[Presentation slides](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/milestone_2.pptx)  
+[Presentation Recording](https://app.vidgrid.com/view/GYWwAvF0TbNZ/?sr=E6WOni)
 
 ## Environment Setup and Hardships
 
@@ -142,8 +144,6 @@ One possible explanation is because CIF is using [Flask-RESTPlus](https://flask-
   def get(self):
     return {'hello': 'world'}
 ```
-
-We will have to try this.
 
 -----
 
