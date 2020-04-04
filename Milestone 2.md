@@ -45,7 +45,7 @@ The following is an example output string.
 
 `525ff70def1b2b4eff3119451eabfa0ce3fa6316efb55fda075db08ac4a2feda`
 
-The other two required environment variables are `MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`.  CIF depends on [as mentioned here](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton). [Maxmind](https://www.maxmind.com/en/home) will allow a user to create a free account within their settings, and provide an account ID and license for the two environment variables.
+The other two required environment variables are `MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`, as explained [here](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton). [Maxmind](https://www.maxmind.com/en/home) will allow a user to create a free account within their settings, and provide an account ID and license for the two environment variables.
 
 *Note: Maxmind will only display the full license key once, as stated on their page. Please be sure to save this securely save this key.*
 
