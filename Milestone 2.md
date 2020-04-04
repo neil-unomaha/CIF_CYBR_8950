@@ -5,7 +5,7 @@
 [Research Outline](#Research-Outline)  
 [Research Abstract](#Research-Abstract)  
 [Visuals and Diagrams](#Visuals-and-Diagrams)  
-[Presentation slides](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/milestone_2.pptx)  
+[Presentation Slides](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/milestone_2.pptx)  
 [Presentation Recording](https://app.vidgrid.com/view/GYWwAvF0TbNZ/?sr=E6WOni)
 
 ## Environment Setup and Hardships
@@ -220,6 +220,10 @@ Along with setting up the CIF environment was to research Palo Alto to understan
 The final form that our project has taken after accomplishing the previous tasks is to have Palo Alto use Dynamic Block Lists to directly access the CIF server.  The CIF server will then respond to an HTTP request to an API that will be created with the threat information.  To create this API endpoint, it is necessary to get an understanding of how the CIF server serves its APIs.  CIF uses the Flask framework to serve APIs so it should be as simple as creating a new API with Flask that responds to an HTTP request with the paginated threat information.  This task is not as simple as first thought due to the CIF server requiring a bearer token for access to its APIs.  Unfortunately, the Palo Alto system for Dynamic Block Lists does not allow for the insertion of the header information in the requests that would have allowed for the insertion of a bearer token, and thus another solution had to be found.  
 
 Instead of having Palo Alto give a token somehow, it was decided that the better solution would be to have an API that did not require a token at all.  Creating the new API endpoint was a relatively easy task that only required copying another API endpoint and editing it so it is now an endpoint called “Palo”.  To allow the API to be accessed without authentication required researching Flask and analyzing the current API endpoints.  The process that ended up being the correct one was discovered by adding logging which allowed the specific API endpoint to be whitelisted as not being authenticated within the system.
+
+### Fallback: Bash Script
+
+It was discussed, if the group has issues in creating an API endpoint to accomplish the goal of this project, there does exist a fallback of using a bash script to pull IPv4 indicators from the CIF server to Palo Alto. This script would include using the cif command to save IPs to a csv file, paging the file of IPs for Palo, and then having Palo Alto refer to a specific folder on the CIF server to collect an IP block list.
 
 -----
 
