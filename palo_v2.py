@@ -24,7 +24,7 @@ class Palo(Resource):
     @api.doc(security=[])
     def get(self, page_num):
         if self.__is_invalid_page_num(page_num):
-            return "Error: invalid page numer"
+            return "Error: invalid page number"
 
         self.__init_page_output(page_num)
 
