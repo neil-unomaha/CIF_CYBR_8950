@@ -1,8 +1,7 @@
-from flask import request, current_app
+from flask import request, current_app, send_file
 from .indicators import *
 
 import json, os
-from flask import send_file
 from .constants import ROUTER_ADDR
 
 import zmq
