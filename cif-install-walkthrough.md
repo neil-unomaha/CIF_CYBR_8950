@@ -3,6 +3,14 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * [Official CIF 4 installation instructions can be found here](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton).  This walkthrough provides supplemental details and screenshots in hopes of making installation more user-friendly.
 
 ## Table of Contents
+* [Maxmind Account Prerequisite](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite)
+* [Install Ubuntu 16.04 server](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-ubuntu-1604-server)
+* [Install additional software within your Ubuntu server virtual machine](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-additional-software-within-your-ubuntu-server-virtual-machine)
+* [Setup environnment variables](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#setup-environnment-variables)
+* [Run the CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#run-the-cif-docker-container)
+* [Install software within running CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-software-within-running-cif-docker-container)
+* [Copy Palo Endpoint Code into the CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#copy-palo-endpoint-code-into-the-cif-docker-container)
+* [Restart CIF and test new palo endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#restart-cif-and-test-new-palo-endpoint)
 
 ## Maxmind Account Prerequisite
 * CIF version 4 has a dependency on [Maxmind](https://www.maxmind.com/en/home), so you must setup an account.  We setup the free account, specifically for the [Geolite2 Databases product](https://dev.maxmind.com/geoip/geoip2/geolite2/).
