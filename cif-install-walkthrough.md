@@ -38,7 +38,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
 ## Install additional software within your Ubuntu server virtual machine
-* After you startup your VM for the first time, we commend installing the `ubuntu-desktop` gui plugin for ease of use:
+* After you startup your VM for the first time, we recommend installing the `ubuntu-desktop` gui plugin for ease of use:
 
       sudo apt-get update
       sudo apt-get install ubuntu-desktop
