@@ -11,7 +11,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * [Install software within running CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-software-within-running-cif-docker-container)
 * [Copy Palo Endpoint Code into the CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#copy-palo-endpoint-code-into-the-cif-docker-container)
 * [Restart CIF and test new palo endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#restart-cif-and-test-new-palo-endpoint)
-* Additional custom configurations and Final Thoughts
+* [Additional custom configurations and Final Thoughts](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#additional-custom-configurations-and-final-thoughts)
 
 ## Maxmind Account Prerequisite
 * CIF version 4 has a dependency on [Maxmind](https://www.maxmind.com/en/home), so you must setup an account.  We setup the free account, specifically for the [Geolite2 Databases product](https://dev.maxmind.com/geoip/geoip2/geolite2/).
@@ -126,7 +126,7 @@ It shouldn't take longer than about 30 seconds for CIF to restart all its proces
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
 ## Additional custom configurations and Final Thoughts
-There are a number of custom configurations you might want to include in your specific instance of CIF.  [CIF has a decent overview in its wiki](https://github.com/csirtgadgets/verbose-robot/wiki/The-CIFv4-Book).  
+There are a number of custom configurations you might want to include in your specific instance of CIF.  [CIF version 4 has a decent overview of its features and configurations in its wiki](https://github.com/csirtgadgets/verbose-robot/wiki/The-CIFv4-Book).  
 
 * One particular configuration worth mentioning: **threat feeds**.  When you originally boot up CIF, it immediately starts pulling indicators from the **default threat feeds**.  The configuration for these threat feeds is located in: `/etc/cif/rules/default`.  You may decide to remove a number of those threat feeds, or include additional threat feeds. 
 
