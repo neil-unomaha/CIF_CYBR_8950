@@ -86,7 +86,7 @@ With the environment variables all setup, you can now run your CIF docker image:
 To confirm our docker container is running, we can run `sudo docker ps`
 ![Show running CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-running.PNG)
 
-If you executed the above commands to run the container and the container is not listed, you can run `sudo docker logs <YOUR-CONTAINER-ID>` in order to debug.  Likely there is an issue with your maxmind licese key because you didn't specify the correct options while creating the license key. [Reference this step for details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
+If you executed the above commands to run the container and the container is not listed, you can run `sudo docker logs <YOUR-CONTAINER-ID>` in order to debug.  Likely there is an issue with your maxmind license key because you didn't specify the correct options while creating the license key. [Reference this step for details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
 
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
@@ -108,7 +108,7 @@ While bashed into your CIF docker container, you will need to make two changes:
     * [Here is the new app.py file with the changes](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-palo-changes/app.py).
     * There are three minor additions.  You can either manually add those three changes (located with comment `# PALO ENDPOINT`), or you can replace the entire app.py file
 
-2. Add new palo.py endpoing file to `/usr/local/lib/python3.6/site-packages/verbose_robot-4.0.1-py3.6.egg/cif/httpd/palo.py`
+2. Add the new palo.py endpoint file to `/usr/local/lib/python3.6/site-packages/verbose_robot-4.0.1-py3.6.egg/cif/httpd/palo.py`
     * [The file can be found here](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-palo-changes/palo.py)
 
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
