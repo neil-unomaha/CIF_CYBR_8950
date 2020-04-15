@@ -77,8 +77,6 @@ With the environment variables all setup, you can now run your CIF docker image:
 
 * This command will go out to docker hub and install the CIF version 4 image, and then run it in a container
 
-[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
-
 **Explaining the above options**:
 * We pass into the running docker container the three environment variables we specified above with the `-e` flag
 * We setup port forwarding on port 5000 with the `-p` flag
