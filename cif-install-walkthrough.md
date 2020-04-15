@@ -2,6 +2,8 @@
 This guide provides step-by-step instructions on how to install [CIF version 4](https://github.com/csirtgadgets/verbose-robot/wiki/The-CIFv4-Book) on a virtual machine.  
 * [Official CIF 4 installation instructions can be found here](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton).  This walkthrough provides supplemental details and screenshots in hopes of making installation more user-friendly.
 
+## Table of Contents
+
 ## Maxmind Account Prerequisite
 * CIF version 4 has a dependency on [Maxmind](https://www.maxmind.com/en/home), so you must setup an account.  We setup the free account, specifically for the [Geolite2 Databases product](https://dev.maxmind.com/geoip/geoip2/geolite2/).
 * After you setup your Maxmind account for the Geolite2 Databases product, you need to generate your license key.  On the sidepanel, click "My Lcense Key" and follow the instructions:
