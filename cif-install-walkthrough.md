@@ -62,7 +62,7 @@ An example output is the following:
     
 The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_LICENSE_KEY`. These two environment variables capture the Maxmind Account ID and your Maxmind License Key values you were advised to copy down [in the instructions above](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
 
-Here is an example command to setup these environment variables. **Note**: that you'll want to swap out the values for` MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`!
+Here is an example command to setup these environment variables. **Reminder**: you'll need to swap out the values for` MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`!
 
     export CIF_TOKEN=`head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'`
     export MAXMIND_USER_ID=YOUR-ACCOUNT-ID
