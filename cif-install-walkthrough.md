@@ -18,6 +18,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * The screenshot above has our Account ID and License key censored out.  
 * **Write down your Account ID and License key.  You will need to specify it as an environment variable within your CIF VM later on.**
 
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
 ## Install Ubuntu 16.04 server
 * Head over to https://releases.ubuntu.com/16.04 to install Ubuntu server, version 16.04
@@ -25,6 +26,8 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * Specifically, we installed the 64-bit PC (AMD64) server install image: **16.04.6**
 ![Screenshot of Ubuntu server download](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif1.PNG)
 * After you install the image, create your virtual machine with your preferred virtualization product (i.e. VMware, Virtualbox, etc)
+
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
 ## Install additional software within your Ubuntu server virtual machine
 * After you startup your VM for the first time, we commend installing the `ubuntu-desktop` gui plugin for ease of use:
@@ -35,6 +38,8 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * Next you will need to install docker
 
       sudo apt install docker.io
+
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
 ## Setup environnment variables
 Before running the CIF docker container, you need to create some environment variables.
@@ -54,13 +59,17 @@ Here is an example command to setup these environment variables. **Note**: that 
     export CIF_TOKEN=`head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'`
     export MAXMIND_USER_ID=YOUR-ACCOUNT-ID
     export MAXMIND_LICENSE_KEY=YOUR-LICENSE-KEY
-    
+
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
+
 ## Run the CIF docker container
 With the environment variables all setup, you can now run your CIF docker image:
 
     sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
 
 * This command will go out to docker hub and install the CIF version 4 image, and then run it in a container
+
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
 **Explaining the above options**:
 * We pass into the running docker container the three environment variables we specified above with the `-e` flag
@@ -73,6 +82,8 @@ To confirm our docker container is running, we can run `sudo docker ps`
 
 If you executed the above commands to run the container, and the container is not listed, you can run `sudo docker logs <YOUR-CONTAINER-ID> in order to debug.  Likely there is an issue with your maxmind licese key because you didn't specify the correct options while creating the license key. [Reference this step for details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
 
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
+
 ## Install software within running CIF docker container
 You will need to `bash` into your CIF docker container with the following command:
 
@@ -82,7 +93,9 @@ Once you are bashed in, install your favorite text editor.  We installed `nano`:
 
     apt-get update
     apt-get install nano
-    
+
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
+
 ## Copy Palo Endpoint Code into the CIF docker container
 While bashed into your CIF docker container, you will need to make two changes:
 1. Add three changes to `/usr/local/lib/python3.6/site-packages/verbose_robot-4.0.1-py3.6.egg/cif/httpd/app.py`
@@ -91,6 +104,8 @@ While bashed into your CIF docker container, you will need to make two changes:
 
 2. Add new palo.py endpoing file to `/usr/local/lib/python3.6/site-packages/verbose_robot-4.0.1-py3.6.egg/cif/httpd/palo.py`
     * [The file can be found here](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-palo-changes/palo.py)
+
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
 ## Restart CIF and test new palo endpoint
 `Supervisord` is the orchestator of all the running CIF processes.  The easiest way to restart CIF in order to load in all the changes is to kill the runninging Supervisord process.  After the process is killed, it will automatically restart:
@@ -101,4 +116,4 @@ While bashed into your CIF docker container, you will need to make two changes:
 It shouldn't take longer than about 30 seconds for CIF to restart all its processes.  You can confirm it is back up and running within your VM's browser by going to `localhost:5000`.
 * If that works, then the final test is to confirm the palo endpoing is working with: `localhost:5000/palo/1`
 
-
+[back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
