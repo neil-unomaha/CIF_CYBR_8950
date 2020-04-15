@@ -83,5 +83,20 @@ Once you are bashed in, install your favorite text editor.  We installed `nano`:
     
 ## Copy in Palo Endpoint Code into the CIF docker container
 While bashed into your CIF docker container, you will need to make two changes:
-1. 
+1. Add three changes to `/usr/local/lib/python3.6/site-packages/verbose_robot-4.0.1-py3.6.egg/cif/httpd/app.py`
+    * [Here is the new app.py file with the changes](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-palo-changes/app.py).
+    * There are three minor additions.  You can either manually add those three changes (located with comment `# PALO ENDPOINT`), or you can replace the entire app.py file
+
+2. Add new palo.py endpoing file to `/usr/local/lib/python3.6/site-packages/verbose_robot-4.0.1-py3.6.egg/cif/httpd/palo.py`
+    * [The file can be found here](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-palo-changes/palo.py)
+
+## Restart CIF and test it out
+`Supervisord` is the orchestator of all the running CIF processes.  The easiest way to restart CIF in order to load in all the changes is to kill the runninging Supervisord process.  After the process is killed, it will automatically restart:
+
+    PID=`ps aux | grep supervisord | grep -v grep | awk -F ' ' '{print $2}'`
+    kill -HUP $PID
+
+It shouldn't take longer than about 30 seconds for CIF to restart all its processes.  You can confirm it is back up and running within your VM's browser by going to `localhost:5000`.
+* If that works, then the final test is to confirm the palo endpoing is working with: `localhost:5000/palo/1`
+
 
