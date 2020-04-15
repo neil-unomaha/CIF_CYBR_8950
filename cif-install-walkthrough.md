@@ -19,7 +19,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 ![Maxmind My License Key link](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-maxmind-1.PNG)
 ![Maxmind Generate License Key Button](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-maxmind-2.PNG)
 ![Maxmind Generate License Key Cpnfirm](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-maxmind-license-key.PNG)
-* It is critical that for CIF version 4 you specify the options depicted in the picture.  This is because CIF version 4 utilizes `geoipupdate` version **2.3.1**, so it will not work for the GEolite2 Databases product unless you specify those options.  This issue is (addressed by the existing CIF maintainer here)[https://github.com/csirtgadgets/verbose-robot/issues/87].   
+* It is critical that for CIF version 4 you specify the options depicted in the picture.  This is because CIF version 4 utilizes `geoipupdate` version **2.3.1**, so it will not work for the GEolite2 Databases product unless you specify those options.  This issue is [addressed by the existing CIF maintainer here](https://github.com/csirtgadgets/verbose-robot/issues/87).   
 
 ![Maxmind Generate License Key](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-maxmind-4.PNG)
 
