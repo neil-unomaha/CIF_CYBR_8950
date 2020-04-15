@@ -9,7 +9,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 ![Maxmind My License Key link](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-maxmind-1.PNG)
 ![Maxmind Generate License Key Button](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-maxmind-2.PNG)
 ![Maxmind Generate License Key Cpnfirm](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-maxmind-license-key.PNG)
-* It is critical that in this version of `CIF` you specify the options depicted in the picture.  This is because CIF version 4 utilizes geoipupdate version 2.3.1, so it will not work for the GEolite2 Databases product unless you specify those options.  This issue is (addressed by the existing CIF maintainer here)[https://github.com/csirtgadgets/verbose-robot/issues/87].   
+* It is critical that for CIF version 4 you specify the options depicted in the picture.  This is because CIF version 4 utilizes `geoipupdate` version **2.3.1**, so it will not work for the GEolite2 Databases product unless you specify those options.  This issue is (addressed by the existing CIF maintainer here)[https://github.com/csirtgadgets/verbose-robot/issues/87].   
 
 ![Maxmind Generate License Key](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-maxmind-4.PNG)
 
@@ -45,7 +45,7 @@ An example output is the following:
 
     ce52fd26bc3d3f7a1f73dfddeeb36a4a7a59586aef40205df8f55c170b6b2e46
     
-The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_LICENSE_KEY`. Each of these environment variables capture your Maxmind Account ID and your Maxmind License Key that you were adised to copy down [in the instructions above](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
+The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_LICENSE_KEY`. These two environment variables capture the Maxmind Account ID and your Maxmind License Key values you were advised to copy down [in the instructions above](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
 
 Here is an example command to setup these environment variables. **Note**: that you'll want to swap out the values for` MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`!
 
@@ -58,11 +58,15 @@ With the environment variables all setup, you can now run your CIF docker image:
 
     sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
 
-* This command will go out to docker hub and install the CIF version 4 image
+* This command will go out to docker hub and install the CIF version 4 image, and then run it in a container
 
 **Explaining the above options**:
 * We pass into the running docker container the three environment variables we specified above with the `-e` flag
 * We setup port forwarding on port 5000 with the `-p` flag
 * We run the docker container in a daemon with `-d`
 * For ease of referencing our docker container in the future, we labeled the container `verbose-robot`
+
+To confirm our docker container is running, we can run sudo docker ps
+
+If you executed the above commands to run the container, and the container is not listed, you can run `sudo docker logs <YOUR-CONTAINER-ID> in order to debug.  Likely there is an issue with your maxmind licese key because you didn't specify the correct options while creating the license key. [Reference this step for details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
 
