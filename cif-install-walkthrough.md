@@ -31,11 +31,8 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * Next you will need to install docker
 
       sudo apt install docker.io
-* Now that docker is installed, you can install the cif version 4 docker image from docker hub
 
-      sudo docker pull csirtgadgets/verbose-robot
-
-## Setup enviornment variables
+## Setup environnment variables
 Before running the CIF docker container, you need to create some environment variables.
 
 The first environment variable is `CIF_TOKEN` which will contain a randomly generated string. This string ultimately becomes the bearer token passed in for all of your GET and POST requests via the request header for security (exception: we made our palo endpoint not require a bearer token be passed in). You can generate a random string with the following command on Ubuntu:
@@ -46,4 +43,24 @@ An example output is the following:
 
     ce52fd26bc3d3f7a1f73dfddeeb36a4a7a59586aef40205df8f55c170b6b2e46
     
-The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_LICENSE_KEY`. Each of these environment variables capture your Maxmind Account ID and your Maxmind License Key that you were adised to copy down in the instructions above.
+The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_LICENSE_KEY`. Each of these environment variables capture your Maxmind Account ID and your Maxmind License Key that you were adised to copy down [in the instructions above](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
+
+Here is an example command to setup these environment variables. **Note**: that you'll want to swap out the values for` MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`!
+
+    export CIF_TOKEN=`head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'`
+    export MAXMIND_USER_ID=YOUR-ACCOUNT-ID
+    export MAXMIND_LICENSE_KEY=YOUR-LICENSE-KEY
+    
+## Run the CIF docker container
+With the environment variables all setup, you can now run your CIF docker image:
+
+    sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
+
+* This command will go out to docker hub and install the CIF version 4 image
+
+**Explaining the above options**:
+* We pass into the running docker container the three environment variables we specified above with the `-e` flag
+* We setup port forwarding on port 5000 with the `-p` flag
+* We run the docker container in a daemon with `-d`
+* For ease of referencing our docker container in the future, we labeled the container `verbose-robot`
+
