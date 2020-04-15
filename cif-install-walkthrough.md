@@ -19,7 +19,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 
 ## Install Ubuntu 16.04 server
 * Head over to https://releases.ubuntu.com/16.04 to install Ubuntu server, version 16.04
-* [As detailed here](https://github.com/csirtgadgets/verbose-robot/wiki/FAQ#ubuntu-lts-desktop) the desktop version is not supported.  We also found that the 32-bit server versionw as having issues
+* [As detailed here](https://github.com/csirtgadgets/verbose-robot/wiki/FAQ#ubuntu-lts-desktop) the desktop version is not supported.  
 * Specifically, we installed the 64-bit PC (AMD64) server install image: **16.04.6**
 ![Screenshot of Ubuntu server download](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif1.PNG)
 * After you install the image, create your virtual machine with your preferred virtualization product (i.e. VMware, Virtualbox, etc)
@@ -66,7 +66,22 @@ With the environment variables all setup, you can now run your CIF docker image:
 * We run the docker container in a daemon with `-d`
 * For ease of referencing our docker container in the future, we labeled the container `verbose-robot`
 
-To confirm our docker container is running, we can run sudo docker ps
+To confirm our docker container is running, we can run `sudo docker ps`
+![Show running CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-running.PNG)
 
 If you executed the above commands to run the container, and the container is not listed, you can run `sudo docker logs <YOUR-CONTAINER-ID> in order to debug.  Likely there is an issue with your maxmind licese key because you didn't specify the correct options while creating the license key. [Reference this step for details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
+
+## Install software within running CIF docker container
+You will need to `bash` into your CIF docker container with the following command:
+
+    sudo docker exec -it verbose-robot /bin/bash
+
+Once you are bashed in, install your favorite text editor.  We installed `nano`:
+
+    apt-get update
+    apt-get install nano
+    
+## Copy in Palo Endpoint Code into the CIF docker container
+While bashed into your CIF docker container, you will need to make two changes:
+1. 
 
