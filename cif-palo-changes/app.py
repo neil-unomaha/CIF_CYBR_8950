@@ -240,7 +240,7 @@ def before_request():
 # PALO ENDPOINT
 # WHITELIST PALO ENDPOINT
     if request.method == 'GET' and \
-            request.endpoint in ['/', 'doc', 'help', 'health', 'restplus_doc.static', 'specs', 'swaggerui','palo_palo']:
+            request.endpoint in ['/', 'doc', 'help', 'health', 'restplus_doc.static', 'specs', 'swaggerui', 'palo_palo']:
         return
 
     if request.method == 'GET' and request.endpoint in ['favicon']:
