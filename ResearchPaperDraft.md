@@ -2,7 +2,7 @@
 ### Subtitle here
 
 Talon Flynn  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Department Name, First Institution/University Name, City, State, Country, email@email.com  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;College of Information Science & Technolgy, University of Nebraska at Omaha, Omaha, Nebraska, United States, tflynn@unomaha.edu  
 Amber Makovicka  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Department Name, First Institution/University Name, City, State, Country, email@email.com  
 Neil Thorne  
