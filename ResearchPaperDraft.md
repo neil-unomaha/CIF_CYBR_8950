@@ -11,7 +11,7 @@ Jackson Urrutia
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Department Name, First Institution/University Name, City, State, Country, email@email.com
 
 ## Abstract
-*Insert abstract here*
+Malicious cyber-attacks on organizations have increased in frequency. Intrusion detection systems, network monitors, and threat intelligence sharing frameworks have struggled to handle the increased load of information. Timeliness of firewall updates is a crucial issue. Updates are taking hours instead of minutes and can leave the system and individuals vulnerable to attacks. This paper will delve into the effects of threat intelligence sharing timeliness with a university enterprise setting and a development effort focused on the rapid dissemination of threat intelligence to perimeter firewalls. This paper addresses the security efficacy and cost of updating the firewalls in a timely and consistent manner.
 
 ### CCS Concepts
 *insert ACM Computing Classification System using indexing support tool*
