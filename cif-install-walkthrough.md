@@ -121,7 +121,7 @@ While bashed into your CIF docker container, you will need to make two changes:
     kill -HUP $PID
 
 It shouldn't take longer than about 30 seconds for CIF to restart all its processes.  You can confirm it is back up and running within your VM's browser by going to `localhost:5000`.
-* If that works, then the final test is to confirm the palo endpoing is working with: `localhost:5000/palo/1`
+* If that works, then the final test is to confirm the palo endpoint is working with: `localhost:5000/palo/1`
 
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
