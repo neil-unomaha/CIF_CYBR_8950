@@ -4,7 +4,7 @@
 Talon Flynn  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Cybersecurity, University of Nebraska at Omaha, Omaha, Nebraska, United States, tflynn@unomaha.edu  
 Amber Makovicka  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Department Name, First Institution/University Name, City, State, Country, email@email.com  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Cybersecurity, University of Nebraska at Omaha, Omaha, NE, United States, ambermakovicka@unomaha.edu  
 Neil Thorne  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Department Name, First Institution/University Name, City, State, Country, email@email.com  
 Jackson Urrutia  
@@ -103,5 +103,5 @@ Another paper from the author Hiroki Hashiwazaki goes into detail in his report 
 
 ## References
 
-[1] Reference
+[1] Reference  
 [2] Reference
