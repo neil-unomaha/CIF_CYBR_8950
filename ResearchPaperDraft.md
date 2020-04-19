@@ -4,13 +4,14 @@
 Talon Flynn  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Cybersecurity, University of Nebraska at Omaha, Omaha, Nebraska, United States, tflynn@unomaha.edu  
 Amber Makovicka  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Cybersecurity, University of Nebraska at Omaha, Omaha, NE, United States, ambermakovicka@unomaha.edu  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Cybersecurity, University of Nebraska at Omaha, Omaha, Nebraska, United States, ambermakovicka@unomaha.edu  
 Neil Thorne  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Department Name, First Institution/University Name, City, State, Country, email@email.com  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Cybersecurity, University of Nebraska at Omaha, Omaha, Nebraska, United States,  email@email.com  
 Jackson Urrutia  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;First Department Name, First Institution/University Name, City, State, Country, email@email.com
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Cybersecurity, University of Nebraska at Omaha, Omaha, Nebraska, United States, email@email.com
 
 ## Abstract
+
 Malicious cyber-attacks on organizations have increased in frequency. Intrusion detection systems, network monitors, and threat intelligence sharing frameworks have struggled to handle the increased load of information. Timeliness of firewall updates is a crucial issue. Updates are taking hours instead of minutes and can leave the system and individuals vulnerable to attacks. This paper will delve into the effects of threat intelligence sharing timeliness with a university enterprise setting and a development effort focused on the rapid dissemination of threat intelligence to perimeter firewalls. This paper addresses the security efficacy and cost of updating the firewalls in a timely and consistent manner.
 
 ### CCS Concepts
@@ -48,19 +49,14 @@ Another paper from the author Hiroki Hashiwazaki goes into detail in his report 
 
 ## 3. CIF Information
 
-  * CIF Architecture
-    * Display diagram of current CIF process
-      * Current pull and push process with Palo Alto firewalls
-      * Explain CIF process
-        * YML files with tokens from each university within CIF
-        * Cron job that is run daily to retrieve updated information
-        * Python and Flask details
-      * Explain why current process is not most efficient
-        * Current cron job works in roundabout way
-  * CIF Versions
-    * Explain our reasoning to use CIFv4 and not v3
-      * CIFv3 is in process of getting deprecated, so v4 is preferred
-      * Mention CIFv3 server we were given access to for getting familiar with CIF
+The project is built upon Python, and the system it is installed on must be Python 3.6 or higher. CIF also uses Flask as the web framework. Before this project, CIF would use a script to run on a daily basis to pull and push the latest feeds to and from Palo Alto firewalls. The retrieved feeds are shared feeds from other members of the framework. Figure 1 is a diagram outlining the current setup.
+
+![Existing Setup Diagram](https://raw.githubusercontent.com/neil-unomaha/CIF_CYBR_8950/master/Assets/Existing_Setup.png)
+Figure 1: Existing Setup
+
+As explained earlier, the goal of this project is to implement a new process to replace the daily script to retrieve the latest feeds several times a day. The question did come up about updating the existing script to run several times a day, but it was decided not to go this route. The script works to request the data from CIF's database, but Flask could be used to internally request and send this data. This would be a better implementation than to run a script separate from the Flask framework.
+
+At the start of the project, CIFv4 was still in beta, but it was decided to follow through in testing to have the implementation work on CIFv4. CIFv3 was in the process of getting deprecated at this point as well.
 
 ## 4. Methodology
   * CIF Environment Research
