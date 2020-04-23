@@ -84,7 +84,7 @@ At the start of the project, CIFv4 was still in beta, but it was decided to foll
     * Collect metric information about IP indicators being collected to block within the 15 minute intervals
 
 ## 5. Results/Findings
-  * Metric Analysis
+  * The results are compiled results from Palo Alto Firewall. It will be a 1-day traffic capture that will have all the threat alerts captured for the day as well. A filter will be applied to these results that identify when the threat first is seen and then 15 minutes later all traffic from that threat will be removed for the rest of the day. This will simulate the CIF palo.py actually running and doing what it was designed for. After all the filters are applied this should simulate a day of traffic while the palo.py is running. This will show an accurate layout of what will happen. Since before and after would show different possible traffic and possible threats because every day is different.
 
     * Collect metrics from CIF about IPs that were blocked on just a day-to-day basis
     * Collect metrics from CIF about IPs that were blocked every 15 minutes (as often as Palo Alto should request updated information)
