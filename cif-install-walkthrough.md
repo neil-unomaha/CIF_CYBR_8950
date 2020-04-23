@@ -53,6 +53,8 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 ## Setup environnment variables
 Before running the CIF docker container, you need to create some environment variables.
 
+* You will set these environment variables on your _host_ virtual machine.  Later on when you execute the command to boot up the CIF docker container, you will pass these environment variables in as arguments.
+
 The first environment variable is `CIF_TOKEN` which will contain a randomly generated string. This string ultimately becomes the bearer token passed in for all of your GET and POST requests via the request header for security (exception: we made our palo endpoint not require a bearer token be passed in). You can generate a random string with the following command on Ubuntu:
 
     head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'
@@ -63,7 +65,7 @@ An example output is the following:
     
 The other two required environment variables are `MAXMIND_USER_ID` AND `MAXMIND_LICENSE_KEY`. These two environment variables capture the Maxmind Account ID and your Maxmind License Key values you were advised to copy down [in the instructions above](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
 
-Here is an example command to setup these environment variables. **Reminder**: you'll need to swap out the values for` MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`!
+Here is an example command to setup these environment variables. **Reminder**: you'll need to swap out the values for` MAXMIND_USER_ID` and `MAXMIND_LICENSE_KEY`!  
 
     export CIF_TOKEN=`head -n 25000 /dev/urandom | openssl dgst -sha256 | awk -F ' ' '{print $2}'`
     export MAXMIND_USER_ID=YOUR-ACCOUNT-ID
@@ -72,7 +74,7 @@ Here is an example command to setup these environment variables. **Reminder**: y
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
 ## Run the CIF docker container
-With the environment variables all setup, you can now run your CIF docker image:
+With the environment variables all setup on your virtual machine, you can now run your CIF docker image:
 
     sudo docker run -e CIF_TOKEN="${CIF_TOKEN}" -e MAXMIND_USER_ID="${MAXMIND_USER_ID}" -e MAXMIND_LICENSE_KEY="${MAXMIND_LICENSE_KEY}" -it -p 5000:5000 -d --name verbose-robot csirtgadgets/verbose-robot:latest
 
