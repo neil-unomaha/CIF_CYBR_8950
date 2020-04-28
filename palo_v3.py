@@ -16,12 +16,11 @@ from cifsdk.exceptions import AuthError, TimeoutError, InvalidSearch, \
 
 api = Namespace('palo', description='Palo API')
 
-
 @api.route('/')
 @api.response(401, 'Unauthorized')
 @api.response(200, 'OK')
 class Palo(Resource):
-    @api.param('page_num','Page Number')
+    @api.param('page_num', 'Page Number')
     @api.doc(security=[])
     def get(self):
         page_num = request.args.get('page_num')
@@ -31,12 +30,11 @@ class Palo(Resource):
         out_file = io.StringIO()
         self.__init_page_output(page_num, out_file)
         byte_out_file = io.BytesIO()
-        byte_out_file = io.BytesIO()
         byte_out_file.write(out_file.getvalue().encode('utf-8'))
         byte_out_file.seek(0)
         out_file.close()
         return send_file(byte_out_file, attachment_filename="palo_paged_indicators.txt")
-        
+
     def __is_invalid_page_num(self, page_num):
         if(page_num == None or page_num == ""):
             return True
@@ -57,7 +55,6 @@ class Palo(Resource):
         all_indicators_dirty = []
         all_indicators_clean = []
 
-
         # all_indicators_dirty is a list of dictionaries containing only the "id" and "indicator" attributes
         # the items within the all_indicators_dirty list are sorted by the dictionary item's "id" attribute
         for item in results:
@@ -77,7 +74,6 @@ class Palo(Resource):
         # each page can contain no more than 5000 indicators
         # initialize index count based on paging
         index_count = (int(page_num) * 5000) - 5000
-        
         for num in range(5000):
             if(index_count > length_of_indicators - 1):
                 break
@@ -85,5 +81,4 @@ class Palo(Resource):
                 out_file.write(all_indicators_clean[index_count])
                 out_file.write("\n")
                 index_count += 1
-
         return
