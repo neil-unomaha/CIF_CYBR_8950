@@ -5,7 +5,7 @@ import json, os
 from .constants import ROUTER_ADDR
 
 import zmq
-
+import io
 from flask_restplus import Namespace, Resource, fields
 from cif.constants import FEEDS_LIMIT, FEEDS_WHITELIST_LIMIT, \
     HTTPD_FEED_WHITELIST_CONFIDENCE, FEEDS_WHITELIST_DAYS
@@ -16,19 +16,24 @@ from cifsdk.exceptions import AuthError, TimeoutError, InvalidSearch, \
 
 api = Namespace('palo', description='Palo API')
 
-@api.route('/<string:page_num>')
+@api.route('/')
 @api.response(401, 'Unauthorized')
 @api.response(200, 'OK')
 class Palo(Resource):
+    @api.param('page_num', 'Page Number')
     @api.doc(security=[])
-    def get(self, page_num):
+    def get(self):
+        page_num = request.args.get('page_num')
         """Returns IPv4 indicators, one per line, 5,000 per page, max 150,000 indicators (30 pages)"""
         if self.__is_invalid_page_num(page_num):
             return "Error: invalid page number"
-
-        self.__init_page_output(page_num)
-
-        return send_file("/home/cif/palo_paged_indicators.txt")
+        out_file = io.StringIO()
+        self.__init_page_output(page_num, out_file)
+        byte_out_file = io.BytesIO()
+        byte_out_file.write(out_file.getvalue().encode('utf-8'))
+        byte_out_file.seek(0)
+        out_file.close()
+        return send_file(byte_out_file, attachment_filename="palo_paged_indicators.txt")
 
     def __is_invalid_page_num(self, page_num):
         if(page_num == None or page_num == ""):
@@ -38,8 +43,7 @@ class Palo(Resource):
                 return True
         return False
 
-    def __init_page_output(self, page_num):
-        output_file = open('/home/cif/palo_paged_indicators.txt', 'w')
+    def __init_page_output(self, page_num, out_file):
 
         filters = {
             'tags': 'botnet,phishing,malware,scanner,bruteforce,darknet',
@@ -74,8 +78,7 @@ class Palo(Resource):
             if(index_count > length_of_indicators - 1):
                 break
             else:
-                output_file.write(all_indicators_clean[index_count])
-                output_file.write("\n")
+                out_file.write(all_indicators_clean[index_count])
+                out_file.write("\n")
                 index_count += 1
-        output_file.close()
         return
