@@ -53,7 +53,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 ## Setup environnment variables
 Before running the CIF docker container, you need to create some environment variables.
 
-* You will set these environment variables on your _**virtual machine**_.  Later on when you execute the command to boot up the CIF docker container _within your virtual machine_, you will pass these environment variables in as arguments.
+* **Note:** You will set these environment variables on your _**virtual machine**_.  Later on when you execute the command to boot up the CIF docker container _within your virtual machine_, you will pass these environment variables in as arguments.
 
 The first environment variable is `CIF_TOKEN` which will contain a randomly generated string. This string ultimately becomes the bearer token passed in for all of your GET and POST requests via the request header for security (exception: we made our palo endpoint not require a bearer token be passed in). You can generate a random string with the following command on Ubuntu:
 
