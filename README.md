@@ -20,4 +20,4 @@ We aspire to extend the functionality of [CIF version 4](https://github.com/csir
 * For security, user input is validated
 
 ## Check Out the Feature Yourself
-Checkout our [walk-through guide](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md) where we talk through, step-by-step, how to setup CIF version 4, and how to plug in our feature. 
+Checkout our [walk-through guide](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md) where we talk through, step-by-step, how to setup CIF version 4, and how to plug in our feature. Setup will take you less than one hour.
