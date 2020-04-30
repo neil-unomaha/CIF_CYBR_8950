@@ -53,7 +53,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 ## Setup environnment variables
 Before running the CIF docker container, you need to create some environment variables.
 
-* You will set these environment variables on your _host_ virtual machine.  Later on when you execute the command to boot up the CIF docker container, you will pass these environment variables in as arguments.
+* You will set these environment variables on your _**virtual machine**_.  Later on when you execute the command to boot up the CIF docker container _within your virtual machine_, you will pass these environment variables in as arguments.
 
 The first environment variable is `CIF_TOKEN` which will contain a randomly generated string. This string ultimately becomes the bearer token passed in for all of your GET and POST requests via the request header for security (exception: we made our palo endpoint not require a bearer token be passed in). You can generate a random string with the following command on Ubuntu:
 
@@ -89,7 +89,8 @@ With the environment variables all setup on your virtual machine, you can now ru
 To confirm our docker container is running, we can run `sudo docker ps`
 ![Show running CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/cif-install-walkthrough-assets/cif-running.PNG)
 
-If you executed the above commands to run the container and the container is not listed, you can run `sudo docker logs <YOUR-CONTAINER-ID>` in order to debug.  Likely there is an issue with your maxmind license key because you didn't specify the correct options while creating the license key. [Reference this step for details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
+If you executed the above commands to run the container and the container is not listed, chances are that it created the container but it immediately exited.  You can confirm this by running `sudo docker ps -a` which lists all containers, both actively running and exited.
+* If the container did in fact exit immediately, you can run `sudo docker logs <YOUR-CONTAINER-ID>` to debug.  Likely there is an issue with your maxmind license key because you didn't specify the correct options while creating the license key. [Reference this step for details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite).
 
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
