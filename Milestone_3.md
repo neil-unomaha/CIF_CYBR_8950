@@ -4,9 +4,12 @@
 
 ### Overview
 
-By the end of the second milestone, We had a functioning test environment and were in the process of getting a functioning implementation of the Palo Alto endpoint set up.  By the end of the third milestone, we not only successfully created the Palo Alto endpoint, but after multiple code review sessions we ended up iterating through three functioning versions of the Palo Alto endpoint. The code was made better in a number of ways, including providing better code comments and API documentation, optimization, and accounting for eventual edge cases that would cause issues. 
+By the end of the second milestone, We technically had a CIF environment setup but we did not sufficiently understand how it worked in order to extend its functionality.  By the end of the third milestone, we gained the necessary knowledge to implement the Palo Alto endpoint.  We conducted multiple code review session which resulted to [three functioning iterations of the Palo Alto endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/tree/master/palo_endpoint_versions). The code along the way was made better in several ways, including providing better code comments and API documentation, increasing optimization, accounting for eventual edge cases that would cause issues, and writing [test coverage](https://github.com/neil-unomaha/CIF_CYBR_8950/tree/master/test-file). 
 
-We informed the stakeholder of our progress and informed him of the [walkthrough guide](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md) we developed to provide a more user-friendly guide to installing CIF along with including our endpoint.   The stakeholder requested we create a short presentation for him to share what we had created with other Universities, [and we delivered](https://app.vidgrid.com/view/8JmGblYqwkXE/?sr=0sOkk6).
+During milestone 3 we informed the stakeholder of our progress, as well as the user-friendly [walk-through guide](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md) we developed for installing CIF along with adding in our endpoint. The stakeholder requested we create a short presentation for him to share what we had created with other Universities, [and we delivered](https://app.vidgrid.com/view/8JmGblYqwkXE/?sr=0sOkk6).
+
+The stakeholder was unable to setup a live implementation of CIF 4 with our included endpoint, so we were unable to execute our [originally planned methodology](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Milestone_1.md#project-methodology) of conducting baseline measurement and post-solution measurements of network traffic.  However, the stakeholder did provide us two-and-a-half hours worth of network traffic data which we analyzed and were able to identify theortical findings.  
+
 
 ### Outcomes
 
