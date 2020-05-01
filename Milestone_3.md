@@ -12,7 +12,7 @@ We informed the stakeholder of our progress and informed him of the [walkthrough
 
 #### CIF Test Environment
 
-It was documented in the last [realization report](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Milestone%202.md#Project-Realization) that proper set up of the CIF test environment had to be handled in the beginning of the project. Since the [original setup](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Milestone%202.md#Environment-Setup-and-Hardships), the team has learned more about CIF when it came to initial installation and about its codebase. In particular, the team was able to find the CIF file that specifies endpoints in app.py. From here, a Palo Alto endpoint was created and tested. This endpoint will be further explained below.
+It was documented in the last [realization report](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Milestone_2.md#project-realizationn) that proper set up of the CIF test environment had to be handled in the beginning of the project. Since the [original setup](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Milestone_2.md#Environment-Setup-and-Hardships), the team has learned more about CIF when it came to initial installation and about its codebase. In particular, the team was able to find the CIF file that specifies endpoints in app.py. From here, a Palo Alto endpoint was created and tested. This endpoint will be further explained below.
 
 #### API Endpoint
 
