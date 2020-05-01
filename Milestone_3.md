@@ -6,7 +6,7 @@
 
 By the end of the second milestone, We had a functioning test environment and were in the process of getting a functioning implementation of the Palo Alto endpoint set up.  By the end of the third milestone, we not only successfully created the Palo Alto endpoint, but after multiple code review sessions we ended up iterating through three functioning versions of the Palo Alto endpoint. The code was made better in a number of ways, including providing better code comments and API documentation, optimization, and accounting for eventual edge cases that would cause issues. 
 
-We informed the stakeholder of our progress and informed him of the (walkthrough guide)[https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md] we developed to provide a more user-friendly guide to installing CIF along with including our endpoint.   The stakeholder requested we create a short presentation for him to share what we had created with other Universities, (and we delivered)[https://app.vidgrid.com/view/8JmGblYqwkXE/?sr=0sOkk6].
+We informed the stakeholder of our progress and informed him of the [walkthrough guide](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md) we developed to provide a more user-friendly guide to installing CIF along with including our endpoint.   The stakeholder requested we create a short presentation for him to share what we had created with other Universities, [and we delivered](https://app.vidgrid.com/view/8JmGblYqwkXE/?sr=0sOkk6).
 
 ### Outcomes
 
