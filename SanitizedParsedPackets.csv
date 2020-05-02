@@ -1,0 +1,163 @@
+No.,Source,Destination,Protocol,Length,Info,Arrival Time
+30294,Malicious IP 43,Non-Malicious IP 1,TCP,58,59608  >  50075 [SYN] Seq=0 Win=65535 Len=0,4/27/20 11:39
+42758,Malicious IP 44,Non-Malicious IP 2,TCP,58,52628  >  50070 [SYN] Seq=0 Win=65535 Len=0,4/27/20 11:44
+86218,Malicious IP 20,Non-Malicious IP 3,TCP,62,60165  >  1250 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:02
+88563,Malicious IP 9,Non-Malicious IP 4,TCP,62,57072  >  139 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:03
+93320,Malicious IP 27,Non-Malicious IP 5,UDP,47,53159  >  1434 Len=1,4/27/20 12:05
+94375,Malicious IP 19,Non-Malicious IP 6,TCP,62,50637  >  9200 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:06
+101666,Malicious IP 40,Non-Malicious IP 7,TCP,62,53649  >  7547 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:09
+104826,Malicious IP 33,Non-Malicious IP 8,TCP,62,54772  >  990 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:10
+105080,Malicious IP 42,Non-Malicious IP 9,TCP,58,15091  >  23 [SYN] Seq=0 Win=10467 Len=0,4/27/20 12:10
+106111,Malicious IP 20,Non-Malicious IP 10,TCP,62,62878  >  2161 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:11
+106249,Malicious IP 34,Non-Malicious IP 11,TCP,62,61718  >  8081 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:11
+107900,Malicious IP 17,Non-Malicious IP 12,SNMP,86,get-next-request 1.3.6.1.2.1,4/27/20 12:11
+109599,Malicious IP 40,Non-Malicious IP 13,TCP,62,62176  >  3000 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:12
+118007,Malicious IP 35,Non-Malicious IP 14,TCP,62,63506  >  873 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:15
+120623,Malicious IP 3,Non-Malicious IP 15,TCP,62,50398  >  143 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:16
+121420,Malicious IP 39,Non-Malicious IP 16,TCP,62,56835  >  5984 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:17
+122167,Malicious IP 39,Non-Malicious IP 17,TCP,62,56835  >  5984 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:17
+122450,Malicious IP 44,Non-Malicious IP 18,TCP,58,56681  >  9200 [SYN] Seq=0 Win=65535 Len=0,4/27/20 12:17
+123195,Malicious IP 5,Non-Malicious IP 19,TCP,62,52900  >  83 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:17
+124858,Malicious IP 18,Non-Malicious IP 20,TCP,62,51983  >  8088 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:18
+125191,Malicious IP 17,Non-Malicious IP 21,TCP,62,52123  >  995 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:18
+125895,Malicious IP 43,Non-Malicious IP 22,TCP,58,58679  >  9200 [SYN] Seq=0 Win=65535 Len=0,4/27/20 12:18
+125910,Malicious IP 18,Non-Malicious IP 23,TCP,62,51983  >  8088 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:18
+127044,Malicious IP 21,Non-Malicious IP 24,TCP,62,57579  >  8081 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:19
+129493,Malicious IP 25,Non-Malicious IP 25,TCP,62,59491  >  888 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:20
+131139,Malicious IP 13,Non-Malicious IP 26,TCP,62,55892  >  9200 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:21
+132342,Malicious IP 25,Non-Malicious IP 27,TCP,62,59491  >  888 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:21
+132639,Malicious IP 5,Non-Malicious IP 28,TCP,62,34247  >  8333 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:21
+134144,Malicious IP 13,Non-Malicious IP 29,TCP,62,55892  >  9200 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:22
+135400,Malicious IP 17,Non-Malicious IP 30,TCP,62,57022  >  7443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:22
+136224,Malicious IP 3,Non-Malicious IP 31,TCP,62,54669  >  1521 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:23
+136441,Malicious IP 26,Non-Malicious IP 32,TCP,62,54459  >  5800 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:23
+138325,Malicious IP 20,Non-Malicious IP 33,TCP,62,53617  >  5985 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:24
+139482,Malicious IP 23,Non-Malicious IP 34,TCP,62,64061  >  5000 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:24
+143464,Malicious IP 33,Non-Malicious IP 35,DNS,76,Standard query 0x34ef TXT VERSION.BIND,4/27/20 12:26
+143486,Malicious IP 14,Non-Malicious IP 36,TCP,62,51971  >  389 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:26
+144518,Malicious IP 11,Non-Malicious IP 37,TCP,62,51208  >  2323 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:26
+145755,Malicious IP 33,Non-Malicious IP 38,DNS,76,Standard query 0x34ef TXT VERSION.BIND,4/27/20 12:26
+148822,Malicious IP 24,Non-Malicious IP 39,TCP,62,53110  >  118 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:28
+150052,Malicious IP 28,Non-Malicious IP 40,TCP,62,65489  >  3052 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:28
+150820,Malicious IP 11,Non-Malicious IP 41,TCP,62,57620  >  8009 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:29
+151989,Malicious IP 25,Non-Malicious IP 42,TCP,62,52195  >  5222 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:29
+153576,Malicious IP 4,Non-Malicious IP 43,TCP,62,54669  >  3389 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:30
+155605,Malicious IP 37,Non-Malicious IP 44,TCP,62,64484  >  7443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:31
+159118,Malicious IP 39,Non-Malicious IP 45,TCP,62,56512  >  11211 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:32
+159865,Malicious IP 1,Non-Malicious IP 46,TCP,62,51319  >  80 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:32
+163822,Malicious IP 25,Non-Malicious IP 47,TCP,62,61954  >  9443 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:34
+164163,Malicious IP 12,Non-Malicious IP 48,TCP,62,50334  >  2121 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:34
+164727,Malicious IP 37,Non-Malicious IP 49,TCP,62,63506  >  3000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:34
+169087,Malicious IP 22,Non-Malicious IP 50,TCP,62,60863  >  5904 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:36
+170251,Malicious IP 33,Non-Malicious IP 51,TCP,62,53432  >  5909 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:36
+171294,Malicious IP 27,Non-Malicious IP 52,TCP,62,61787  >  888 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:37
+171973,Malicious IP 39,Non-Malicious IP 53,TCP,62,53159  >  3443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:37
+174862,Malicious IP 39,Non-Malicious IP 54,TCP,62,53159  >  3443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:38
+178010,Malicious IP 25,Non-Malicious IP 55,TCP,62,34247  >  3333 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:40
+180990,Malicious IP 30,Non-Malicious IP 56,NAT-PMP,50,External Address Request,4/27/20 12:41
+181482,Malicious IP 16,Non-Malicious IP 57,TCP,62,62926  >  6443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:41
+181633,Malicious IP 22,Non-Malicious IP 58,TCP,62,53034  >  8080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:41
+182046,Malicious IP 37,Non-Malicious IP 59,TCP,62,49694  >  3493 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:41
+182285,Malicious IP 19,Non-Malicious IP 60,TCP,62,56835  >  5907 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:41
+182801,Malicious IP 16,Non-Malicious IP 61,TCP,62,62926  >  6443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:41
+183437,Malicious IP 22,Non-Malicious IP 62,TCP,62,53034  >  8080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:42
+185199,Malicious IP 22,Non-Malicious IP 63,TCP,62,53034  >  8080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:42
+188118,Malicious IP 42,Non-Malicious IP 64,TCP,58,15091  >  23 [SYN] Seq=0 Win=10467 Len=0,4/27/20 12:44
+189539,Malicious IP 4,Non-Malicious IP 65,TCP,62,63927  >  3000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:44
+190945,Malicious IP 4,Non-Malicious IP 66,TCP,62,63927  >  3000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:45
+192808,Malicious IP 2,Non-Malicious IP 67,ENIP,70,List Identity (Req),4/27/20 12:45
+193370,Malicious IP 8,Non-Malicious IP 68,TCP,62,49718  >  9000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:46
+194188,Malicious IP 5,Non-Malicious IP 69,TCP,62,64942  >  110 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:46
+198064,Malicious IP 25,Non-Malicious IP 70,TCP,62,10978  >  88 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:47
+201036,Malicious IP 7,Non-Malicious IP 71,TCP,62,65177  >  81 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:49
+201104,Malicious IP 17,Non-Malicious IP 72,TCP,62,60758  >  9042 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:49
+203193,Malicious IP 15,Non-Malicious IP 73,TCP,62,34247  >  2002 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:50
+203218,Malicious IP 42,Non-Malicious IP 74,TCP,58,15091  >  23 [SYN] Seq=0 Win=10467 Len=0,4/27/20 12:50
+207004,Malicious IP 9,Non-Malicious IP 75,TCP,62,58080  >  3000 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:51
+207863,Malicious IP 41,Non-Malicious IP 76,TCP,58,54323  >  5555 [SYN] Seq=0 Win=65535 Len=0,4/27/20 12:51
+209929,Malicious IP 20,Non-Malicious IP 77,TCP,62,60945  >  11211 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:52
+210421,Malicious IP 40,Non-Malicious IP 78,TCP,62,58807  >  9092 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:52
+212707,Malicious IP 15,Non-Malicious IP 79,TCP,62,53152  >  4567 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:53
+215352,Malicious IP 9,Non-Malicious IP 80,TCP,62,65177  >  2222 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:54
+216250,Malicious IP 37,Non-Malicious IP 81,TCP,62,53300  >  1026 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:55
+217128,Malicious IP 42,Non-Malicious IP 82,TCP,58,15091  >  23 [SYN] Seq=0 Win=10467 Len=0,4/27/20 12:55
+219110,Malicious IP 3,Non-Malicious IP 83,TCP,62,56341  >  2084 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:56
+224210,Malicious IP 34,Non-Malicious IP 84,TCP,62,52875  >  5001 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:58
+224544,Malicious IP 26,Non-Malicious IP 85,TCP,62,61103  >  3389 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:58
+227026,Malicious IP 35,Non-Malicious IP 86,TCP,62,60244  >  80 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 12:59
+227258,Malicious IP 26,Non-Malicious IP 87,TCP,62,61103  >  3389 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 12:59
+231527,Malicious IP 6,Non-Malicious IP 88,TCP,62,50464  >  2443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:01
+238768,Malicious IP 29,Non-Malicious IP 89,TCP,62,64995  >  1028 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:04
+239090,Malicious IP 13,Non-Malicious IP 90,UDP,48,49363  >  5632 Len=2,4/27/20 13:04
+239647,Malicious IP 29,Non-Malicious IP 91,TCP,62,64995  >  1028 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:04
+242204,Malicious IP 7,Non-Malicious IP 92,TCP,62,61337  >  2087 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:05
+242250,Malicious IP 1,Non-Malicious IP 93,TCP,62,56212  >  4443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:05
+244856,Malicious IP 23,Non-Malicious IP 94,TCP,62,58401  >  3389 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:06
+245055,Malicious IP 23,Non-Malicious IP 95,TCP,62,58401  >  3389 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:06
+245081,Malicious IP 19,Non-Malicious IP 96,TCP,62,52420  >  5908 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:06
+245313,Malicious IP 20,Non-Malicious IP 97,TCP,62,63536  >  8088 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:06
+245641,Malicious IP 4,Non-Malicious IP 98,TCP,62,34247  >  554 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:07
+246236,Malicious IP 42,Non-Malicious IP 99,TCP,58,15091  >  2323 [SYN] Seq=0 Win=10467 Len=0,4/27/20 13:07
+247597,Malicious IP 6,Non-Malicious IP 100,TCP,62,55655  >  5910 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:07
+250192,Malicious IP 16,Non-Malicious IP 101,BACnet-APDU,63,"Confirmed-REQ   readProperty[  1] device,4194303 object-identifier ",4/27/20 13:08
+254153,Malicious IP 2,Non-Malicious IP 102,TCP,62,57823  >  2083 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:10
+255683,Malicious IP 13,Non-Malicious IP 103,TCP,62,60097  >  5000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:11
+256272,Malicious IP 28,Non-Malicious IP 104,TCP,62,59574  >  135 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:11
+259543,Malicious IP 39,Non-Malicious IP 105,TCP,62,63123  >  9000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:12
+265995,Malicious IP 33,Non-Malicious IP 106,TCP,62,54959  >  8081 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:15
+267413,Malicious IP 42,Non-Malicious IP 107,TCP,58,15091  >  2323 [SYN] Seq=0 Win=10467 Len=0,4/27/20 13:15
+269972,Malicious IP 40,Non-Malicious IP 108,TCP,62,52283  >  5289 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:16
+271799,Malicious IP 42,Non-Malicious IP 109,TCP,58,15091  >  2323 [SYN] Seq=0 Win=10467 Len=0,4/27/20 13:17
+272549,Malicious IP 6,Non-Malicious IP 110,TCP,62,56700  >  8443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:17
+278492,Malicious IP 26,Non-Malicious IP 111,TCP,62,62910  >  6443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:20
+279534,Malicious IP 39,Non-Malicious IP 112,TCP,62,60407  >  110 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:20
+288042,Malicious IP 5,Non-Malicious IP 113,DNS,76,Standard query 0x34ef TXT VERSION.BIND,4/27/20 13:24
+288056,Malicious IP 40,Non-Malicious IP 114,NAT-PMP,50,External Address Request,4/27/20 13:24
+288320,Malicious IP 5,Non-Malicious IP 115,DNS,76,Standard query 0x34ef TXT VERSION.BIND,4/27/20 13:24
+290169,Malicious IP 36,Non-Malicious IP 116,TCP,62,10978  >  88 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:24
+292534,Malicious IP 31,Non-Malicious IP 117,TCP,62,34247  >  30303 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:25
+296777,Malicious IP 32,Non-Malicious IP 118,TCP,62,49466  >  20 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:27
+299256,Malicious IP 24,Non-Malicious IP 119,TCP,62,49154  >  80 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:28
+300846,Malicious IP 41,Non-Malicious IP 120,TCP,58,49368  >  5900 [SYN] Seq=0 Win=65535 Len=0,4/27/20 13:29
+301535,Malicious IP 10,Non-Malicious IP 121,MDNS,92,"Standard query 0x0000 PTR _services._dns-sd._udp.local, ""QM"" question",4/27/20 13:29
+303952,Malicious IP 8,Non-Malicious IP 122,TCP,62,34247  >  9002 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:30
+311438,Malicious IP 34,Non-Malicious IP 123,TCP,62,53463  >  987 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:33
+312013,Malicious IP 16,Non-Malicious IP 124,TCP,62,60269  >  8888 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:33
+312889,Malicious IP 28,Non-Malicious IP 125,TCP,62,58723  >  5905 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:34
+313123,Malicious IP 1,Non-Malicious IP 126,TCP,62,60578  >  2443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:34
+315064,Malicious IP 8,Non-Malicious IP 127,TCP,62,60000  >  8443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:34
+317735,Malicious IP 2,Non-Malicious IP 128,TCP,62,50473  >  3000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:36
+321515,Malicious IP 25,Non-Malicious IP 129,TCP,62,10978  >  88 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:37
+323082,Malicious IP 18,Non-Malicious IP 130,TCP,62,56359  >  21 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:39
+325194,Malicious IP 27,Non-Malicious IP 131,TCP,62,57593  >  80 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:39
+325381,Malicious IP 32,Non-Malicious IP 132,TCP,62,51016  >  5907 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:40
+327815,Malicious IP 22,Non-Malicious IP 133,TCP,62,63263  >  5916 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:40
+329417,Malicious IP 2,Non-Malicious IP 134,TCP,62,34247  >  8333 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:41
+331979,Malicious IP 7,Non-Malicious IP 135,TCP,62,64942  >  7443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:42
+332188,Malicious IP 1,Non-Malicious IP 136,TCP,62,63912  >  2222 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:42
+332951,Malicious IP 6,Non-Malicious IP 137,SNMP,86,get-next-request 1.3.6.1.2.1,4/27/20 13:42
+333031,Malicious IP 40,Non-Malicious IP 138,TCP,62,60273  >  443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:42
+335949,Malicious IP 26,Non-Malicious IP 139,TCP,62,51385  >  110 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:43
+338611,Malicious IP 41,Non-Malicious IP 140,TCP,58,56108  >  5900 [SYN] Seq=0 Win=65535 Len=0,4/27/20 13:44
+343125,Malicious IP 16,Non-Malicious IP 141,TCP,62,34247  >  8333 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:46
+343238,Malicious IP 24,Non-Malicious IP 142,TCP,62,34247  >  2002 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:46
+349455,Malicious IP 10,Non-Malicious IP 143,UDP,110,60732  >  17185 Len=64,4/27/20 13:49
+349470,Malicious IP 5,Non-Malicious IP 144,SNMP,86,get-next-request 1.3.6.1.2.1,4/27/20 13:49
+350788,Malicious IP 25,Non-Malicious IP 145,TCP,62,61609  >  990 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:49
+352822,Malicious IP 6,Non-Malicious IP 146,TCP,62,34247  >  30303 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:50
+357160,Malicious IP 24,Non-Malicious IP 147,TCP,62,63680  >  9983 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:52
+358004,Malicious IP 34,Non-Malicious IP 148,TCP,62,59338  >  1025 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:52
+359263,Malicious IP 14,Non-Malicious IP 149,TCP,62,57987  >  5289 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:53
+360412,Malicious IP 29,Non-Malicious IP 150,TCP,62,55425  >  2087 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:53
+361105,Malicious IP 14,Non-Malicious IP 151,TCP,62,57987  >  5289 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:53
+363329,Malicious IP 12,Non-Malicious IP 152,TCP,62,53948  >  3388 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:54
+363757,Malicious IP 19,Non-Malicious IP 153,TCP,62,56805  >  2323 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:55
+364007,Malicious IP 2,Non-Malicious IP 154,TCP,62,62204  >  50070 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:55
+364361,Malicious IP 12,Non-Malicious IP 155,TCP,62,53948  >  3388 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:55
+366492,Malicious IP 35,Non-Malicious IP 156,TCP,62,55832  >  2121 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:56
+367335,Malicious IP 17,Non-Malicious IP 157,TCP,62,64108  >  37777 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:56
+367422,Malicious IP 38,Non-Malicious IP 158,TCP,62,34247  >  3333 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:56
+371172,Malicious IP 23,Non-Malicious IP 159,TCP,62,59645  >  2087 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:58
+371750,Malicious IP 26,Non-Malicious IP 160,TCP,62,65507  >  995 [SYN] Seq=0 Win=1024 Len=0 MSS=1460,4/27/20 13:58
+372081,Malicious IP 13,Non-Malicious IP 161,TCP,62,58712  >  3388 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:58
+375371,Malicious IP 40,Non-Malicious IP 162,TCP,62,10978  >  9595 [SYN] Seq=0 Win=65535 Len=0 MSS=1460,4/27/20 13:59
