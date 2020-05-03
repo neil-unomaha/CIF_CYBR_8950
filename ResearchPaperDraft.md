@@ -83,9 +83,10 @@ Following the development of version three and labeling it as being in a satisfa
 
 The results were compiled from Palo Alto Firewall. It will be a 1-day traffic capture that will have all the threat alerts captured for the day as well. A filter will be applied to these results that identify when the threat first is seen and then 15 minutes later all traffic from that threat will be removed for the rest of the day. This will simulate the CIF palo.py actually running and doing what it was designed for. After all the filters are applied this should simulate a day of traffic while the palo.py is running. This will show an accurate layout of what will happen. Since before and after would show different possible traffic and possible threats because every day is different.
 
-    * Collect metrics from CIF about IPs that were blocked on just a day-to-day basis
-    * Collect metrics from CIF about IPs that were blocked every 15 minutes (as often as Palo Alto should request updated information)
-    * Compare findings and summarize differences found between the metrics
+Palo Alto findings. To simulate the impact our tool would have on the network traffic. We used a 2.5-hour network packet capture along with identified IP addresses that were deemed malicious. We examined the packet capture for all the identified malicious traffic and marked each malicious IP addresses for first seen. Fifteen minutes after the first packet we consider all other packets from that IP address as blocked. This is to show the potential impact of the implemented CIF add-in for Palo Alto. From the 2.5-hour packet capture, 44 unique IP addresses were marked as malicious. There were 162 malicious packets during the captured time. If the CIF add-in was implemented 93 of these packets would have been dropped if the add-in was implemented. The potential impact on network traffic would be somewhere around 50% to 60% of malicious traffic being dropped. Potential more because this capture was a limited time frame. Most of these IP addresses could have been hitting the network before the capture started, as well as after the packet capture stopped.
+
+Disclaimer: Network traffic varies from day to day. As well as inbound malicious traffic. This is a limited view of the network traffic. The data in the CSV has been sanitized to only show data that is considered important for this paper.
+
   * MORE INFORMATION PENDING
 
 ## 6. Conclusion and further research considerations
