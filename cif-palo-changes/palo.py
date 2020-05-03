@@ -23,7 +23,7 @@ class Palo(Resource):
     @api.param('page_num', 'Page Number')
     @api.doc(security=[])
     def get(self):
-        """Returns IPv4 indicators, one per line, 5,000 per page, max 150,000 indicators (30 pages)"""
+        """Returns IPv4 indicators, one per line, Max 5,000 per page"""
         page_num = request.args.get('page_num')
 
         if self.__is_invalid_page_num(page_num):
