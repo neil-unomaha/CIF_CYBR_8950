@@ -49,11 +49,17 @@ Another paper from the author Hiroki Hashiwazaki goes into detail in his report 
 
 ## 3. CIF Environment
 
-The project is built upon Python, and the system it is installed on must be Python 3.6 or higher. CIF also uses Flask as the web framework along with the Flask-RESTplus extension. For sending information between different devices, CIFv4 requires a token to be used for authorization when requests are made. Before this project, CIF would use a script to run on a daily basis to pull and push the latest feeds to and from Palo Alto firewalls. Typically, these feeds would contain a list of IP addresses for Palo Alto to put on their blocklist. The retrieved feeds are shared feeds from other members of the framework. Figure 1 is a diagram outlining the current setup.
+The project was developed by REN-ISAC. For all intents and purposes, CIF is a server that pulls threat feeds from multiple sources and stores them in an internal database. The server then allows authorized clients to pull the threat feeds from said database. It utilizes what are called indicators to represent attributes associated with malicious activity. A few examples of indicators permitted by CIF include IPv4 and IPv6 addresses, email addresses, and URLs. To describe these indicators, tags are used. Tags are used to describe the malicious activity associated with the indicator, such as malware or phishing, and multiple tags can be associated with each indicator. Lastly, CIF uses a four-point scale to give a confidence level to the specified indicator. This is to assure the specified indicator is malicious. On the scale, a 4 represents absolute certainty, and a 0 or 1 may just represent informational data. Clients that are wanting to pull threat data from a CIF server can specify the minimum confidence level for pulling indicators in a threat feed. Figure 1 is a diagram to represent this basic setup. The threat feeds to pull from can be specified in its configuration, and by default will include a few pre-configured sources that can be adjusted. CIF gives users the choice to expose their server to allow clients to pull from it as well.
+
+![Basic setup Diagram](https://raw.githubusercontent.com/neil-unomaha/CIF_CYBR_8950/master/Assets/cif-basic.png)
+<br>
+Figure 1: Basic Setup
+
+The CIF server itself is built upon Python, and requires Python 3.6 or higher. In addition, CIF uses Flask as the web framework along with the Flask-RESTplus extension. For sending information between different devices, CIFv4 requires a token to be used for authorization when requests are made. Before any new implementations from this team, CIF would use a script to run on a daily basis to pull and push the latest feeds to and from Palo Alto firewalls, the clients in this case. Typically, these feeds would contain a list of IP addresses for Palo Alto to put on their blocklist. The retrieved feeds are shared feeds from other members of the framework. Figure 2 is a diagram outlining the current setup.
 
 ![Existing Setup Diagram](https://raw.githubusercontent.com/neil-unomaha/CIF_CYBR_8950/master/Assets/Existing_Setup.png)
 <br>
-Figure 1: Existing Setup
+Figure 2: Existing Setup
 
 As explained earlier, the goal of this project is to implement a new process to replace the daily script to retrieve the latest feeds several times a day. The question did come up about updating the existing script to run several times a day, but it was decided not to go this route. The script works to request the data from CIF's database, but Flask could be used to internally request and send this data. This would be a better implementation than to run a script separate from the Flask framework.
 
@@ -63,11 +69,17 @@ At the start of the project, CIFv4 was still in beta, but it was decided to foll
 
 The beginning of the project begun with conducting research about the CIF working environment. At the initial start of the project, online resources were used such as Lynda to get familiar with Python and the Flask web framework. Within CIF itself, virtual machines were set up with Ubuntu Server 16.04 and CIFv4 was installed using docker within the setup. This was all done in reference to CIF's Wiki page [10].
 
-Following the setup of the CIF test environment, progress for realizing the project goal: to update feeds multiple times a day rather than once a day. A few restraints in creating this endpoint were quick to present themselves. The preferred solution was to utilize Palo Alto's external block list [11], where Palo Alto can request a file of IP addresses to block from a specific URL source. In requesting these files, it was realized per file there was a 5,000 IP limit per external block list, with a maximum of 150,000 IP addresses via the block lists [12]. This would imply that multiple external block list files would have to be sent to Palo Alto if the IP addresses to be blocked exceeded 5,000. In addition, it was mentioned earlier that CIF requires a token in the request header whenever a request is being made. The external block lists are not able to send this token that CIF requires. In the test environment setup, a new endpoint file was created to listen for Palo Alto request feeds. Figure 2 below is a diagram to visually represent this idea. To allow this new endpoint to run in this test environment, it had to be imported, added to the API and whitelisted in the driver python script, app.py. In the testing and examining logs from the CIF server, we were able to implement a solution to the token issue mentioned before. This endpoint file was named palo.py and placed in the same directory as the app.py file.
+Following the setup of the CIF test environment, progress for realizing the project goal: to update feeds multiple times a day rather than once a day. Figure 3 represents the environment the team was working with. Somehow, without using the daily script, the desire was to push and pull feeds between the CIF server's internal database and Palo Alto firewalls.
+
+![Environment](https://raw.githubusercontent.com/neil-unomaha/CIF_CYBR_8950/master/Assets/cif-challenge.png)
+<br>
+Figure 3: Test Environment
+
+The solution chosen was to use an endpoint built into the CIF software directly for the firewall to invoke. A few restraints in creating this endpoint were quick to present themselves. The preferred solution was to utilize Palo Alto's external block list [11], where Palo Alto can request a file of IP addresses to block from a specific URL source. In requesting these files, it was realized per file there was a 5,000 IP limit per external block list, with a maximum of 150,000 IP addresses via the block lists [12]. This would imply that multiple external block list files would have to be sent to Palo Alto if the IP addresses to be blocked exceeded 5,000. In addition, it was mentioned earlier that CIF requires a token in the request header whenever a request is being made. The external block lists are not able to send this token that CIF requires. In the test environment setup, a new endpoint file was created to listen for Palo Alto request feeds. Figure 4 below is a diagram to visually represent this idea. To allow this new endpoint to run in this test environment, it had to be imported, added to the API and whitelisted in the driver python script, app.py. In the testing and examining logs from the CIF server, we were able to implement a solution to the token issue mentioned before. This endpoint file was named palo.py and placed in the same directory as the app.py file.
 
 ![Palo Alto Endpoint Diagram](https://raw.githubusercontent.com/neil-unomaha/CIF_CYBR_8950/master/Assets/cif-api-solution.png)
 <br>
-Figure 2
+Figure 4: Palo Alto Endpoint Implementation
 
 In the process, the Palo Alto endpoint had gone under three revisions.
 
