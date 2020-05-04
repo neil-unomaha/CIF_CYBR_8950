@@ -132,6 +132,8 @@ It shouldn't take longer than about 30 seconds for CIF to restart all its proces
 ## Additional custom configurations and Final Thoughts
 There are a number of custom configurations you might want to include in your specific instance of CIF.  [CIF version 4 has a decent overview of its features and configurations in its wiki](https://github.com/csirtgadgets/verbose-robot/wiki/The-CIFv4-Book).  
 
-* One particular configuration worth mentioning: **threat feeds**.  When you originally boot up CIF, it immediately starts pulling indicators from the **default threat feeds**.  The configuration for these threat feeds is located in: `/etc/cif/rules/default`.  You may decide to remove a number of those threat feeds, or include additional threat feeds. 
+* One particular configuration worth mentioning: **threat feeds**.  When you originally boot up CIF, it immediately starts pulling indicators from the [default threat feeds](https://github.com/csirtgadgets/verbose-robot/wiki/FAQ#what-open-source-feeds-come-out-of-the-box).  The configuration for these threat feeds is located in: `/etc/cif/rules/default`.  You may decide to remove a number of those threat feeds, or include additional threat feeds. 
+
+Documentation for configuring feeds in CIF version 4 appears to be missing.  However, you can reference the [CIF version 3 documentation on configuring feeds](https://github.com/csirtgadgets/bearded-avenger-deploymentkit/wiki/ParsingFeeds).
 
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
