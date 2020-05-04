@@ -34,7 +34,7 @@ The rest of the paper will be organized as follows. Section 2 will introduce pre
 
 * Background/Literature Review
   * Cyber Crime effects
-    * 90% of organization have increased budgets [2]]
+    * 90% of organization have increased budgets [2]
     * Ransomware attacks, phishing, breaches, etc. are increasing [3]
     * Companies blocking IP addresses by using honeywords, fake passwords entered [4]
     * Other companies sharing intel reports for possible threats [5]
