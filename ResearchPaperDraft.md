@@ -39,7 +39,7 @@ The rest of the paper will be organized as follows. Section 2 will introduce pre
     * Companies blocking IP addresses by using honeywords, fake passwords entered [4]
     * Other companies sharing intel reports for possible threats [5]
     * Security intelligence and threat sharing has the highest cost savings. 67% respondents use it, average 2.26 million savings (includes costs of tech) [3]
-    * Average cost of successful cyber attack is $1.1 million [6]]
+    * Average cost of successful cyber attack is $1.1 million [6]
 
 Many organizations and researchers have been looking at collective intelligence solutions. With collective intelligence, multiple organizations work in conjunction to collect and sharing information that could be useful for others. Zhao and White in their paper talk about how collective information sharing can help a community prevent cyber attacks and detect any potential risks in an early stage. They define different types of information sources (internal and external), different methods of communication, etc. The model is very defined with various aspects however the framework is not applied in a test environment for further evaluation [7].
 
