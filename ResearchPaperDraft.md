@@ -85,8 +85,6 @@ The results were compiled from Palo Alto Firewall. It will be a 2.5-hour traffic
 
 It should be noted that this is a limited view of the network traffic. Malicious traffic can change day by day and depend on world events can be vastly different. This was a 2.5-hour capture of traffic.
 
-  * MORE INFORMATION PENDING
-
 ## 6. Conclusion and further research considerations
 
   * Summarize findings, metrics, lessons learned, etc.
