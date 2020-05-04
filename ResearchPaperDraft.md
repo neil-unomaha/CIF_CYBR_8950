@@ -85,7 +85,7 @@ The results were compiled from Palo Alto Firewall. It will be a 1-day traffic ca
 
 Palo Alto findings. To simulate the impact our tool would have on the network traffic. We used a 2.5-hour network packet capture along with identified IP addresses that were deemed malicious. We examined the packet capture for all the identified malicious traffic and marked each malicious IP addresses for first seen. Fifteen minutes after the first packet we consider all other packets from that IP address as blocked. This is to show the potential impact of the implemented CIF add-in for Palo Alto. From the 2.5-hour packet capture, 44 unique IP addresses were marked as malicious. There were 162 malicious packets during the captured time. If the CIF add-in was implemented 93 of these packets would have been dropped if the add-in was implemented. The potential impact on network traffic would be somewhere around 50% to 60% of malicious traffic being dropped. Potential more because this capture was a limited time frame. Most of these IP addresses could have been hitting the network before the capture started, as well as after the packet capture stopped.
 
-Disclaimer: Network traffic varies from day to day. As well as inbound malicious traffic. This is a limited view of the network traffic. The data in the CSV has been sanitized to only show data that is considered important for this paper.
+It should be noted that this is a limited view of the network traffic. Malicious traffic can change day by day and depend on world events can be vastly different. This was a 2.5-hour capture of traffic.
 
   * MORE INFORMATION PENDING
 
