@@ -79,7 +79,7 @@ In the process, the Palo Alto endpoint had gone under three revisions.
 
 Following the development of version three and labeling it as being in a satisfactory state, the stakeholder was informed of this solution. The next step in this project was to ask of the stakeholder to collect metric data of the CIF environment before any implementing this new endpoint. Following, it was asked of them to also follow the setup walkthrough guide the team had generated in setting up this new CIF test environment with the new Palo Alto endpoint. The aim was to collect new metric data following the new endpoint's implementation and compare the results.
 
-## 5. Results/Findings
+## 5. Metric Analysis
 
 The team was able to communicate with the stakeholder of the project and retrieve reports from their Palo Alto Firewall. The report contained traffic for a 2.5-hour span, and will also include threat alerts for the day. A filter was applied to the report to identify when the threat was first seen, then 15 minutes after that timestamp, traffic from that threat will be ignored going forward. This is to simulate the expected operation of the new endpoint developed if implemented in the CIF environment.
 
