@@ -14,16 +14,16 @@ During milestone 3 we informed the stakeholder of our progress, and we wrote for
 
 We made serveral outcomes within milestone three. By the end we met our stakeholders expectations by creating the desired Palo Alto endpoint.  A list of all our achievements are the following:
 
-* Setup a CIF test environment
-* Created the Palo Alto Endpoint
-* Iterated through three functioning versions of the Palo Alto Endpoint
-* Wrote test coverage on our endpoint
-* Developed a user-friendly walkthrough guide of setting up CIF version 4 with our endpoint
-* As requested by stakeholder, recorded a quick 2-minute video highlighting what we achieved
-* Analyzed 2.5hrs of network traffic to derive a theoretical model of the impact ob timely threat intelligence gathering, aggregation and sharing on risk profile reduction
+* [Setup a CIF test environment](https://github.com/neil-unomaha/CIF_CYBR_8950/issues/20)
+* [Created the Palo Alto Endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/tree/master/cif-palo-changes)
+* Iterated through [three functioning versions of the Palo Alto Endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/tree/master/palo_endpoint_versions)
+* [Wrote test coverage on our endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/test-file/test_basics.py)
+* [Developed a user-friendly walkthrough guide](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md) of setting up CIF version 4 with our endpoint
+* As requested by stakeholder, [recorded a quick 2-minute video presentation](https://app.vidgrid.com/view/8JmGblYqwkXE/?sr=0sOkk6) highlighting what we achieved
+* [Analyzed 2.5hrs of network traffic](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/SanitizedParsedPackets.csv) to derive a [theoretical model](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/milestone_3.pptx) of the impact ob timely threat intelligence gathering, aggregation and sharing on risk profile reduction
 
 
-### Hindrances
+### Hinderances
 
 One of the first obstacles was the documentation on CIFv4's [wiki page](https://github.com/csirtgadgets/cifsdk-v4-py/wiki) had some gaps in its explanations.  CIF was largely written, and is currently maintained, by a single individuaul, so the gaps in documentation is understandable. The team had to troubleshoot various installation issues they encounted which is [well documented in the our capstone repo of issues](https://github.com/neil-unomaha/CIF_CYBR_8950/issues/20).  
 
@@ -35,12 +35,13 @@ Another hurdle involved the methodology on how we were going to conduct our anal
 
 Unfortunately, due to fallout from COVID-19, the manpower was not available at UNL to setup a CIF version four instance with our endpoint, and to conduct either of the seven day reports.  
 
-We overcame this hinderance by analyzing the network traffic the stakeholder was able to provide to us.  Our stakeholder provided us with two-and-a-half hours of network traffic along with the previous day's listing of newly added IPs to block from CIF.  With this data, we were able to derive a theoretical model by applying those newly added blocked IPs to the network traffic.  We describe in more detail our analysis strategy in both our presentation, as well as our research paper.
+We overcame this hinderance by analyzing the network traffic the stakeholder was able to provide to us.  Our stakeholder provided us with [two-and-a-half hours of network traffic](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/SanitizedParsedPackets.csv) along with the previous day's listing of newly added IPs to block from CIF.  With this data, we were able to derive a theoretical model by applying those newly added blocked IPs to the network traffic.  We describe in more detail our analysis strategy in both our presentation, as well as our research paper.
 
-## Final Report
+## Final Report: Packaging and Release
+[Located in README](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/README.md).
 
-* List out accomplishments across the project pulling from milestone 1 and deliverables achieved in 2 and 3
+## Presentation
+[Our capstone presentation can be found here](https://app.vidgrid.com/view/J4gY8JH6x7rb).
 
-## Research Paper
-
-* Later link to finished research paper
+# Research Paper
+[Our research paper can be found here](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/ResearchPaperDraft.md).
