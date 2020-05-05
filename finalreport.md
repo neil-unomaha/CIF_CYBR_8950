@@ -1,8 +1,9 @@
-# CIF CYBR
+# Improving the Collective intelligence Framework:
+### Final Report
 ## Executive Summary
-The Collective Intelligence Framework, or CIF, is built to intelligently retrieve threat information from various sources, and use that information for incident response, intrusion detection, and mitigation. Most commonly, this framework works with IP addresses, domains, and URLs that have been suspected to be malicious. The framework works to analyze data at different times to make observations and build reputations based on these observations. The process is split into seven parts: parse, normalize, post-process, store, query, share, and produce.
+The Collective Intelligence Framework [CIF] is built to intelligently retrieve threat information from various sources.  CIF uses threat information for incident response, intrusion detection, and mitigation. Most commonly, this framework works with IP addresses, domains, and URLs that have been suspected to be malicious. The framework works to analyze data at different times to make observations and build reputations based on these observations. The process is split into seven parts: parse, normalize, post-process, store, query, share, and produce.
 
-Within this existing framework, the project will focus on the store portion of the process and thus will be discussing this part in more detail. CIF holds a database of millions of records of threat intelligence. One source of the threat intelligence information is from Palo Alto hardware. Information is pulled from Palo Alto devices and pushed to CIF, then pushed to Palo Alto devices within CIF. At this time, a script is run once a day to automatically copy threats into a file, then manually added to the CIF. For this project, it is the aim to make this threat pulling process more automatic. Palo Alto will update their threat information numerous times a day, and it would be more effective to collect this information and push to CIF numerous times a day, rather than once a day. The goal is to pull information from Palo Alto every 15 minutes and update CIF with the information pulled.
+Within this existing framework, the project will focus on the store portion of the process and thus will be discussing this part in more detail. CIF is able to hold a database of millions of records of threat intelligence. One source of the threat intelligence information can be from Palo Alto hardware. --Information is pulled from Palo Alto devices and pushed to CIF, then pushed to Palo Alto devices within CIF. At this time, a script is run once a day to automatically copy threats into a file, then manually added to the CIF. For this project, it is the aim to make this threat pulling process more automatic. Palo Alto will update their threat information numerous times a day, and it would be more effective to collect this information and push to CIF numerous times a day, rather than once a day. The goal is to pull information from Palo Alto every 15 minutes and update CIF with the information pulled.--
 
 ## Project Goals
 
@@ -40,6 +41,6 @@ A 2.5-hour spanned network packet capture was used and contained IP addresses th
 It should be noted that this is a limited view of the network traffic. Malicious traffic can vary on a day-by-day basis. This was a 2.5-hour capture of traffic. If the report was over a day or even a week, the results could be more impactful.
 
 ## Install Instructions
-A github repostitory containing only materials needed for installation has been created:
+A github repository containing only materials needed for installation has been created:
 https://github.com/Jacksonurrutia/CIF-V4-PALO
 
