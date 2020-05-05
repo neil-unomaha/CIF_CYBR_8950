@@ -18,7 +18,7 @@ Within this existing framework, the project will focus on the store portion of t
 ### Baseline Measurement
 
 * Measure the number of new threats ingested into Palo Alto firewalls within a 24hr period within the current system.
-  * Spoke with customer and he confirmed he can set up a Palo Alto firewall with a rule to collect a 7-day log report for us to use as a baseline measurement for blocked IPs during that period to show how much traffic is being passed during that timeframe.
+  * Spoke with the customer and he confirmed he can set up a Palo Alto firewall with a rule to collect a 7-day log report for us to use as a baseline measurement for blocked IPs during that period to show how much traffic is being passed during that timeframe.
 
 ### Build and Implement Solution
 
@@ -29,7 +29,7 @@ Within this existing framework, the project will focus on the store portion of t
 
 ### Conduct Post-Solution Measurement
 
-* Generate Palo Alto report to show blocked IPs after endpoint implementation and compare with baseline metrics gathered from the original baseline. This is to show that bocking the IPs every 15 minutes can cut down on traffic that is making its way into the network. This will require a 7-day log of post implmentation. 
+* Generate Palo Alto report to show blocked IPs after endpoint implementation and compare with baseline metrics gathered from the original baseline. This is to show that blocking the IPs every 15 minutes can cut down on traffic that is making its way into the network. This will require a 7-day log of post-implementation.  
 
 * Calculate and document any differences perceived following implementation
 
@@ -41,6 +41,6 @@ A 2.5-hour spanned network packet capture was used and contained IP addresses th
 It should be noted that this is a limited view of the network traffic. Malicious traffic can vary on a day-by-day basis. This was a 2.5-hour capture of traffic. If the report was over a day or even a week, the results could be more impactful.
 
 ## Install Instructions
-A github repository containing only materials needed for installation has been created:
+A Github repository containing only materials needed for installation has been created:
 https://github.com/Jacksonurrutia/CIF-V4-PALO
 
