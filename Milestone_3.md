@@ -10,14 +10,6 @@ By the end of the third milestone, we gained the necessary knowledge to implemen
 
 During milestone 3 we informed the stakeholder of our progress, and we wrote for him a user-friendly [walk-through guide](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md) on how to install CIF and how to add in our endpoint, and we also included highlights of important features such as configuring threat feeds as well as how to add new indicators. The stakeholder requested we create a short presentation for him to share what we had created with other Universities, [and we delivered](https://app.vidgrid.com/view/8JmGblYqwkXE/?sr=0sOkk6).
 
-### Overview
-
-By the end of the second milestone, We technically had a CIF environment setup but we did not sufficiently understand how it worked in order to extend its functionality. We had pseudocode for steps of writing the new endpoint, as well as a possible implemention, but the solution had yet to be written.  
-
-By the end of the third milestone, we gained the necessary knowledge to implement the Palo Alto endpoint.  We conducted multiple code review session which resulted to [three functioning iterations of the Palo Alto endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/tree/master/palo_endpoint_versions). The code along the way was made better in several ways, including providing better code comments and API documentation, increasing optimization, accounting for edge cases that would cause issues, and writing [test coverage](https://github.com/neil-unomaha/CIF_CYBR_8950/tree/master/test-file). 
-
-During milestone 3 we informed the stakeholder of our progress, and we wrote for him a user-friendly [walk-through guide](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md) on how to install CIF and how to add in our endpoint, and we also included highlights of important features such as configuring threat feeds as well as how to add new indicators. The stakeholder requested we create a short presentation for him to share what we had created with other Universities, [and we delivered](https://app.vidgrid.com/view/8JmGblYqwkXE/?sr=0sOkk6).
-
 ### Outcomes
 
 We made serveral outcomes within milestone three. By the end we met our stakeholders expectations by creating the desired Palo Alto endpoint.  A list of all our achievements are the following:
