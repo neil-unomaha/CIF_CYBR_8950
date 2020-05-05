@@ -23,7 +23,7 @@ We made serveral outcomes within milestone three. By the end we met our stakehol
 * [Analyzed 2.5hrs of network traffic](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/SanitizedParsedPackets.csv) to derive a [theoretical model](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/Assets/milestone_3.pptx) of the impact ob timely threat intelligence gathering, aggregation and sharing on risk profile reduction
 
 
-### Hindrances
+### Hinderances
 
 One of the first obstacles was the documentation on CIFv4's [wiki page](https://github.com/csirtgadgets/cifsdk-v4-py/wiki) had some gaps in its explanations.  CIF was largely written, and is currently maintained, by a single individuaul, so the gaps in documentation is understandable. The team had to troubleshoot various installation issues they encounted which is [well documented in the our capstone repo of issues](https://github.com/neil-unomaha/CIF_CYBR_8950/issues/20).  
 
