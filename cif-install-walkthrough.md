@@ -142,7 +142,7 @@ Documentation for configuring feeds in CIF version 4 appears to be missing.  How
 
 ### Manually adding new indicators
 
-New indicators will be pulled into your running CIF instance, but you also might want to add new indcators yourself.
+New indicators will be pulled into your running CIF instance from your configured threat feeds, but you also might want to add new indcators yourself.
 * You might have a script on your firewall that automatically pushes new indicators to your running CIF instance.  
 * You might write a script yourself that does this. 
 * You might quick just want to add a new indicator that came to your attention by some source outside of your firewall or threat feeds.
