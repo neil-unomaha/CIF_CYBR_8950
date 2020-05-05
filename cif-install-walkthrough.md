@@ -12,7 +12,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * [Install software within running CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-software-within-running-cif-docker-container)
 * [Copy Palo Endpoint Code into the CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#copy-palo-endpoint-code-into-the-cif-docker-container)
 * [Restart CIF and test new palo endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#restart-cif-and-test-new-palo-endpoint)
-* [Additional custom configurations and Final Thoughts](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#additional-custom-configurations-and-final-thoughts)
+* [Additional Details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#additional-custom-configurations-and-final-thoughts)
 
 ## Maxmind Account Prerequisite
 * CIF version 4 has a dependency on [Maxmind](https://www.maxmind.com/en/home), so you must setup an account.  We setup the free account, specifically for the [Geolite2 Databases product](https://dev.maxmind.com/geoip/geoip2/geolite2/).
@@ -129,11 +129,26 @@ It shouldn't take longer than about 30 seconds for CIF to restart all its proces
 
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
-## Additional custom configurations and Final Thoughts
+## Additional Details
 There are a number of custom configurations you might want to include in your specific instance of CIF.  [CIF version 4 has a decent overview of its features and configurations in its wiki](https://github.com/csirtgadgets/verbose-robot/wiki/The-CIFv4-Book).  
 
-* One particular configuration worth mentioning: **threat feeds**.  When you originally boot up CIF, it immediately starts pulling indicators from the [default threat feeds](https://github.com/csirtgadgets/verbose-robot/wiki/FAQ#what-open-source-feeds-come-out-of-the-box).  The configuration for these threat feeds is located in: `/etc/cif/rules/default`.  You may decide to remove a number of those threat feeds, or include additional threat feeds. 
+### Modifying default threat feeds
+When you originally boot up CIF, it immediately starts pulling indicators from various, preconfigured [default threat feeds](https://github.com/csirtgadgets/verbose-robot/wiki/FAQ#what-open-source-feeds-come-out-of-the-box).  
+* The configuration for these threat feeds is located in: `/etc/cif/rules/default`.  
+
+You may decide to remove a number of these threat feeds, or include additional threat feeds. 
 
 Documentation for configuring feeds in CIF version 4 appears to be missing.  However, you can reference the [CIF version 3 documentation on configuring feeds](https://github.com/csirtgadgets/bearded-avenger-deploymentkit/wiki/ParsingFeeds).
+
+### Manually adding new indicators
+
+New indicators will be pulled into your running CIF instance, but you also might want to add new indcators yourself.
+* You might have a script on your firewall that automatically pushes new indicators to your running CIF instance.  
+* You might write a script yourself that does this. 
+* You might quick just want to add a new indicator that came to your attention by some source outside of your firewall or threat feeds.
+
+Here is how you can push a new IPv4 indicator to your CIF instance via `curl`:
+
+    curl -H "Content-Type: application/json" -H "Authorization: YOUR-CIF-TOKEN" -X POST "http://localhost:5000/indicators/" -d '{"indicator":"555.777.666.555","tlp":"amber","confidence":"4","tags":"malware","provider":"example.com","group":"everyone"}'
 
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
