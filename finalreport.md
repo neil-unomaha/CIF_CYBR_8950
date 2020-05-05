@@ -3,7 +3,7 @@
 ## Executive Summary
 The Collective Intelligence Framework [CIF] is built to intelligently retrieve threat information from various sources.  CIF uses threat information for incident response, intrusion detection, and mitigation. Most commonly, this framework works with IP addresses, domains, and URLs that have been suspected to be malicious. The framework works to analyze data at different times to make observations and build reputations based on these observations. The process is split into seven parts: parse, normalize, post-process, store, query, share, and produce.
 
-Within this existing framework, the project will focus on the store portion of the process and thus will be discussing this part in more detail. CIF is able to hold a database of millions of records of threat intelligence. One source of the threat intelligence information can be from Palo Alto hardware. --Information is pulled from Palo Alto devices and pushed to CIF, then pushed to Palo Alto devices within CIF. At this time, a script is run once a day to automatically copy threats into a file, then manually added to the CIF. For this project, it is the aim to make this threat pulling process more automatic. Palo Alto will update their threat information numerous times a day, and it would be more effective to collect this information and push to CIF numerous times a day, rather than once a day. The goal is to pull information from Palo Alto every 15 minutes and update CIF with the information pulled.--
+Within this existing framework, the project will focus on the store portion of the process and thus will be discussing this part in more detail. CIF is able to hold a database of millions of records of threat intelligence. One source of the threat intelligence information can be from Palo Alto hardware. Within the existing setup of CIF at the Univesrsity of Nebraska-Lincoln, a script is written which pulls in new CIF indicators and writes them to a series of files.  Palo Alto then once per day pulls in these indicators.  Our goal was to reduce the burden on the UNL IT department, as well as other CIF end users, by removing the need to write a custom script to pull in the new CIF indicators.  Our goal was to write a new endpoint into CIF that Palo Alto can directly pulled from.  Palo Alto would then be re-configured to pull from this new endpoint every fifteen minutes.
 
 ## Project Goals
 
@@ -14,24 +14,35 @@ Within this existing framework, the project will focus on the store portion of t
 * Enable process automation between CIF framework and Palo Alto by using/creating appropriate APIs
 * Document key findings and processes that were attempted in the sandbox environment
 
-## Project Methodology
-### Baseline Measurement
+
+### Original Methodology
+#### Baseline Measurement
 
 * Measure the number of new threats ingested into Palo Alto firewalls within a 24hr period within the current system.
-  * Spoke with the customer and he confirmed he can set up a Palo Alto firewall with a rule to collect a 7-day log report for us to use as a baseline measurement for blocked IPs during that period to show how much traffic is being passed during that timeframe.
 
-### Build and Implement Solution
+#### Build and Implement Solution
 
 * Extend CIFv4 API
 
   * Build an additional endpoint into CIF server which outputs a list of IP indicators in Palo Alto ingestible format
     * Indicators are retrieved from other universities under the CIF framework
 
-### Conduct Post-Solution Measurement
+#### Conduct Post-Solution Measurement
 
 * Generate Palo Alto report to show blocked IPs after endpoint implementation and compare with baseline metrics gathered from the original baseline. This is to show that blocking the IPs every 15 minutes can cut down on traffic that is making its way into the network. This will require a 7-day log of post-implementation.  
 
 * Calculate and document any differences perceived following implementation
+
+### Revised Methodology
+Due to fallout from COVID-19, the manpower was unavailable from UNL to both provide the reports described in the original methodology, and to implement a CIFv4 instance with our solution.
+
+Our revised methodology was was the following
+#### Retrieve data to perform an analysis based upon a theoretical model
+* Retrieve the previous day's CIF block list
+* Retrieve 2.5hrs worth of network traffic
+#### Analysis and compare blocking strategies
+Compare the amount of blocked malicious IPs based upon a one day strategy vs. a 15-minute strategy
+
 
 ## Results / Findings
 The team was able to communicate with the stakeholder of the project and retrieve reports from their Palo Alto Firewall. The report contained traffic for a 2.5-hour timeframe, and will also include threat alerts for the day. A filter was applied to the report to identify when the threat was first seen, then 15 minutes after that timestamp, traffic from that threat will be ignored going forward. This is to simulate the expected operation of the new endpoint developed if implemented in the CIF environment.
