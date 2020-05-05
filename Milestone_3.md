@@ -38,7 +38,7 @@ Unfortunately, due to fallout from COVID-19, the manpower was not available at U
 We overcame this hindrance by analyzing the network traffic the stakeholder was able to provide to us.  Our stakeholder provided us with [two-and-a-half hours of network traffic](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/SanitizedParsedPackets.csv) along with the previous day's listing of newly added IPs to block from CIF.  With this data, we were able to derive a theoretical model by applying those newly added blocked IPs to the network traffic.  We describe in more detail our analysis strategy in both our presentation, as well as our research paper.
 
 ## Final Report: Packaging and Release
-[Located in README](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/finalreport.md).
+[Located in finalreport.md](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/finalreport.md).
 
 ## Presentation
 [Our capstone presentation can be found here](https://app.vidgrid.com/view/J4gY8JH6x7rb).
