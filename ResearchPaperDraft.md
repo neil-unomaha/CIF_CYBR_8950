@@ -99,11 +99,11 @@ A 2.5-hour spanned network packet capture was used, and it contained IP addresse
 
 It should be noted that this is a limited view of the network traffic. Malicious traffic can vary on a day-by-day basis. This was a 2.5-hour capture of traffic. If the report was over a day or even a week, the results could be more impactful.
 
-## 6. Conclusion and further research considerations
+## 6. Conclusion
 
-  * Summarize findings, metrics, lessons learned, etc.
-  * Submit pull request for CIFv4
-  * Areas for further research
+As a result of this project the team was able to create a new endpoint within the existing CIF infrastructure. It was designed to assist in pulling feeds for Palo Alto firewalls to request and ingest in a recognized format. The endpoint is able to listen to requests for latest threat feeds. Metric analysis was performed on a 2.5-hour packet capture without the endpoint implementation. After manual analysis, it was found within the packet capture, the endpoint could help eliminate 50-60% of malicious traffic over the network.
+
+For further research, it has been advised to try implementing the endpoint is a more expansive environment to test for any bugs or issues in addition to its effectiveness.
 
 ## References
 
