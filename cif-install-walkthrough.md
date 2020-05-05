@@ -1,7 +1,7 @@
 # CIF Installation Walkthrough
 This guide provides step-by-step instructions on how to install [CIF version 4](https://github.com/csirtgadgets/verbose-robot/wiki/The-CIFv4-Book) on a virtual machine.  
 * [Official CIF 4 installation instructions can be found here](https://github.com/csirtgadgets/verbose-robot/wiki#the-easybutton).  This walkthrough provides supplemental details and screenshots in hopes of making installation more user-friendly.
-* Depending on your network speed, performing all steps outlined in this walkthrough should take less than an hour.
+* Depending on your network speed, performing all steps outlined in this walkthrough should take around one hour.
 
 ## Table of Contents
 * [Maxmind Account Prerequisite](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite)
