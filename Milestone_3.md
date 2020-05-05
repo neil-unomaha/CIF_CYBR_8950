@@ -44,4 +44,4 @@ We overcame this hinderance by analyzing the network traffic the stakeholder was
 [Our capstone presentation can be found here](https://app.vidgrid.com/view/J4gY8JH6x7rb).
 
 # Research Paper
-[Our research paper can be found here](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/ResearchPaperDraft.md).
+[Our research paper can be found here](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/ResearchPaper.md).
