@@ -12,7 +12,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * [Install software within running CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-software-within-running-cif-docker-container)
 * [Copy Palo Endpoint Code into the CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#copy-palo-endpoint-code-into-the-cif-docker-container)
 * [Restart CIF and test new palo endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#restart-cif-and-test-new-palo-endpoint)
-* [Additional Details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#additional-custom-configurations-and-final-thoughts)
+* [Additional Details](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#additional-details)
 
 ## Maxmind Account Prerequisite
 * CIF version 4 has a dependency on [Maxmind](https://www.maxmind.com/en/home), so you must setup an account.  We setup the free account, specifically for the [Geolite2 Databases product](https://dev.maxmind.com/geoip/geoip2/geolite2/).
