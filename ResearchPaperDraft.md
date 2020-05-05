@@ -1,5 +1,4 @@
-# Title in progress
-### Subtitle here
+# Improving the Collective intelligence Framework
 
 Talon Flynn  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Department of Cybersecurity, University of Nebraska at Omaha, Omaha, Nebraska, United States, tflynn@unomaha.edu  
@@ -18,6 +17,7 @@ Malicious cyber-attacks on organizations have increased in frequency. Intrusion 
 *insert ACM Computing Classification System using indexing support tool*
 
 ### Keywords
+
 Collective Intelligence Framework, Palo Alto, IP Management, Information Sharing, Intrusion Detection System
 
 ## 1. Introduction
