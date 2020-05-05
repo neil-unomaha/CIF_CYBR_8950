@@ -7,7 +7,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 * [Maxmind Account Prerequisite](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#maxmind-account-prerequisite)
 * [Install Ubuntu 16.04 server](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-ubuntu-1604-server)
 * [Install additional software within your Ubuntu server virtual machine](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-additional-software-within-your-ubuntu-server-virtual-machine)
-* [Setup environnment variables](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#setup-environnment-variables)
+* [Setup environment variables](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#setup-environment-variables)
 * [Run the CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#run-the-cif-docker-container)
 * [Install software within running CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#install-software-within-running-cif-docker-container)
 * [Copy Palo Endpoint Code into the CIF docker container](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#copy-palo-endpoint-code-into-the-cif-docker-container)
@@ -51,7 +51,7 @@ This guide provides step-by-step instructions on how to install [CIF version 4](
 
 [back to top](https://github.com/neil-unomaha/CIF_CYBR_8950/blob/master/cif-install-walkthrough.md#table-of-contents)
 
-## Setup environnment variables
+## Setup environment variables
 Before running the CIF docker container, you need to create some environment variables.
 
 * **Note:** You will set these environment variables on your _**virtual machine**_.  Later on when you execute the command to boot up the CIF docker container _within your virtual machine_, you will pass these environment variables in as arguments.
