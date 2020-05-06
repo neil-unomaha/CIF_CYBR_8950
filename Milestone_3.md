@@ -4,7 +4,7 @@
 
 ### Overview
 
-By the end of the second milestone, We technically had a CIF environment setup but we did not sufficiently understand how it worked in order to extend its functionality. We had pseudocode for steps of writing the new endpoint, as well as a possible implementation, but the solution had yet to be written.  
+By the end of the second milestone, We technically had a CIF environment setup but we did not sufficiently understand how it worked to extend its functionality. We had pseudocode for steps of writing the new endpoint, as well as a possible implementation, but the solution had yet to be written.  
 
 By the end of the third milestone, we gained the necessary knowledge to implement the Palo Alto endpoint.  We conducted multiple code review sessions which resulted in [three functioning iterations of the Palo Alto endpoint](https://github.com/neil-unomaha/CIF_CYBR_8950/tree/master/palo_endpoint_versions). The code was improved in several ways, including providing better code comments and API documentation, increasing optimization, accounting for edge cases that would cause issues, and writing [test coverage](https://github.com/neil-unomaha/CIF_CYBR_8950/tree/master/test-file). 
 
@@ -25,7 +25,7 @@ We made several outcomes within milestone three. By the end, we met our stakehol
 
 ### Hindrances
 
-One of the first obstacles was the documentation on CIFv4's [wiki page](https://github.com/csirtgadgets/cifsdk-v4-py/wiki) had some gaps in its explanations.  CIF was largely written, and is currently maintained, by a single individual, so the gaps in documentation are understandable. The team had to troubleshoot various installation issues they encountered which is [well documented in our capstone repo of issues](https://github.com/neil-unomaha/CIF_CYBR_8950/issues/20).  
+One of the first obstacles was the documentation on CIFv4's [wiki page](https://github.com/csirtgadgets/cifsdk-v4-py/wiki) had some gaps in its explanations.  CIF was largely written and is currently maintained, by a single individual, so the gaps in the documentation are understandable. The team had to troubleshoot various installation issues they encountered which is [well documented in our capstone repo of issues](https://github.com/neil-unomaha/CIF_CYBR_8950/issues/20).  
 
 Another hurdle involved the methodology of how we were going to conduct our analysis.  Our original analysis would have involved the following:
 * Pull a report from Palo Alto to examine the amount of blocked IPs over a seven-day period resulting from the existing, daily blocking strategy of CIF
