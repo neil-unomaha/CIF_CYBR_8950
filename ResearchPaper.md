@@ -14,7 +14,10 @@ Jackson Urrutia
 Malicious cyber-attacks on organizations have increased in frequency. Intrusion detection systems, network monitors, and threat intelligence sharing frameworks have struggled to handle the increased load of information. Timeliness of firewall updates is a crucial issue. Updates are taking hours instead of minutes and can leave the system and individuals vulnerable to attacks. This paper will delve into the effects of threat intelligence sharing timeliness within a university enterprise setting and a development effort focused on the rapid dissemination of threat intelligence to perimeter firewalls. This paper addresses the security efficacy and cost of updating the firewalls in a timely and consistent manner.
 
 ### CCS Concepts
-*insert ACM Computing Classification System using indexing support tool*
+
+Networks → Networks Services → Network Management  
+Networks → Networks Services → Network Monitoring  
+Security and Privacy → Network Security → Firewalls
 
 ### Keywords
 
@@ -59,7 +62,7 @@ The project was developed by REN-ISAC. For all intents and purposes, CIF is a se
 <br>
 Figure 1: Basic Setup
 
-The CIF server itself is built upon Python and requires Python 3.6 or higher. In addition, CIF uses Flask as the web framework along with the Flask-RESTplus extension. For sending information between different devices, CIFv4 requires a token to be used for authorization when requests are made. Before any new implementations from this team, CIF would use a script to run on daily to pull and push the latest feeds to and from Palo Alto firewalls, the clients in this case. Typically, these feeds would contain a list of IP addresses for Palo Alto to put on their blocklist. The retrieved feeds are shared feeds from other members of the framework. Figure 2 is a diagram outlining the current setup.
+The CIF server itself is built upon Python and requires Python 3.6 or higher. In addition, CIF uses Flask as the web framework along with the Flask-RESTplus extension. For sending information between different devices, CIFv4 requires a token to be used for authorization when requests are made. Before any new implementations from this team, CIF would use a script to run daily to pull and push the latest feeds to and from Palo Alto firewalls, the clients in this case. Typically, these feeds would contain a list of IP addresses for Palo Alto to put on their blocklist. The retrieved feeds are shared feeds from other members of the framework. Figure 2 is a diagram outlining the current setup.
 
 ![Existing Setup Diagram](https://raw.githubusercontent.com/neil-unomaha/CIF_CYBR_8950/master/Assets/Existing_Setup.png)
 <br>
@@ -73,7 +76,7 @@ At the start of the project, CIFv4 was still in beta, but it was decided to foll
 
 The beginning of the project began with researching the CIF working environment. At the initial start of the project, online resources were used such as Lynda to get familiar with Python and the Flask web framework. Within CIF itself, virtual machines were set up with Ubuntu Server 16.04, and CIFv4 was installed using docker within the setup. This was all done in reference to CIF's Wiki page [10].
 
-Following the setup of the CIF test environment, progress for realizing the project goal: to update feeds multiple times a day rather than once a day. Figure 3 represents the environment the team was working with. Somehow, without using the daily script, the desire was to push and pull feeds between the CIF server's internal database and Palo Alto firewalls.
+Following the setup of the CIF test environment, the next step was to address the project goal: to update feeds multiple times a day rather than once a day. Figure 3 represents the environment the team was working with. Somehow, without using the daily script, the desire was to push and pull feeds between the CIF server's internal database and Palo Alto firewalls.
 
 ![Environment](https://raw.githubusercontent.com/neil-unomaha/CIF_CYBR_8950/master/Assets/cif-challenge.png)
 <br>
