@@ -14,7 +14,7 @@ We aspire to extend the functionality of [CIFv4](https://github.com/csirtgadgets
       localhost:5000/palo/?page_num=1
       
       # Returns second set of 5,000 IP addresses
-      localhost:5000/?page_num=2
+      localhost:5000/palo/?page_num=2
 
 #### User Input Sanitization 
 * For security, user input is validated
